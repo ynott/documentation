@@ -3,6 +3,7 @@
 
 # Generated Files
 */_build/*
+crowdin.yaml
 
 # Meta Data
 .DS_Store
