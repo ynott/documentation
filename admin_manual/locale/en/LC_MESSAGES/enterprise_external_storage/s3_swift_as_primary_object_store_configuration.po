@@ -1,0 +1,121 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../enterprise_external_storage/s3_swift_as_primary_object_store_configuration.rst:3
+msgid "Configuring S3 and OpenStack Swift Objects as Primary Storage"
+msgstr ""
+
+#: ../../enterprise_external_storage/s3_swift_as_primary_object_store_configuration.rst:5
+msgid ""
+"In ownCloud Enterprise edition, you can configure S3 objects as primary "
+"storage. This replaces the default ownCloud ``owncloud/data`` directory. "
+"You may still need to keep the ``owncloud/data`` directory for these "
+"reasons:"
+msgstr ""
+
+#: ../../enterprise_external_storage/s3_swift_as_primary_object_store_configuration.rst:9
+msgid "The ownCloud log file is saved in the data directory"
+msgstr ""
+
+#: ../../enterprise_external_storage/s3_swift_as_primary_object_store_configuration.rst:10
+msgid ""
+"Legacy apps may not support using anything but the ``owncloud/data`` "
+"directory"
+msgstr ""
+
+#: ../../enterprise_external_storage/s3_swift_as_primary_object_store_configuration.rst:12
+msgid ""
+"You can move your logfile by changing its location in ``config.php``. You"
+" may still need ``owncloud/data`` for backwards compatibility with some "
+"apps."
+msgstr ""
+
+#: ../../enterprise_external_storage/s3_swift_as_primary_object_store_configuration.rst:16
+msgid "Implications"
+msgstr ""
+
+#: ../../enterprise_external_storage/s3_swift_as_primary_object_store_configuration.rst:18
+msgid ""
+"ownCloud in object store mode expects exclusive access to the object "
+"store container, because it only stores the binary data for each file. "
+"The metadata are kept in the local database for performance reasons."
+msgstr ""
+
+#: ../../enterprise_external_storage/s3_swift_as_primary_object_store_configuration.rst:22
+msgid ""
+"The current implementation is incompatible with any app that uses direct "
+"file I/O and circumvents the ownCloud virtual filesystem. That includes "
+"Encryption and Gallery. Gallery stores thumbnails directly in the "
+"filesystem, and Encryption causes severe overhead because key files need "
+"to be fetched in addition to any requested file."
+msgstr ""
+
+#: ../../enterprise_external_storage/s3_swift_as_primary_object_store_configuration.rst:29
+msgid "Configuration"
+msgstr ""
+
+#: ../../enterprise_external_storage/s3_swift_as_primary_object_store_configuration.rst:31
+msgid ""
+"Look in ``config.sample.php`` for a example configurations. Copy the "
+"relevant part to your ``config.php`` file. Any object store needs to "
+"implement ``\\\\OCP\\\\Files\\\\ObjectStore\\\\IObjectStore`` and can be "
+"passed parameters in the constructor with the ``arguments`` key:"
+msgstr ""
+
+#: ../../enterprise_external_storage/s3_swift_as_primary_object_store_configuration.rst:46
+msgid "Amazon S3"
+msgstr ""
+
+#: ../../enterprise_external_storage/s3_swift_as_primary_object_store_configuration.rst:48
+msgid ""
+"The S3 backend mounts a bucket of the Amazon S3 object store into the "
+"virtual filesystem. The class to be used is ``OCA\\ObjectStore\\S3``:"
+msgstr ""
+
+#: ../../enterprise_external_storage/s3_swift_as_primary_object_store_configuration.rst:77
+msgid "Ceph S3"
+msgstr ""
+
+#: ../../enterprise_external_storage/s3_swift_as_primary_object_store_configuration.rst:79
+msgid ""
+"The S3 backend can also be used to mount the bucket of a ceph object "
+"store via the s3 API into the virtual filesystem. The class to be used is"
+" ``OCA\\ObjectStore\\S3``:"
+msgstr ""
+
+#: ../../enterprise_external_storage/s3_swift_as_primary_object_store_configuration.rst:111
+msgid "S3 Multibucket Configuration"
+msgstr ""
+
+#: ../../enterprise_external_storage/s3_swift_as_primary_object_store_configuration.rst:113
+msgid "ownCloud 9.1+ has multibucket support for S3 object stores::"
+msgstr ""
+
+#: ../../enterprise_external_storage/s3_swift_as_primary_object_store_configuration.rst:133
+msgid "OpenStack Swift"
+msgstr ""
+
+#: ../../enterprise_external_storage/s3_swift_as_primary_object_store_configuration.rst:135
+msgid ""
+"The Swift backend mounts a container on an OpenStack Object Storage "
+"server into the virtual filesystem. The class to be used is "
+"``\\\\OC\\\\Files\\\\ObjectStore\\\\Swift``:"
+msgstr ""
+

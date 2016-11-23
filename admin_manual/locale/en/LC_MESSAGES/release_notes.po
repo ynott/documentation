@@ -1,0 +1,1039 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../release_notes.rst:3
+msgid "ownCloud |version| Release Notes"
+msgstr ""
+
+#: ../../release_notes.rst:6
+msgid "Changes in 9.2"
+msgstr ""
+
+#: ../../release_notes.rst:8
+msgid "Supported PHP versions are 5.6+ and 7.0+."
+msgstr ""
+
+#: ../../release_notes.rst:9
+msgid ""
+"The upgrade migration test has been removed; see "
+":ref:`migration_test_label`."
+msgstr ""
+
+#: ../../release_notes.rst:10
+msgid "Requires to use at least desktop client version 2.0 by default."
+msgstr ""
+
+#: ../../release_notes.rst:13
+msgid "Changes in 9.1"
+msgstr ""
+
+#: ../../release_notes.rst:15
+msgid "**General**"
+msgstr ""
+
+#: ../../release_notes.rst:17
+msgid "Background jobs (cron) can now run in parallel"
+msgstr ""
+
+#: ../../release_notes.rst:18
+msgid ""
+"Update notifications in client via API - You can now be notified in your "
+"desktop client about available updates for core and apps. The "
+"notifications are made available via the notifications API."
+msgstr ""
+
+#: ../../release_notes.rst:21
+msgid "Multi-bucket support for primary objectstore integration"
+msgstr ""
+
+#: ../../release_notes.rst:22
+msgid "Support for Internet Explorer below version 11 was dropped"
+msgstr ""
+
+#: ../../release_notes.rst:23
+msgid ""
+"Symlinks pointing outside of the datadir are disallowed. Please use the "
+":doc:`configuration_files/external_storage_configuration_gui` with the "
+":doc:`configuration_files/external_storage/local` storage backend "
+"instead."
+msgstr ""
+
+#: ../../release_notes.rst:25
+msgid ""
+"Removed ``dav:migrate-calendars`` and ``dav:migrate-addressbooks`` "
+"commands for ``occ``. Users planning to upgrade from oC 9.0 or below to "
+"oC 9.1 needs to make sure that their Calendars and Adressbooks are "
+"correctly migrated **before** continuing to upgrade to 9.1."
+msgstr ""
+
+#: ../../release_notes.rst:29
+msgid "**Authentication**"
+msgstr ""
+
+#: ../../release_notes.rst:31
+msgid ""
+"Pluggable authentication: plugin system that supports different "
+"authentication schemes"
+msgstr ""
+
+#: ../../release_notes.rst:32
+msgid "Token-based authentication"
+msgstr ""
+
+#: ../../release_notes.rst:33
+msgid "Ability to invalidate sessions"
+msgstr ""
+
+#: ../../release_notes.rst:34
+msgid ""
+"List connected browsers/devices in the personal settings page. Allows the"
+" user to disconnect browsers/devices."
+msgstr ""
+
+#: ../../release_notes.rst:35
+msgid ""
+"Device-specific passwords/tokens, can be generated in the personal page "
+"and revoked"
+msgstr ""
+
+#: ../../release_notes.rst:36
+msgid "Disable users and automatically revoke their sessions"
+msgstr ""
+
+#: ../../release_notes.rst:37
+msgid "Detect disabled LDAP users or password changes and revoke their sessions"
+msgstr ""
+
+#: ../../release_notes.rst:38
+msgid "Log in with email address"
+msgstr ""
+
+#: ../../release_notes.rst:39
+msgid "Configuration option to enforce token-based login outside the web UI"
+msgstr ""
+
+#: ../../release_notes.rst:40
+msgid "Two Factor authentication plug-in system"
+msgstr ""
+
+#: ../../release_notes.rst:41
+msgid ""
+"OCC command added to (temporarily) disable/enable two-factor "
+"authentication for single users"
+msgstr ""
+
+#: ../../release_notes.rst:43
+msgid ""
+"The current desktop and mobile client versions do not support two-factor "
+"yet, this will be added later. It is already possible to generate a "
+"device specific password and enter that in the current client versions."
+msgstr ""
+
+#: ../../release_notes.rst:47
+msgid "**Files app**"
+msgstr ""
+
+#: ../../release_notes.rst:49
+msgid "Ability to toggle displaying hidden files"
+msgstr ""
+
+#: ../../release_notes.rst:50
+msgid "Remember sort order"
+msgstr ""
+
+#: ../../release_notes.rst:51
+msgid "Permalinks for internal shares"
+msgstr ""
+
+#: ../../release_notes.rst:52
+msgid "Visual cue when dragging in files app"
+msgstr ""
+
+#: ../../release_notes.rst:53
+msgid "Autoscroll file list when dragging files"
+msgstr ""
+
+#: ../../release_notes.rst:54
+msgid "Upload progress estimate"
+msgstr ""
+
+#: ../../release_notes.rst:56
+msgid "**Federated sharing**"
+msgstr ""
+
+#: ../../release_notes.rst:58
+msgid "Ability to create federated shares with CRUDS permissions"
+msgstr ""
+
+#: ../../release_notes.rst:59
+msgid ""
+"Resharing a federated share does not create a chain of shares any more "
+"but connects the share owner's server to the reshare recipient"
+msgstr ""
+
+#: ../../release_notes.rst:62
+msgid "**External storage**"
+msgstr ""
+
+#: ../../release_notes.rst:64
+msgid ""
+"UTF-8 NFD encoding compatibility support for NFD file names stored "
+"directly on external storages (new mount option in external storage admin"
+" page)"
+msgstr ""
+
+#: ../../release_notes.rst:66
+msgid ""
+"Direct links to the configuration pages for setting up a GDrive or "
+"Dropbox app for use with ownCloud"
+msgstr ""
+
+#: ../../release_notes.rst:67
+msgid ""
+"Some performance and memory usage improvements for GDrive, stream "
+"download and chunk upload"
+msgstr ""
+
+#: ../../release_notes.rst:68
+msgid "Performance and memory usage improvements for Dropbox with stream download"
+msgstr ""
+
+#: ../../release_notes.rst:69
+msgid ""
+"GDrive library update provides exponential backoff which will reduce rate"
+" limit errors"
+msgstr ""
+
+#: ../../release_notes.rst:71
+msgid "**Minor additions**"
+msgstr ""
+
+#: ../../release_notes.rst:73
+msgid "Support for print style sheets"
+msgstr ""
+
+#: ../../release_notes.rst:74
+msgid ""
+"Command line based update will now be suggested if the instance is bigger"
+" to avoid potential timeouts"
+msgstr ""
+
+#: ../../release_notes.rst:75
+msgid "Web updater will be disabled if LDAP or shibboleth are installed"
+msgstr ""
+
+#: ../../release_notes.rst:76
+msgid "DB/app update process now shows better progress information"
+msgstr ""
+
+#: ../../release_notes.rst:77
+msgid ""
+"Added occ files:scan --unscanned to only scan folders that haven't yet "
+"been explored on external storages"
+msgstr ""
+
+#: ../../release_notes.rst:78
+msgid "Chunk cache TTL can now be configured"
+msgstr ""
+
+#: ../../release_notes.rst:79
+msgid ""
+"Added warning for wrongly configured database transactions, helps prevent"
+" \"database is locked\" issues"
+msgstr ""
+
+#: ../../release_notes.rst:80
+msgid ""
+"Use a capped memory cache to reduce memory usage especially in background"
+" jobs and the file scanner"
+msgstr ""
+
+#: ../../release_notes.rst:81
+msgid "Allow login by email"
+msgstr ""
+
+#: ../../release_notes.rst:82
+msgid "Respect CLASS property in calendar events"
+msgstr ""
+
+#: ../../release_notes.rst:83
+msgid "Allow addressbook export using VCFExportPlugin"
+msgstr ""
+
+#: ../../release_notes.rst:84
+msgid "Birthdays are also generated based on shared addressbooks"
+msgstr ""
+
+#: ../../release_notes.rst:86
+msgid "**For developers**"
+msgstr ""
+
+#: ../../release_notes.rst:88
+msgid ""
+"New DAV endpoint with a new chunking protocol aiming to solve many issues"
+" like timeouts (not used by clients yet)"
+msgstr ""
+
+#: ../../release_notes.rst:89
+msgid "New webdav property for share permissions"
+msgstr ""
+
+#: ../../release_notes.rst:90
+msgid "Background repair steps can be specified info.xml"
+msgstr ""
+
+#: ../../release_notes.rst:91
+msgid "Background jobs (cron) can now be declared in info.xml"
+msgstr ""
+
+#: ../../release_notes.rst:92
+msgid "Apps can now define repair steps to run at install/uninstall time"
+msgstr ""
+
+#: ../../release_notes.rst:93
+msgid "Export contact images via sabre dav plugin"
+msgstr ""
+
+#: ../../release_notes.rst:94
+msgid ""
+"Sabre DAV's browser plugin is available in debug mode to allow easier "
+"development around webdav"
+msgstr ""
+
+#: ../../release_notes.rst:96
+msgid "**Technical debt**"
+msgstr ""
+
+#: ../../release_notes.rst:98
+msgid ""
+"PSR-4 autoloading forced for OC\\ and OCP\\, optional for OCA\\ docs at "
+"https://doc.owncloud.org/server/9.1/developer_manual/app/classloader.html"
+msgstr ""
+
+#: ../../release_notes.rst:99
+msgid "More cleanup of the sharing code (ongoing)"
+msgstr ""
+
+#: ../../release_notes.rst:104
+msgid "Changes in 9.0"
+msgstr ""
+
+#: ../../release_notes.rst:106
+msgid ""
+"9.0 requires .ico files for favicons. This will change in 9.1, which will"
+" use .svg files. See `Changing favicon "
+"<https://doc.owncloud.org/server/9.0/developer_manual/core/theming.html#changing"
+" -favicon>`_ in the Developer Manual."
+msgstr ""
+
+#: ../../release_notes.rst:111
+msgid ""
+"Home folder rule is enforced in the user_ldap application in new ownCloud"
+" installations; see :doc:`configuration_user/user_auth_ldap`. This "
+"affects ownCloud 8.0.10, 8.1.5 and 8.2.0 and up."
+msgstr ""
+
+#: ../../release_notes.rst:114
+msgid ""
+"The Calendar and Contacts apps have been rewritten and the CalDAV and "
+"CardDAV backends of these apps were merged into ownCloud core. During the"
+" upgrade existing Calendars and Addressbooks are automatically migrated "
+"(except when using the the ``IMAP user backend``). As a fallback for "
+"failed upgrades, when using the ``IMAP user backend`` or as an option to "
+"test a migration ``dav:migrate-calendars`` and/or ``dav:migrate-"
+"addressbooks`` scripts are available (**only in oC 9.0**) via the ``occ``"
+" command. See :doc:`configuration_server/occ_command`."
+msgstr ""
+
+#: ../../release_notes.rst:121
+msgid ""
+"After upgrading to ownCloud 9.0 and **before** continuing to upgrade to "
+"9.1 make sure that all of your and your users Calendars and Addressbooks "
+"are migrated correctly. Especially when using the ``IMAP user backend`` "
+"(other user backends might be also affected) you need to manually run the"
+" mentioned ``occ`` migration commands described above."
+msgstr ""
+
+#: ../../release_notes.rst:126
+msgid ""
+"Updates on systems with large datasets will take longer, due to the "
+"addition of checksums to the oC database. See "
+"`<https://github.com/owncloud/core/issues/22747>`_."
+msgstr ""
+
+#: ../../release_notes.rst:129
+msgid ""
+"Linux packages are available from our `official download repository "
+"<https://download.owncloud.org/download/repositories/stable/owncloud/>`_ "
+". New in 9.0: split packages. ``owncloud`` installs ownCloud plus "
+"dependencies, including Apache and PHP. ``owncloud-files`` installs only "
+"ownCloud. This is useful for custom LAMP stacks, and allows you to "
+"install your own LAMP apps and versions without packaging conflicts with "
+"ownCloud. See :doc:`installation/linux_installation`."
+msgstr ""
+
+#: ../../release_notes.rst:135
+msgid ""
+"New option for the ownCloud admin to enable or disable sharing on "
+"individual external mountpoints (see "
+":ref:`external_storage_mount_options_label`). Sharing on such mountpoints"
+" is disabled by default."
+msgstr ""
+
+#: ../../release_notes.rst:139
+msgid "Enterprise 9.0"
+msgstr ""
+
+#: ../../release_notes.rst:141
+msgid ""
+"owncloud-enterprise packages are no longer available for CentOS6, RHEL6, "
+"Debian7, or any version of Fedora. A new package, owncloud-enterprise-"
+"files, is available for all supported platforms, including the above. "
+"This new package comes without dependencies, and is installable on a "
+"larger number of platforms. System administrators must install their own "
+"LAMP stacks and databases. See https://owncloud.org/blog/time-to-upgrade-"
+"to-owncloud-9-0/"
+msgstr ""
+
+#: ../../release_notes.rst:145
+msgid "Changes in 8.2"
+msgstr ""
+
+#: ../../release_notes.rst:147
+msgid ""
+"New location for Linux package repositories; ownCloud admins must "
+"manually change to the new repos. See :doc:`maintenance/upgrade`"
+msgstr ""
+
+#: ../../release_notes.rst:150
+msgid ""
+"PHP 5.6.11+ breaks the LDAP wizard with a 'Could not connect to LDAP' "
+"error. See https://github.com/owncloud/core/issues/20020."
+msgstr ""
+
+#: ../../release_notes.rst:152
+msgid ""
+"``filesystem_check_changes`` in ``config.php`` is set to 0 by default. "
+"This prevents unnecessary update checks and improves performance. If you "
+"are using external storage mounts such as NFS on a remote storage server,"
+" set this to 1 so that ownCloud will detect remote file changes."
+msgstr ""
+
+#: ../../release_notes.rst:157
+msgid ""
+"XSendFile support has been removed, so there is no longer support for "
+"`serving static files "
+"<https://doc.owncloud.org/server/8.1/admin_manual/configuration_files/ "
+"serving_static_files_configuration.html>`_ from your ownCloud server."
+msgstr ""
+
+#: ../../release_notes.rst:162
+msgid ""
+"LDAP issue: 8.2 uses the ``memberof`` attribute by default. If this is "
+"not activated on your LDAP server your user groups will not be detected, "
+"and you will see this message in your ownCloud log: ``Error PHP Array to "
+"string conversion at "
+"/var/www/html/owncloud/lib/private/template/functions.php#36``. Fix this "
+"by disabling the ``memberof`` attribute on your ownCloud server with the "
+"``occ`` command, like this example on Ubuntu Linux::"
+msgstr ""
+
+#: ../../release_notes.rst:171
+msgid ""
+"Run ``sudo -u www-data php occ ldap:show-config`` to find the correct "
+"``sNN`` value; if there is not one then use empty quotes, ``\"\"``. (See "
+":doc:`configuration_server/occ_command`.)"
+msgstr ""
+
+#: ../../release_notes.rst:175
+msgid ""
+"Users of the Linux Package need to update their repository setup as "
+"described in this `blogpost <https://owncloud.org/blog/upgrading-to-"
+"owncloud-server-8-2/>`_."
+msgstr ""
+
+#: ../../release_notes.rst:179
+msgid "Changes in 8.1"
+msgstr ""
+
+#: ../../release_notes.rst:181
+msgid ""
+"Use APCu only if available in version 4.0.6 and higher. If you install an"
+" older version, you will see a ``APCu below version 4.0.6 is installed, "
+"for stability and performance reasons we recommend to update to a newer "
+"APCu version`` warning on your ownCloud admin page."
+msgstr ""
+
+#: ../../release_notes.rst:185
+msgid ""
+"SMB external storage now based on ``php5-libsmbclient``, which must be "
+"downloaded from the ownCloud software repositories (`installation "
+"instructions "
+"<https://software.opensuse.org/download.html?project=isv%3AownCloud%3Acommunity%"
+" 3A8.1&package=php5-libsmbclient>`_)."
+msgstr ""
+
+#: ../../release_notes.rst:190
+msgid "\"Download from link\" feature has been removed."
+msgstr ""
+
+#: ../../release_notes.rst:192
+msgid ""
+"The ``.htaccess`` and ``index.html`` files in the ``data/`` directory are"
+" now updated after every update. If you make any modifications to these "
+"files they will be lost after updates."
+msgstr ""
+
+#: ../../release_notes.rst:196
+msgid "The SabreDAV browser at ``/remote.php/webdav`` has been removed."
+msgstr ""
+
+#: ../../release_notes.rst:198
+msgid ""
+"Using ownCloud without a ``trusted_domain`` configuration will not work "
+"anymore."
+msgstr ""
+
+#: ../../release_notes.rst:200
+msgid ""
+"The logging format for failed logins has changed and considers now the "
+"proxy configuration in ``config.php``."
+msgstr ""
+
+#: ../../release_notes.rst:203
+msgid ""
+"A default set of security and privacy HTTP headers have been added to the"
+" ownCloud ``.htaccess`` file, and ownCloud administrators may now "
+"customize which headers are sent."
+msgstr ""
+
+#: ../../release_notes.rst:207
+msgid ""
+"More strict SSL certificate checking improves security but can result in "
+"\"cURL error 60: SSL certificate problem: unable to get local issuer "
+"certificate\" errors with certain broken PHP versions. Please verify your"
+" SSL setup, update your PHP or contact your vendor if you receive these "
+"errors."
+msgstr ""
+
+#: ../../release_notes.rst:212
+msgid ""
+"The persistent file-based cache (e.g. used by LDAP integration) has been "
+"dropped and replaced with a memory-only cache, which must be explicitly "
+"configured. See :doc:`configuration_user/user_auth_ldap`. Memory cache "
+"configuration for the ownCloud server is no longer automatic, requiring "
+"installation of your desired cache backend and configuration in "
+"``config.php`` (see :doc:`configuration_server/caching_configuration`.)"
+msgstr ""
+
+#: ../../release_notes.rst:219
+msgid ""
+"The OC_User_HTTP backend has been removed. Administrators are encouraged "
+"to use the ``user_webdavauth`` application instead."
+msgstr ""
+
+#: ../../release_notes.rst:222
+msgid ""
+"ownCloud ships now with its own root certificate bundle derived from "
+"Mozilla's root certificates file. The system root certificate bundle will"
+" not be used anymore for most requests."
+msgstr ""
+
+#: ../../release_notes.rst:226
+msgid ""
+"When you upgrade from ownCloud 8.0, with encryption enabled, to 8.1, you "
+"must enable the new encryption backend and migrate your encryption keys. "
+"See :ref:`upgrading_encryption_label`."
+msgstr ""
+
+#: ../../release_notes.rst:230
+msgid ""
+"Encryption can no longer be disabled in ownCloud 8.1. It is planned to "
+"re-add this feature to the command line client for a future release."
+msgstr ""
+
+#: ../../release_notes.rst:233
+msgid ""
+"It is not recommended to upgrade encryption-enabled systems from ownCloud"
+" Server 8.0 to version 8.1.0 as there is a chance the migration will "
+"break. We recommend migrating to the first bugfix release, ownCloud "
+"Server 8.1.1."
+msgstr ""
+
+#: ../../release_notes.rst:237
+msgid ""
+"Due to various technical issues, by default desktop sync clients older "
+"than 1.7 are not allowed to connect and sync with the ownCloud server. "
+"This is configurable via the ``minimum.supported.desktop.version`` switch"
+" in ``config.php``."
+msgstr ""
+
+#: ../../release_notes.rst:242
+msgid ""
+"Previews are now generated at a maximum size of 2048 x 2048 pixels. This "
+"is configurable via the ``preview_max_x`` and ``preview_max_y`` switches "
+"in ``config.php``."
+msgstr ""
+
+#: ../../release_notes.rst:245
+msgid "The ownCloud 8 server is not supported on any version of Windows."
+msgstr ""
+
+#: ../../release_notes.rst:247
+msgid ""
+"The 8.1.0 release has a minor bug which makes app updates fail at first "
+"try. Reload the apps page and try again, and the update will succeed."
+msgstr ""
+
+#: ../../release_notes.rst:250
+msgid ""
+"The ``forcessl`` option within the ``config.php`` and the ``Enforce SSL``"
+" option within the Admin-Backend was removed. This now needs to be "
+"configured like described in :ref:`use_https_label`."
+msgstr ""
+
+#: ../../release_notes.rst:254
+msgid ""
+"WebDAV file locking was removed in oC 8.1 which causes Finder on Mac OS X"
+" to mount WebDAV read-only."
+msgstr ""
+
+#: ../../release_notes.rst:257
+msgid "Enterprise 8.1 Only"
+msgstr ""
+
+#: ../../release_notes.rst:259 ../../release_notes.rst:371
+#: ../../release_notes.rst:539
+msgid ""
+"The SharePoint Drive app does not verify the SSL certificate of the "
+"SharePoint server or the ownCloud server, as it is expected that both "
+"devices are in the same trusted environment."
+msgstr ""
+
+#: ../../release_notes.rst:264
+msgid "ownCloud 8.0"
+msgstr ""
+
+#: ../../release_notes.rst:267 ../../release_notes.rst:412
+msgid "Manual LDAP Port Configuration"
+msgstr ""
+
+#: ../../release_notes.rst:269 ../../release_notes.rst:414
+msgid ""
+"When you are configuring the LDAP user and group backend application, "
+"ownCloud may not auto-detect the LDAP server's port number, so you will "
+"need to enter it manually."
+msgstr ""
+
+#: ../../release_notes.rst:276
+msgid "No Preview Icon on Text Files"
+msgstr ""
+
+#: ../../release_notes.rst:278
+msgid ""
+"There is no preview icon displayed for text files when the file contains "
+"fewer than six characters."
+msgstr ""
+
+#: ../../release_notes.rst:283
+msgid "Remote Federated Cloud Share Cannot be Reshared With Local Users"
+msgstr ""
+
+#: ../../release_notes.rst:285
+msgid ""
+"When you mount a Federated Cloud share from a remote ownCloud server, you"
+" cannot re-share it with your local ownCloud users. (See "
+":doc:`configuration_files/federated_cloud_sharing_configuration` to learn"
+" more about federated cloud sharing)"
+msgstr ""
+
+#: ../../release_notes.rst:290
+msgid "Manually Migrate Encryption Keys after Upgrade"
+msgstr ""
+
+#: ../../release_notes.rst:292
+msgid ""
+"If you are using the Encryption app and upgrading from older versions of "
+"ownCloud to ownCloud 8.0, you must manually migrate your encryption keys."
+" See :ref:`upgrading_encryption_label`."
+msgstr ""
+
+#: ../../release_notes.rst:297
+msgid "Windows Server Not Supported"
+msgstr ""
+
+#: ../../release_notes.rst:299
+msgid "Windows Server is not supported in ownCloud 8."
+msgstr ""
+
+#: ../../release_notes.rst:302
+msgid "PHP 5.3 Support Dropped"
+msgstr ""
+
+#: ../../release_notes.rst:304
+msgid "PHP 5.3 is not supported in ownCloud 8, and PHP 5.4 or better is required."
+msgstr ""
+
+#: ../../release_notes.rst:307
+msgid "Disable Apache Multiviews"
+msgstr ""
+
+#: ../../release_notes.rst:309
+msgid ""
+"If Multiviews are enabled in your Apache configuration, this may cause "
+"problems with content negotiation, so disable Multiviews by removing it "
+"from your Apache configuration. Look for lines like this::"
+msgstr ""
+
+#: ../../release_notes.rst:316
+msgid "Delete ``Multiviews`` and restart Apache."
+msgstr ""
+
+#: ../../release_notes.rst:321
+msgid "ownCloud Does Not Follow Symlinks"
+msgstr ""
+
+#: ../../release_notes.rst:323
+msgid ""
+"ownCloud's file scanner does not follow symlinks, which could lead to "
+"infinite loops. To avoid this do not use soft or hard links in your "
+"ownCloud data directory."
+msgstr ""
+
+#: ../../release_notes.rst:330
+msgid "No Commas in Group Names"
+msgstr ""
+
+#: ../../release_notes.rst:332
+msgid ""
+"Creating an ownCloud group with a comma in the group name causes ownCloud"
+" to treat the group as two groups."
+msgstr ""
+
+#: ../../release_notes.rst:338
+msgid "Hebrew File Names Too Large on Windows"
+msgstr ""
+
+#: ../../release_notes.rst:340
+msgid ""
+"On Windows servers Hebrew file names grow to five times their original "
+"size after being translated to Unicode."
+msgstr ""
+
+#: ../../release_notes.rst:346
+msgid "Google Drive Large Files Fail with 500 Error"
+msgstr ""
+
+#: ../../release_notes.rst:348
+msgid ""
+"Google Drive tries to download the entire file into memory, then write it"
+" to a temp file, and then stream it to the client, so very large file "
+"downloads from Google Drive may fail with a 500 internal server error."
+msgstr ""
+
+#: ../../release_notes.rst:355
+msgid "Encrypting Large Numbers of Files"
+msgstr ""
+
+#: ../../release_notes.rst:357
+msgid ""
+"When you activate the Encryption app on a running server that has large "
+"numbers of files, it is possible that you will experience timeouts. It is"
+" best to activate encryption at installation, before accumulating large "
+"numbers of files on your ownCloud server."
+msgstr ""
+
+#: ../../release_notes.rst:366
+msgid "Enterprise 8.0 Only"
+msgstr ""
+
+#: ../../release_notes.rst:369
+msgid "Sharepoint Drive SSL Not Verified"
+msgstr ""
+
+#: ../../release_notes.rst:376 ../../release_notes.rst:516
+msgid "No Federated Cloud Sharing with Shibboleth"
+msgstr ""
+
+#: ../../release_notes.rst:378
+msgid ""
+"Federated Cloud Sharing (formerly Server-to-Server file sharing)does not "
+"work with Shibboleth ."
+msgstr ""
+
+#: ../../release_notes.rst:384
+msgid "Direct Uploads to SWIFT do not Appear in ownCloud"
+msgstr ""
+
+#: ../../release_notes.rst:386
+msgid ""
+"When files are uploaded directly to a SWIFT share mounted as external "
+"storage in ownCloud, the files do not appear in ownCloud. However, files "
+"uploaded to the SWIFT mount through ownCloud are listed correctly in both"
+" locations."
+msgstr ""
+
+#: ../../release_notes.rst:393
+msgid "SWIFT Objectstore Incompatible with Encryption App"
+msgstr ""
+
+#: ../../release_notes.rst:395
+msgid ""
+"The current SWIFT implementation is incompatible with any app that uses "
+"direct file I/O and circumvents the ownCloud virtual filesystem. Using "
+"the Encryption app on a SWIFT object store incurs twice as many HTTP "
+"requests and increases latency significantly."
+msgstr ""
+
+#: ../../release_notes.rst:403
+msgid "App Store is Back"
+msgstr ""
+
+#: ../../release_notes.rst:405
+msgid ""
+"The ownCloud App Store has been re-enabled in oC 8. Note that third-party"
+" apps are not supported."
+msgstr ""
+
+#: ../../release_notes.rst:409
+msgid "ownCloud 7 Release Notes"
+msgstr ""
+
+#: ../../release_notes.rst:421
+msgid "LDAP Search Performance Improved"
+msgstr ""
+
+#: ../../release_notes.rst:423
+msgid ""
+"Prior to 7.0.4, LDAP searches were substring-based and would match search"
+" attributes if the substring occurred anywhere in the attribute value. "
+"Rather, searches are performed on beginning attributes. With 7.0.4, "
+"searches will match at the beginning of the attribute value only. This "
+"provides better performance and a better user experience."
+msgstr ""
+
+#: ../../release_notes.rst:429
+msgid ""
+"Substring searches can still be performed by prepending the search term "
+"with \"*\".For example, a search for ``te`` will find Terri, but not "
+"Nate::"
+msgstr ""
+
+#: ../../release_notes.rst:434
+msgid ""
+"If you want to broaden the search to include Nate, then search for "
+"``*te``::"
+msgstr ""
+
+#: ../../release_notes.rst:439
+msgid ""
+"Refine searches by adjusting the ``User Search Attributes`` field of the "
+"Advanced tab in your LDAP configuration on the Admin page. For example, "
+"if your search attributes are ``givenName`` and ``sn`` you can find users"
+" by first name + last name very quickly. For example, you'll find Terri "
+"Hanson by searching for ``te ha``. Trailing whitespaces are ignored."
+msgstr ""
+
+#: ../../release_notes.rst:448
+msgid "Protecting ownCloud on IIS from Data Loss"
+msgstr ""
+
+#: ../../release_notes.rst:450
+msgid ""
+"Under certain circumstances, running your ownCloud server on IIS could be"
+" at risk of data loss. To prevent this, follow these steps."
+msgstr ""
+
+#: ../../release_notes.rst:453
+msgid ""
+"In your ownCloud server configuration file, "
+"``owncloud\\config\\config.php``, set ``config_is_read_only`` to true."
+msgstr ""
+
+#: ../../release_notes.rst:455
+msgid "Set the ``config.php`` file to read-only."
+msgstr ""
+
+#: ../../release_notes.rst:456
+msgid ""
+"When you make server updates ``config.php`` must be made writeable. When "
+"your updates are completed re-set it to read-only."
+msgstr ""
+
+#: ../../release_notes.rst:460
+msgid "Antivirus App Modes"
+msgstr ""
+
+#: ../../release_notes.rst:462
+msgid ""
+"The Antivirus App offers three modes for running the ClamAV anti-virus "
+"scanner: as a daemon on the ownCloud server, a daemon on a remote server,"
+" or an executable mode that calls ``clamscan`` on the local server. We "
+"recommend using one of the daemon modes, as they are the most reliable."
+msgstr ""
+
+#: ../../release_notes.rst:468
+msgid "\"Enable Only for Specific Groups\" Fails"
+msgstr ""
+
+#: ../../release_notes.rst:470
+msgid ""
+"Some ownCloud applications have the option to be enabled only for certain"
+" groups. However, when you select specific groups they do not get access "
+"to the app."
+msgstr ""
+
+#: ../../release_notes.rst:475
+msgid "Changes to File Previews"
+msgstr ""
+
+#: ../../release_notes.rst:477
+msgid ""
+"For security and performance reasons, file previews are available only "
+"for image files, covers of MP3 files, and text files, and have been "
+"disabled for all other filetypes. Files without previews are represented "
+"by generic icons according to their file types."
+msgstr ""
+
+#: ../../release_notes.rst:483
+msgid "4GB Limit on SFTP Transfers"
+msgstr ""
+
+#: ../../release_notes.rst:485
+msgid ""
+"Because of limitations in ``phpseclib``, you cannot upload files larger "
+"than 4GB over SFTP."
+msgstr ""
+
+#: ../../release_notes.rst:489
+msgid "\"Not Enough Space Available\" on File Upload"
+msgstr ""
+
+#: ../../release_notes.rst:491
+msgid ""
+"Setting user quotas to ``unlimited`` on an ownCloud installation that has"
+" unreliable free disk space reporting-- for example, on a shared hosting "
+"provider-- may cause file uploads to fail with a \"Not Enough Space "
+"Available\" error. A workaround is to set file quotas for all users "
+"instead of ``unlimited``."
+msgstr ""
+
+#: ../../release_notes.rst:498
+msgid "No More Expiration Date On Local Shares"
+msgstr ""
+
+#: ../../release_notes.rst:500
+msgid ""
+"In older versions of ownCloud, you could set an expiration date on both "
+"local and public shares. Now you can set an expiration date only on "
+"public shares, and local shares do not expire when public shares expire."
+msgstr ""
+
+#: ../../release_notes.rst:506
+msgid "Zero Quota Not Read-Only"
+msgstr ""
+
+#: ../../release_notes.rst:508
+msgid ""
+"Setting a user's storage quota should be the equivalent of read-only, "
+"however, users can still create empty files."
+msgstr ""
+
+#: ../../release_notes.rst:513
+msgid "Enterprise 7 Only"
+msgstr ""
+
+#: ../../release_notes.rst:518
+msgid ""
+"Federated Cloud Sharing (formerly Server-to-Server file sharing) does not"
+" work with Shibboleth ."
+msgstr ""
+
+#: ../../release_notes.rst:522
+msgid "Windows Network Drive"
+msgstr ""
+
+#: ../../release_notes.rst:523
+msgid ""
+"Windows Network Drive runs only on Linux servers because it requires the "
+"Samba client, which is included in all Linux distributions."
+msgstr ""
+
+#: ../../release_notes.rst:526
+msgid ""
+"``php5-libsmbclient`` is also required, and there may be issues with "
+"older versions of ``libsmbclient``; see Using External Storage > "
+"Installing and Configuring the Windows Network Drive App in the "
+"Enterprise Admin manual for more information."
+msgstr ""
+
+#: ../../release_notes.rst:531
+msgid ""
+"By default CentOS has activated SELinux, and the ``httpd`` process can "
+"not make outgoing network connections. This will cause problems with "
+"curl, ldap and samba libraries. Again, see Using External Storage > "
+"Installing and Configuring the Windows Network Drive App in the "
+"Enterprise Admin manual for instructions."
+msgstr ""
+
+#: ../../release_notes.rst:537
+msgid "Sharepoint Drive SSL"
+msgstr ""
+
+#: ../../release_notes.rst:544
+msgid "Shibboleth and WebDAV Incompatible"
+msgstr ""
+
+#: ../../release_notes.rst:545
+msgid ""
+"Shibboleth and standard WebDAV are incompatible, and cannot be used "
+"together in ownCloud. If Shibboleth is enabled, the ownCloud client uses "
+"an extended WebDAV protocol"
+msgstr ""
+
+#: ../../release_notes.rst:550
+msgid "No SQLite"
+msgstr ""
+
+#: ../../release_notes.rst:552
+msgid ""
+"SQLite is no longer an installation option for ownCloud Enterprise "
+"Edition, as it not suitable for multiple-user installations or managing "
+"large numbers of files."
+msgstr ""
+
+#: ../../release_notes.rst:557
+msgid "No App Store"
+msgstr ""
+
+#: ../../release_notes.rst:559
+msgid "The App Store is disabled for the Enterprise Edition."
+msgstr ""
+
+#: ../../release_notes.rst:562
+msgid "LDAP Home Connector Linux Only"
+msgstr ""
+
+#: ../../release_notes.rst:564
+msgid ""
+"The LDAP Home Connector application requires Linux (with MySQL, MariaDB, "
+"or PostgreSQL) to operate correctly."
+msgstr ""
+

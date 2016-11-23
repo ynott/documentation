@@ -1,0 +1,152 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../configuration_server/background_jobs_configuration.rst:2
+msgid "Defining Background Jobs"
+msgstr ""
+
+#: ../../configuration_server/background_jobs_configuration.rst:3
+msgid ""
+"A system like ownCloud sometimes requires tasks to be done on a regular "
+"basis without the need for user interaction or hindering ownCloud "
+"performance. For that purpose, as a system administrator, you can define "
+"background jobs (for example, database clean-ups) which are executed "
+"without any need for user interaction."
+msgstr ""
+
+#: ../../configuration_server/background_jobs_configuration.rst:5
+msgid ""
+"These jobs are typically referred to as *cron jobs*.  Cron jobs are "
+"commands or shell-based scripts that are scheduled to run periodically at"
+" fixed times, dates, or intervals.   ``cron.php`` is an ownCloud internal"
+" process that runs such background jobs on demand."
+msgstr ""
+
+#: ../../configuration_server/background_jobs_configuration.rst:7
+msgid ""
+"ownCloud plug-in applications register actions with ``cron.php`` "
+"automatically to take care of typical housekeeping operations, such as "
+"garbage collecting of temporary files or checking for newly updated files"
+" using ``filescan()`` for externally mounted file systems."
+msgstr ""
+
+#: ../../configuration_server/background_jobs_configuration.rst:10
+msgid "Parameters"
+msgstr ""
+
+#: ../../configuration_server/background_jobs_configuration.rst:11
+msgid ""
+"In the admin settings menu you can configure how cron-jobs should be "
+"executed. You can choose between the following options:"
+msgstr ""
+
+#: ../../configuration_server/background_jobs_configuration.rst:14
+#: ../../configuration_server/background_jobs_configuration.rst:24
+msgid "AJAX"
+msgstr ""
+
+#: ../../configuration_server/background_jobs_configuration.rst:15
+#: ../../configuration_server/background_jobs_configuration.rst:33
+msgid "Webcron"
+msgstr ""
+
+#: ../../configuration_server/background_jobs_configuration.rst:16
+#: ../../configuration_server/background_jobs_configuration.rst:43
+msgid "Cron"
+msgstr ""
+
+#: ../../configuration_server/background_jobs_configuration.rst:19
+msgid "Cron Jobs"
+msgstr ""
+
+#: ../../configuration_server/background_jobs_configuration.rst:21
+msgid ""
+"You can schedule cron jobs in three ways -- using AJAX, Webcron, or cron."
+" The default method is to use AJAX.  However, the recommended method is "
+"to use cron.  The following sections describe the differences between "
+"each method."
+msgstr ""
+
+#: ../../configuration_server/background_jobs_configuration.rst:26
+msgid ""
+"The AJAX scheduling method is the default option.  Unfortunately, "
+"however, it is also the least reliable. Each time a user visits the "
+"ownCloud page, a single background job is executed. The advantage of this"
+" mechanism is that it does not require access to the system nor "
+"registration with a third party service. The disadvantage of this "
+"mechanism, when compared to the Webcron service, is that it requires "
+"regular visits to the page for it to be triggered."
+msgstr ""
+
+#: ../../configuration_server/background_jobs_configuration.rst:28
+msgid ""
+"Especially when using the Activity App or external storages, where new "
+"files are added, updated or deleted one of the two methods below should "
+"be preferred."
+msgstr ""
+
+#: ../../configuration_server/background_jobs_configuration.rst:35
+msgid ""
+"By registering your ownCloud ``cron.php`` script address at an external "
+"webcron service (for example, easyCron_), you ensure that background jobs"
+" are executed regularly. To use this type of service, your server you "
+"must be able to access your server using the Internet. For example::"
+msgstr ""
+
+#: ../../configuration_server/background_jobs_configuration.rst:45
+msgid ""
+"Using the operating system cron feature is the preferred method for "
+"executing regular tasks.  This method enables the execution of scheduled "
+"jobs without the inherent limitations the Web server might have."
+msgstr ""
+
+#: ../../configuration_server/background_jobs_configuration.rst:47
+msgid ""
+"To run a cron job on a \\*nix system, every 15 minutes, under the default"
+" Web server user (often, ``www-data`` or ``wwwrun``), you must set up the"
+" following cron job to call the **cron.php** script::"
+msgstr ""
+
+#: ../../configuration_server/background_jobs_configuration.rst:52
+msgid "You can verify if the cron job has been added and scheduled by executing::"
+msgstr ""
+
+#: ../../configuration_server/background_jobs_configuration.rst:57
+msgid ""
+"You have to replace the path ``/var/www/owncloud/cron.php`` with the path"
+" to your current ownCloud installation."
+msgstr ""
+
+#: ../../configuration_server/background_jobs_configuration.rst:59
+msgid ""
+"You have to make sure that ``php`` is found by ``cron``. Best practice is"
+" to expressly add the full path like ``/usr/bin/php``."
+msgstr ""
+
+#: ../../configuration_server/background_jobs_configuration.rst:61
+msgid ""
+"On some systems it might be required to call **php-cli** instead of "
+"**php**."
+msgstr ""
+
+#: ../../configuration_server/background_jobs_configuration.rst:63
+msgid "Please refer to the crontab man page for the exact command syntax."
+msgstr ""
+

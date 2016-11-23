@@ -1,0 +1,122 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../configuration_mimetypes/mimetype_aliases.rst:3
+msgid "Mimetype Aliases"
+msgstr ""
+
+#: ../../configuration_mimetypes/mimetype_aliases.rst:5
+msgid ""
+"ownCloud allows you to create aliases for mimetypes, so that you can "
+"display custom icons for files. For example, you might want a nice audio "
+"icon for audio files instead of the default file icon."
+msgstr ""
+
+#: ../../configuration_mimetypes/mimetype_aliases.rst:9
+msgid ""
+"By default ownCloud is distributed with "
+"``owncloud/resources/config/mimetypealiases.dist.json``. Do not modify "
+"this file, as it will be replaced when ownCloud is updated. Instead, "
+"create your own ``owncloud/config/mimetypealiases.json`` file with your "
+"custom aliases. Use the same syntax as in "
+"``owncloud/resources/config/mimetypealiases.dist.json``."
+msgstr ""
+
+#: ../../configuration_mimetypes/mimetype_aliases.rst:16
+msgid ""
+"Once you have made changes to your ``mimetypealiases.json``, use the "
+"``occ`` command to propagate the changes through the system. This example"
+" is for Ubuntu Linux::"
+msgstr ""
+
+#: ../../configuration_mimetypes/mimetype_aliases.rst:22
+msgid ""
+"See :doc:`../configuration_server/occ_command` to learn more about "
+"``occ``."
+msgstr ""
+
+#: ../../configuration_mimetypes/mimetype_aliases.rst:24
+msgid "Some common mimetypes that may be useful in creating aliases are:"
+msgstr ""
+
+#: ../../configuration_mimetypes/mimetype_aliases.rst:27
+msgid "image"
+msgstr ""
+
+#: ../../configuration_mimetypes/mimetype_aliases.rst:27
+msgid "Generic image"
+msgstr ""
+
+#: ../../configuration_mimetypes/mimetype_aliases.rst:30
+msgid "image/vector"
+msgstr ""
+
+#: ../../configuration_mimetypes/mimetype_aliases.rst:30
+msgid "Vector image"
+msgstr ""
+
+#: ../../configuration_mimetypes/mimetype_aliases.rst:33
+msgid "audio"
+msgstr ""
+
+#: ../../configuration_mimetypes/mimetype_aliases.rst:33
+msgid "Generic audio file"
+msgstr ""
+
+#: ../../configuration_mimetypes/mimetype_aliases.rst:36
+msgid "x-office/document"
+msgstr ""
+
+#: ../../configuration_mimetypes/mimetype_aliases.rst:36
+msgid "Word processed document"
+msgstr ""
+
+#: ../../configuration_mimetypes/mimetype_aliases.rst:39
+msgid "x-office/spreadsheet"
+msgstr ""
+
+#: ../../configuration_mimetypes/mimetype_aliases.rst:39
+msgid "Spreadsheet"
+msgstr ""
+
+#: ../../configuration_mimetypes/mimetype_aliases.rst:42
+msgid "x-office/presentation"
+msgstr ""
+
+#: ../../configuration_mimetypes/mimetype_aliases.rst:42
+msgid "Presentation"
+msgstr ""
+
+#: ../../configuration_mimetypes/mimetype_aliases.rst:45
+msgid "text"
+msgstr ""
+
+#: ../../configuration_mimetypes/mimetype_aliases.rst:45
+msgid "Generic text document"
+msgstr ""
+
+#: ../../configuration_mimetypes/mimetype_aliases.rst:47
+msgid "text/code"
+msgstr ""
+
+#: ../../configuration_mimetypes/mimetype_aliases.rst:48
+msgid "Source code"
+msgstr ""
+

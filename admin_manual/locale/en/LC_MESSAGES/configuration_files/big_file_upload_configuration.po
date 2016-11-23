@@ -1,0 +1,367 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../configuration_files/big_file_upload_configuration.rst:3
+msgid "Uploading big files > 512MB"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:5
+msgid ""
+"The default maximum file size for uploads is 512MB. You can increase this"
+" limit up to what your filesystem and operating system allows. There are "
+"certain hard limits that cannot be exceeded:"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:9
+msgid "< 2GB on 32Bit OS-architecture"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:10
+msgid "< 2GB on Windows (32Bit and 64Bit)"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:11
+msgid "< 2GB with Server Version 4.5 or older"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:12
+msgid "< 2GB with IE6 - IE8"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:13
+msgid "< 4GB with IE9 - IE11"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:15
+msgid ""
+"64-bit filesystems have much higher limits; consult the documentation for"
+" your filesystem."
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:18
+msgid ""
+"The ownCloud sync client is not affected by these upload limits as it is "
+"uploading files in smaller chunks."
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:22
+msgid "System Configuration"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:24
+msgid "Make sure that the latest version of PHP (at least 5.6) is installed"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:25
+msgid "Disable user quotas, which makes them unlimited"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:26
+msgid ""
+"Your temp file or partition has to be big enough to hold multiple "
+"parallel uploads from multiple users; e.g. if the max upload size is 10GB"
+" and the average number of users uploading at the same time is 100: temp "
+"space has to hold at least 10x100 GB"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:32
+msgid "Configuring Your Web server"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:34
+msgid ""
+"ownCloud comes with its own ``owncloud/.htaccess`` file. Because ``php-"
+"fpm`` can't read PHP settings in ``.htaccess`` these settings must be set"
+" in the ``owncloud/.user.ini`` file."
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:38
+msgid ""
+"Set the following two parameters inside the corresponding php.ini file "
+"(see the **Loaded Configuration File** section of :ref:`label-phpinfo` to"
+" find your relevant php.ini files) ::"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:45
+msgid ""
+"Adjust these values for your needs. If you see PHP timeouts in your "
+"logfiles, increase the timeout values, which are in seconds::"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:51
+msgid ""
+"The `mod_reqtimeout "
+"<https://httpd.apache.org/docs/current/mod/mod_reqtimeout.html>`_ Apache "
+"module could also stop large uploads from completing. If you're using "
+"this module and getting failed uploads of large files either disable it "
+"in your Apache config or raise the configured ``RequestReadTimeout`` "
+"timeouts."
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:56
+msgid ""
+"There are also several other configuration options in your Web server "
+"config which could prevent the upload of larger files. Please see the "
+"manual of your Web server for how to configure those values correctly:"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:61
+msgid "Apache"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:62
+msgid ""
+"`LimitRequestBody "
+"<https://httpd.apache.org/docs/current/en/mod/core.html#limitrequestbody>`_"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:63
+msgid ""
+"`SSLRenegBufferSize "
+"<https://httpd.apache.org/docs/current/mod/mod_ssl.html#sslrenegbuffersize>`_"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:66
+msgid "Apache with mod_fcgid"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:67
+msgid ""
+"`FcgidMaxRequestInMem "
+"<https://httpd.apache.org/mod_fcgid/mod/mod_fcgid.html#fcgidmaxrequestinmem>`_"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:68
+msgid ""
+"`FcgidMaxRequestLen "
+"<https://httpd.apache.org/mod_fcgid/mod/mod_fcgid.html#fcgidmaxrequestlen>`_"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:70
+msgid ""
+"If you are using Apache/2.4 with mod_fcgid, as of February/March 2016, "
+"``FcgidMaxRequestInMem`` still needs to be significantly increased from "
+"its default value to avoid the occurence of segmentation faults when "
+"uploading big files. This is not a regular setting but serves as a "
+"workaround for `Apache with mod_fcgid bug #51747 "
+"<https://bz.apache.org/bugzilla/show_bug.cgi?id=51747>`_."
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:75
+msgid ""
+"Setting ``FcgidMaxRequestInMem`` significantly higher than normal may no "
+"longer be necessary, once bug #51747 is fixed."
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:79
+msgid "NGINX"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:80
+msgid ""
+"`client_max_body_size "
+"<http://nginx.org/en/docs/http/ngx_http_core_module.html#client_max_body_size>`_"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:81
+msgid ""
+"`fastcgi_read_timeout "
+"<http://nginx.org/en/docs/http/ngx_http_fastcgi_module.html#fastcgi_read_timeout>`_"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:82
+msgid ""
+"`client_body_temp_path "
+"<http://nginx.org/en/docs/http/ngx_http_core_module.html#client_body_temp_path>`_"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:84
+msgid ""
+"For more info how to configure nginx to raise the upload limits see also "
+"`this <https://github.com/owncloud/documentation/wiki/Uploading-files-up-"
+"to-16GB#configuring-nginx>`_ wiki entry."
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:88
+msgid ""
+"Make sure that ``client_body_temp_path`` points to a partition with "
+"adequate space for your upload file size, and on the same partition as "
+"the ``upload_tmp_dir`` or ``tempdirectory`` (see below). For optimal "
+"performance, place these on a separate hard drive that is dedicated to "
+"swap and temp storage."
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:94
+msgid "If your site is behind a Nginx frontend (for example a loadbalancer):"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:96
+msgid ""
+"By default, downloads will be limited to 1GB due to ``proxy_buffering`` "
+"and ``proxy_max_temp_file_size`` on the frontend."
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:98
+msgid ""
+"If you can access the frontend's configuration, disable `proxy_buffering "
+"<http://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_buffering>`_"
+" or increase `proxy_max_temp_file_size "
+"<http://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_max_temp_file_size>`_"
+" from the default 1GB."
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:99
+msgid ""
+"If you do not have access to the frontend, set the `X-Accel-Buffering "
+"<http://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_buffering>`_"
+" header to ``add_header X-Accel-Buffering no;`` on your backend server."
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:102
+msgid "Configuring PHP"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:104
+msgid ""
+"If you don't want to use the ownCloud ``.htaccess`` or ``.user.ini`` "
+"file, you may configure PHP instead. Make sure to comment out any lines "
+"``.htaccess`` pertaining to upload size, if you entered any."
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:108
+msgid ""
+"If you are running ownCloud on a 32-bit system, any ``open_basedir`` "
+"directive in your ``php.ini`` file needs to be commented out."
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:111
+msgid ""
+"Set the following two parameters inside ``php.ini``, using your own "
+"desired file size values::"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:117
+msgid "Tell PHP which temp file you want it to use::"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:121
+msgid ""
+"**Output Buffering** must be turned off in ``.htaccess`` or ``.user.ini``"
+" or ``php.ini``, or PHP will return memory-related errors:"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:124
+msgid "``output_buffering = 0``"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:127
+msgid "Configuring ownCloud"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:129
+msgid ""
+"As an alternative to the ``upload_tmp_dir`` of PHP (e.g. if you don't "
+"have access to your ``php.ini``) you can also configure a temporary "
+"location for uploaded files by using the ``tempdirectory`` setting in "
+"your ``config.php`` (See "
+":doc:`../configuration_server/config_sample_php_parameters`)."
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:133
+msgid ""
+"If you have configured the ``session_lifetime`` setting in your "
+"``config.php`` (See "
+":doc:`../configuration_server/config_sample_php_parameters`) file then "
+"make sure it is not too low. This setting needs to be configured to at "
+"least the time (in seconds) that the longest upload will take. If unsure "
+"remove this completely from your configuration to reset it to the default"
+" shown in the ``config.sample.php``."
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:141
+msgid "Configuring upload limits within the GUI"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:143
+msgid ""
+"If all prerequisites described in this documentation are in place an "
+"admin can change the upload limits on demand by using the ``File "
+"handling`` input box within the administrative backend of ownCloud."
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:149
+msgid ""
+"Depending on your environment you might get an insufficient permissions "
+"message shown for this input box."
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:154
+msgid "To be able to use this input box you need to make sure that:"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:156
+msgid ""
+"your Web server is be able to use the ``.htaccess`` file shipped by "
+"ownCloud (Apache only)"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:157
+msgid ""
+"the user your Web server is running as has write permissions to the files"
+" ``.htaccess`` and ``.user.ini``"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:159
+msgid ""
+":ref:`strong_perms_label` might prevent write access to these files. As "
+"an admin you need to decide between the ability to use the input box and "
+"a more secure ownCloud installation where you need to manually modify the"
+" upload limits in the ``.htaccess`` and ``.user.ini`` files described "
+"above."
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:165
+msgid "General upload issues"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:167
+msgid ""
+"Various environmental factors could cause a restriction of the upload "
+"size. Examples are:"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:169
+msgid "the ``LVE Manager`` of ``CloudLinux`` which sets a ``I/O limit``"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:170
+msgid "some services like ``Cloudflare`` are also known to cause uploading issues"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:171
+msgid "upload limits enforced by proxies used by your clients"
+msgstr ""
+
+#: ../../configuration_files/big_file_upload_configuration.rst:172
+msgid ""
+"other webserver modules like described in "
+":doc:`../issues/general_troubleshooting`"
+msgstr ""
+

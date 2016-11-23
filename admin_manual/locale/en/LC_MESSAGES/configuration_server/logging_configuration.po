@@ -1,0 +1,144 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../configuration_server/logging_configuration.rst:3
+msgid "Logging Configuration"
+msgstr ""
+
+#: ../../configuration_server/logging_configuration.rst:5
+msgid ""
+"Use your ownCloud log to review system status, or to help debug problems."
+" You may adjust logging levels, and choose between using the ownCloud log"
+" or your syslog."
+msgstr ""
+
+#: ../../configuration_server/logging_configuration.rst:8
+msgid "Parameters"
+msgstr ""
+
+#: ../../configuration_server/logging_configuration.rst:10
+msgid ""
+"Logging levels range from **DEBUG**, which logs all activity, to "
+"**FATAL**, which logs only fatal errors."
+msgstr ""
+
+#: ../../configuration_server/logging_configuration.rst:12
+msgid "**0**: DEBUG: All activity; the most detailed logging."
+msgstr ""
+
+#: ../../configuration_server/logging_configuration.rst:13
+msgid ""
+"**1**: INFO:  Activity such as user logins and file activities, plus "
+"warnings, errors, and fatal errors."
+msgstr ""
+
+#: ../../configuration_server/logging_configuration.rst:14
+msgid ""
+"**2**: WARN:  Operations succeed, but with warnings of potential "
+"problems, plus errors and fatal errors."
+msgstr ""
+
+#: ../../configuration_server/logging_configuration.rst:15
+msgid ""
+"**3**: ERROR: An operation fails, but other services and operations "
+"continue, plus fatal errors."
+msgstr ""
+
+#: ../../configuration_server/logging_configuration.rst:16
+msgid "**4**: FATAL: The server stops."
+msgstr ""
+
+#: ../../configuration_server/logging_configuration.rst:18
+msgid ""
+"By default the log level is set to **2** (WARN). Use **DEBUG** when you "
+"have a problem to diagnose, and then reset your log level to a less-"
+"verbose level as **DEBUG** outputs a lot of information, and can affect "
+"your server performance."
+msgstr ""
+
+#: ../../configuration_server/logging_configuration.rst:20
+msgid ""
+"Logging level parameters are set in the :file:`config/config.php` file, "
+"or on the Admin page of your ownCloud Web GUI."
+msgstr ""
+
+#: ../../configuration_server/logging_configuration.rst:23
+msgid "ownCloud"
+msgstr ""
+
+#: ../../configuration_server/logging_configuration.rst:25
+msgid ""
+"All log information will be written to a separate log file which can be "
+"viewed using the log viewer on your Admin page. By default, a log file "
+"named **owncloud.log** will be created in the directory which has been "
+"configured by the **datadirectory** parameter in "
+":file:`config/config.php`."
+msgstr ""
+
+#: ../../configuration_server/logging_configuration.rst:30
+msgid ""
+"The desired date format can optionally be defined using the "
+"**logdateformat** parameter in :file:`config/config.php`. By default the "
+"`PHP date function`_ parameter \"*c*\" is used, and therefore the "
+"date/time is written in the format \"*2013-01-10T15:20:25+02:00*\". By "
+"using the date format in the example below, the date/time format will be "
+"written in the format \"*January 10, 2013 15:20:25*\"."
+msgstr ""
+
+#: ../../configuration_server/logging_configuration.rst:44
+msgid "syslog"
+msgstr ""
+
+#: ../../configuration_server/logging_configuration.rst:46
+msgid "All log information will be sent to your default syslog daemon."
+msgstr ""
+
+#: ../../configuration_server/logging_configuration.rst:55
+msgid "Conditional Logging Level Increase"
+msgstr ""
+
+#: ../../configuration_server/logging_configuration.rst:57
+msgid ""
+"You can configure the logging level to automatically increase to "
+"``debug`` when one of three conditions are met:"
+msgstr ""
+
+#: ../../configuration_server/logging_configuration.rst:59
+msgid ""
+"# ``shared_secret``: If a request parameter with the name ``log_secret`` "
+"is set to this value the condition is met."
+msgstr ""
+
+#: ../../configuration_server/logging_configuration.rst:61
+msgid ""
+"# ``users``: If the current request is done by one of the specified "
+"users, this condition is met."
+msgstr ""
+
+#: ../../configuration_server/logging_configuration.rst:63
+msgid ""
+"# ``apps``: If the log message is invoked by one of the specified apps, "
+"this condition is met."
+msgstr ""
+
+#: ../../configuration_server/logging_configuration.rst:65
+msgid "The following example demonstrates what all three conditions look like::"
+msgstr ""
+

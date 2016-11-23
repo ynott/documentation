@@ -1,0 +1,134 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../configuration_files/previews_configuration.rst:3
+msgid "Previews Configuration"
+msgstr ""
+
+#: ../../configuration_files/previews_configuration.rst:5
+msgid ""
+"The ownCloud thumbnail system generates previews of files for all "
+"ownCloud apps that display files, such as Files and Gallery."
+msgstr ""
+
+#: ../../configuration_files/previews_configuration.rst:8
+msgid "The following image shows some examples of previews of various file types."
+msgstr ""
+
+#: ../../configuration_files/previews_configuration.rst:13
+msgid "By default, ownCloud can generate previews for the following filetypes:"
+msgstr ""
+
+#: ../../configuration_files/previews_configuration.rst:15
+msgid "Images files"
+msgstr ""
+
+#: ../../configuration_files/previews_configuration.rst:16
+msgid "Cover of MP3 files"
+msgstr ""
+
+#: ../../configuration_files/previews_configuration.rst:17
+msgid "Text documents"
+msgstr ""
+
+#: ../../configuration_files/previews_configuration.rst:19
+msgid ""
+"Older versions of ownCloud also supported the preview generation of other"
+" file types such as PDF, SVG or various office documents. Due to security"
+" concerns those providers have been disabled by default and are "
+"considered unsupported. While those providers are still available, we "
+"discourage enabling them, and they are not documented."
+msgstr ""
+
+#: ../../configuration_files/previews_configuration.rst:27
+msgid "Parameters"
+msgstr ""
+
+#: ../../configuration_files/previews_configuration.rst:29
+msgid ""
+"Please notice that the ownCloud preview system comes already with "
+"sensible defaults, and therefore it is usually unnecessary to adjust "
+"those configuration values."
+msgstr ""
+
+#: ../../configuration_files/previews_configuration.rst:34
+msgid "Disabling previews:"
+msgstr ""
+
+#: ../../configuration_files/previews_configuration.rst:36
+msgid ""
+"Under certain circumstances, for example if the server has limited "
+"resources, you might want to consider disabling the generation of "
+"previews. Note that if you do this all previews in all apps are disabled,"
+" including the Gallery app, and will display generic icons instead of "
+"thumbnails."
+msgstr ""
+
+#: ../../configuration_files/previews_configuration.rst:42
+msgid ""
+"Set the configuration option ``enable_previews`` in config.php to "
+"``false``:"
+msgstr ""
+
+#: ../../configuration_files/previews_configuration.rst:50
+msgid "Maximum preview size:"
+msgstr ""
+
+#: ../../configuration_files/previews_configuration.rst:52
+msgid "There are two configuration options to set the maximum size of a preview."
+msgstr ""
+
+#: ../../configuration_files/previews_configuration.rst:60
+msgid ""
+"By default, both options are set to null. 'Null' is equal to no limit. "
+"Numeric values represent the size in pixels. The following code limits "
+"previews to a maximum size of 100×100px:"
+msgstr ""
+
+#: ../../configuration_files/previews_configuration.rst:70
+msgid ""
+"'preview_max_x' represents the x-axis and 'preview_max_y' represents the "
+"y-axis."
+msgstr ""
+
+#: ../../configuration_files/previews_configuration.rst:73
+msgid "Maximum scale factor:"
+msgstr ""
+
+#: ../../configuration_files/previews_configuration.rst:75
+msgid ""
+"If a lot of small pictures are stored on the ownCloud instance and the "
+"preview system generates blurry previews, you might want to consider "
+"setting a maximum scale factor. By default, pictures are upscaled to 10 "
+"times the original size:"
+msgstr ""
+
+#: ../../configuration_files/previews_configuration.rst:84
+msgid ""
+"If you want to disable scaling at all, you can set the config value to "
+"'1':"
+msgstr ""
+
+#: ../../configuration_files/previews_configuration.rst:91
+msgid ""
+"If you want to disable the maximum scaling factor, you can set the config"
+" value to 'null':"
+msgstr ""
+

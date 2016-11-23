@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../installation/apps_supported.rst:3
+msgid "Supported Apps in ownCloud"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:6
+msgid "AGPL Apps"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:8
+msgid "Activity"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:9
+msgid "AntiVirus"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:10
+msgid "Collaborative Tags"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:11
+msgid "Comments"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:12
+msgid "Encryption"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:13
+msgid "External Sites"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:14
+msgid "External Storage"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:15
+msgid "ownCloud WebDAV Endpoint (handles old and new webdav endpoints)"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:16
+msgid "Federated File Sharing (allows file sharing across ownCloud instances)"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:17
+msgid "Federation (allows usernname auto-complete across ownCloud instances)"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:18
+msgid "Files (cannot be disabled)"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:19
+msgid "Files PDF Viewer"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:20
+msgid "Files Sharing"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:21
+msgid "Files TextEditor"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:22
+msgid "Files Trashbin"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:23
+msgid "Files Versions"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:24
+msgid "Files VideoPlayer"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:25
+msgid "First Run Wizard"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:26
+msgid "Gallery"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:27
+msgid "Notifications"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:28
+msgid "Object Storage (Swift)"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:29
+msgid "Provisioning API"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:30
+msgid "Template Editor (for notification emails)"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:31
+msgid "Update Notifications"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:32
+msgid "User External"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:33
+msgid "User LDAP"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:36
+msgid "Enterprise-Only Apps"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:38
+msgid "Enterprise License Key"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:39
+msgid "Files Drop"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:40
+msgid "File Firewall"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:41
+msgid "LDAP Home Connector"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:42
+msgid ""
+"Log user and Sharing actions (1 new app, replacing the 2 former logging "
+"apps)"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:43
+msgid "Object Storage (S3)"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:44
+msgid "SharePoint"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:45
+msgid "Shibboleth (SAML)"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:46
+msgid "Windows Network Drives (requires External Storage)"
+msgstr ""
+
+#: ../../installation/apps_supported.rst:47
+msgid "Workflow"
+msgstr ""
+

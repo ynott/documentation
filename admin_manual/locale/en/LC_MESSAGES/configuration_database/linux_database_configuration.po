@@ -1,0 +1,376 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../configuration_database/linux_database_configuration.rst:3
+msgid "Database Configuration"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:5
+msgid ""
+"ownCloud requires a database in which administrative data is stored. The "
+"following databases are currently supported:"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:7
+msgid "`MySQL <http://www.mysql.com/>`_ / `MariaDB <https://mariadb.org/>`_"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:8
+msgid "`PostgreSQL <http://www.postgresql.org/>`_"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:9
+msgid "`Oracle <http://www.oracle.com/>`_ (ownCloud Enterprise edition only)"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:11
+msgid "The MySQL or MariaDB databases are the recommended database engines."
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:14
+msgid "Requirements"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:16
+msgid ""
+"Choosing to use MySQL / MariaDB, PostgreSQL, or Oracle (ownCloud "
+"Enterprise edition only) as your database requires that you install and "
+"set up the server software first. (Oracle users, see "
+":doc:`../enterprise_installation/oracle_db_configuration`.)"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:21
+msgid ""
+"The steps for configuring a third party database are beyond the scope of "
+"this document.  Please refer to the documentation for your specific "
+"database choice for instructions."
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:26
+msgid "MySQL / MariaDB with Binary Logging Enabled"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:28
+msgid ""
+"ownCloud is currently using a ``TRANSACTION_READ_COMMITTED`` transaction "
+"isolation to avoid data loss under high load scenarios (e.g. by using the"
+" sync client with many clients/users and many parallel operations). This "
+"requires a disabled or correctly configured binary logging when using "
+"MySQL or MariaDB. Your system is affected if you see the following in "
+"your log file during the installation or update of ownCloud:"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:35
+msgid ""
+"An unhandled exception has been thrown: exception 'PDOException' with "
+"message 'SQLSTATE[HY000]: General error: 1665 Cannot execute statement: "
+"impossible to write to binary log since BINLOG_FORMAT = STATEMENT and at "
+"least one table uses a storage engine limited to row-based logging. "
+"InnoDB is limited to row-logging when transaction isolation level is READ"
+" COMMITTED or READ UNCOMMITTED.'"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:42
+msgid ""
+"There are two solutions. One is to disable binary logging. Binary logging"
+" records all changes to your database, and how long each change took. The"
+" purpose of binary logging is to enable replication and to support backup"
+" operations."
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:47
+msgid ""
+"The other is to change the BINLOG_FORMAT = STATEMENT in your database "
+"configuration file, or possibly in your database startup script, to "
+"BINLOG_FORMAT = MIXED. See `Overview of the Binary Log "
+"<https://mariadb.com/kb/en/mariadb/overview-of-the-binary-log/>`_ and "
+"`The Binary Log <https://dev.mysql.com/doc/refman/5.6/en/binary-"
+"log.html>`_ for detailed information."
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:57
+msgid "MySQL / MariaDB \"READ COMMITED\" transaction isolation level"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:59
+msgid ""
+"As discussed above ownCloud is using the ``TRANSACTION_READ_COMMITTED`` "
+"transaction isolation level. Some database configurations are enforcing "
+"other transaction isolation levels. To avoid data loss under high load "
+"scenarios (e.g. by using the sync client with many clients/users and many"
+" parallel operations) you need to configure the transaction isolation "
+"level accordingly. Please refer to the `MySQL manual "
+"<https://dev.mysql.com/doc/refman/5.7/en/set-transaction.html>`_ for "
+"detailed information."
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:69
+msgid "MySQL / MariaDB storage engine"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:71
+msgid ""
+"Since ownCloud 7 only InnoDB is supported as a storage engine. There are "
+"some shared hosters that do not support InnoDB and only MyISAM. Running "
+"ownCloud on such an environment is not supported."
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:75
+msgid "Parameters"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:76
+msgid ""
+"For setting up ownCloud to use any database, use the instructions in "
+":doc:`../installation/installation_wizard`. You should not have to edit "
+"the respective values in the :file:`config/config.php`.  However, in "
+"special cases (for example, if you want to connect your ownCloud instance"
+" to a database created by a previous installation of ownCloud), some "
+"modification might be required."
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:79
+msgid "Configuring a MySQL or MariaDB Database"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:81
+msgid "If you decide to use a MySQL or MariaDB database, ensure the following:"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:83
+msgid "That you have installed and enabled the pdo_mysql extension in PHP"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:85
+msgid ""
+"That the **mysql.default_socket** points to the correct socket (if the "
+"database runs on the same server as ownCloud)."
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:87
+msgid ""
+"MariaDB is backwards compatible with MySQL.  All instructions work for "
+"both. You will not need to replace mysql with anything."
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:89
+msgid ""
+"The PHP configuration in :file:`/etc/php5/conf.d/mysql.ini` could look "
+"like this:"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:110
+msgid ""
+"Now you need to create a database user and the database itself by using "
+"the MySQL command line interface. The database tables will be created by "
+"ownCloud when you login for the first time."
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:114
+msgid "To start the MySQL command line mode use::"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:118
+msgid ""
+"Then a **mysql>** or **MariaDB [root]>** prompt will appear. Now enter "
+"the following lines and confirm them with the enter key:"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:125
+#: ../../configuration_database/linux_database_configuration.rst:180
+#: ../../configuration_database/linux_database_configuration.rst:221
+msgid "You can quit the prompt by entering::"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:129
+msgid ""
+"An ownCloud instance configured with MySQL would contain the hostname on "
+"which the database is running, a valid username and password to access "
+"it, and the name of the database. The :file:`config/config.php` as "
+"created by the :doc:`../installation/installation_wizard` would therefore"
+" contain entries like this:"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:148
+msgid "PostgreSQL Database"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:150
+msgid ""
+"If you decide to use a PostgreSQL database make sure that you have "
+"installed and enabled the PostgreSQL extension in PHP. The PHP "
+"configuration in :file:`/etc/php5/conf.d/pgsql.ini` could look like this:"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:168
+msgid ""
+"The default configuration for PostgreSQL (at least in Ubuntu 14.04) is to"
+" use the peer authentication method. Check "
+":file:`/etc/postgresql/9.3/main/pg_hba.conf` to find out which "
+"authentication method is used in your setup. To start the postgres "
+"command line mode use::"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:173
+msgid ""
+"Then a **template1=#** prompt will appear. Now enter the following lines "
+"and confirm them with the enter key:"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:184
+msgid ""
+"An ownCloud instance configured with PostgreSQL would contain the path to"
+" the socket on which the database is running as the hostname, the system "
+"username the php process is using, and an empty password to access it, "
+"and the name of the database. The :file:`config/config.php` as created by"
+" the :doc:`../installation/installation_wizard` would therefore contain "
+"entries like this:"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:201
+msgid ""
+"The host actually points to the socket that is used to connect to the "
+"database. Using localhost here will not work if postgreSQL is configured "
+"to use peer authentication. Also note, that no password is specified, "
+"because this authentication method doesn't use a password."
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:203
+msgid ""
+"If you use another authentication method (not peer), you'll need to use "
+"the following steps to get the database setup: Now you need to create a "
+"database user and the database itself by using the PostgreSQL command "
+"line interface. The database tables will be created by ownCloud when you "
+"login for the first time."
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:208
+msgid "To start the postgres command line mode use::"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:212
+msgid ""
+"Then a **postgres=#** prompt will appear. Now enter the following lines "
+"and confirm them with the enter key:"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:225
+msgid ""
+"An ownCloud instance configured with PostgreSQL would contain the "
+"hostname on which the database is running, a valid username and password "
+"to access it, and the name of the database. The :file:`config/config.php`"
+" as created by the :doc:`../installation/installation_wizard` would "
+"therefore contain entries like this:"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:245
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:248
+msgid "How to workaround General error: 2006 MySQL server has gone away"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:250
+msgid ""
+"The database request takes too long and therefore the MySQL server times "
+"out. Its also possible that the server is dropping a packet that is too "
+"large. Please refer to the manual of your database for how to raise the "
+"configuration options ``wait_timeout`` and/or ``max_allowed_packet``."
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:255
+msgid ""
+"Some shared hosters are not allowing the access to these config options. "
+"For such systems ownCloud is providing a ``dbdriveroptions`` "
+"configuration option within your :file:`config/config.php` where you can "
+"pass such options to the database driver. Please refer to "
+":doc:`../configuration_server/config_sample_php_parameters` for an "
+"example."
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:261
+msgid "How can I find out if my MySQL/PostgreSQL server is reachable?"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:263
+msgid ""
+"To check the server's network availability, use the ping command on the "
+"server's host name (db.server.com in this example)::"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:275
+msgid ""
+"For a more detailed check whether the access to the database server "
+"software itself works correctly, see the next question."
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:279
+msgid "How can I find out if a created user can access a database?"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:281
+msgid ""
+"The easiest way to test if a database can be accessed is by starting the "
+"command line interface:"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:284
+msgid "**MySQL**:"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:286
+#: ../../configuration_database/linux_database_configuration.rst:309
+msgid ""
+"Assuming the database server is installed on the same system you're "
+"running the command from, use::"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:291
+#: ../../configuration_database/linux_database_configuration.rst:314
+msgid ""
+"To acess a MySQL installation on a different machine, add the -h option "
+"with the respective host name::"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:307
+msgid "**PostgreSQL**:"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:328
+msgid "Useful SQL commands"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:330
+msgid "**Show Database Users**::"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:335
+msgid "**Show available Databases**::"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:340
+msgid "**Show ownCloud Tables in Database**::"
+msgstr ""
+
+#: ../../configuration_database/linux_database_configuration.rst:345
+msgid "**Quit Database**::"
+msgstr ""
+

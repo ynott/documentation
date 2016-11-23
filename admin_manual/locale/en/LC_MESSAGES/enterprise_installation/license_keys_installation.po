@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../enterprise_installation/license_keys_installation.rst:3
+msgid "License Keys"
+msgstr ""
+
+#: ../../enterprise_installation/license_keys_installation.rst:6
+msgid "Introduction"
+msgstr ""
+
+#: ../../enterprise_installation/license_keys_installation.rst:8
+msgid ""
+"You'll need to install a license key to use ownCloud Enterprise Edition. "
+"There are two types of license keys: one is a free 30-day trial key. The "
+"other is a full license key for Enterprise customers."
+msgstr ""
+
+#: ../../enterprise_installation/license_keys_installation.rst:12
+msgid ""
+"You can `download and try ownCloud Enterprise for 30 days for free "
+"<https://owncloud.com/download/>`_, which auto-generates a free 30-day "
+"key. When this key expires your ownCloud installation is not removed, so "
+"when you become an Enterprise customer you can enter your new key to "
+"regain access. See `How to Buy ownCloud <https://owncloud.com/how-to-buy-"
+"owncloud/>`_ for sales and contact information."
+msgstr ""
+
+#: ../../enterprise_installation/license_keys_installation.rst:20
+msgid "Configuration"
+msgstr ""
+
+#: ../../enterprise_installation/license_keys_installation.rst:22
+msgid ""
+"Once you get your Enterprise license key, it needs to be copied to your "
+"ownCloud configuration file, ``config/config.php`` file like this "
+"example::"
+msgstr ""
+
+#: ../../enterprise_installation/license_keys_installation.rst:28
+msgid ""
+"Each running instance of ownCloud requires a license key. Keys will work "
+"across upgrades without issue, so new keys will not be required when you "
+"upgrade your ownCloud Enterprise to a new version."
+msgstr ""
+

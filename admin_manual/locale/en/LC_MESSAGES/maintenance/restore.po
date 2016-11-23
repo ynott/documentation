@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../maintenance/restore.rst:3
+msgid "Restoring ownCloud"
+msgstr ""
+
+#: ../../maintenance/restore.rst:5
+msgid ""
+"When you install ownCloud from packages, follow these steps to restore "
+"your ownCloud installation. Start with a fresh ownCloud package "
+"installation in a new, empty directory. Then restore these items from "
+"your backup (see :doc:`backup`):"
+msgstr ""
+
+#: ../../maintenance/restore.rst:7
+msgid "Your ``config/`` directory."
+msgstr ""
+
+#: ../../maintenance/restore.rst:8
+msgid "Your ``data/`` directory."
+msgstr ""
+
+#: ../../maintenance/restore.rst:9
+msgid "Your ownCloud database."
+msgstr ""
+
+#: ../../maintenance/restore.rst:10
+msgid ""
+"Your custom theme files, if you have any. (See `Theming ownCloud "
+"<https://doc.owncloud.org/server/9.2/developer_manual/core/theming.html>`_)"
+msgstr ""
+
+#: ../../maintenance/restore.rst:12
+msgid ""
+"When you install ownCloud from the source tarballs you may safely restore"
+" your entire ownCloud installation from backup, with the exception of "
+"your ownCloud database. Databases cannot be copied, but you must use the "
+"database tools to make a correct restoration."
+msgstr ""
+
+#: ../../maintenance/restore.rst:14
+msgid ""
+"When you have completed your restoration, see :ref:`Setting Strong "
+"Permissions <strong_perms_label>`."
+msgstr ""
+
+#: ../../maintenance/restore.rst:17
+msgid "Restore Directories"
+msgstr ""
+
+#: ../../maintenance/restore.rst:19
+msgid ""
+"Simply copy your configuration and data folder to your ownCloud "
+"environment. You could use this command, which restores the backup "
+"example in :doc:`backup`::"
+msgstr ""
+
+#: ../../maintenance/restore.rst:23
+msgid ""
+"There are many ways to restore normal files from backups, and you may use"
+" whatever method you are accustomed to."
+msgstr ""
+
+#: ../../maintenance/restore.rst:26
+msgid "Restore Database"
+msgstr ""
+
+#: ../../maintenance/restore.rst:28
+msgid ""
+"This guide assumes that your previous backup is called \"owncloud-"
+"dbbackup.bak\""
+msgstr ""
+
+#: ../../maintenance/restore.rst:32
+msgid "MySQL"
+msgstr ""
+
+#: ../../maintenance/restore.rst:34
+msgid "MySQL is the recommended database engine. To restore MySQL::"
+msgstr ""
+
+#: ../../maintenance/restore.rst:39
+msgid "SQLite"
+msgstr ""
+
+#: ../../maintenance/restore.rst:46
+msgid "PostgreSQL"
+msgstr ""
+

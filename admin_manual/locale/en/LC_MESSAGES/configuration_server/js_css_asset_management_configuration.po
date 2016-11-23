@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../configuration_server/js_css_asset_management_configuration.rst:2
+msgid "JavaScript and CSS Asset Management"
+msgstr ""
+
+#: ../../configuration_server/js_css_asset_management_configuration.rst:4
+msgid ""
+"In production environments, JavaScript and CSS files should be delivered "
+"in a concatenated and compressed format."
+msgstr ""
+
+#: ../../configuration_server/js_css_asset_management_configuration.rst:6
+msgid ""
+"ownCloud can automatically collect all JavaScript and CSS files, "
+"aggregate and compress them to then save the result in a folder called "
+"'assets' which can be found in the folder where ownCloud has been "
+"installed."
+msgstr ""
+
+#: ../../configuration_server/js_css_asset_management_configuration.rst:8
+msgid ""
+"If your Web server has write access to your ownCloud installation, then "
+"the 'assets' folder will be automatically created for you, otherwise, you"
+" need to create it yourself before enabling that option and you must give"
+" write access to your Web server user."
+msgstr ""
+
+#: ../../configuration_server/js_css_asset_management_configuration.rst:10
+msgid ""
+"Assets found in that folder will from now on be served as static files by"
+" your Web server and will be automatically refreshed whenever ownCloud or"
+" one of its apps is updated. It's important to note that apps installed "
+"via git might not always update their version number with every commit "
+"and this could lead to an out-of-sync asset folder. It is not recommended"
+" to enable asset-pipelining when using apps pulled via git."
+msgstr ""
+
+#: ../../configuration_server/js_css_asset_management_configuration.rst:16
+msgid "Parameters"
+msgstr ""
+
+#: ../../configuration_server/js_css_asset_management_configuration.rst:27
+msgid "You can set this parameter in the :file:`config/config.php`"
+msgstr ""
+

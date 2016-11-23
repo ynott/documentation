@@ -1,0 +1,166 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../installation/apps_management_installation.rst:3
+msgid "Installing and Managing Apps"
+msgstr ""
+
+#: ../../installation/apps_management_installation.rst:5
+msgid ""
+"After installing ownCloud, you may provide added functionality by "
+"installing applications."
+msgstr ""
+
+#: ../../installation/apps_management_installation.rst:9
+msgid "Supported Apps"
+msgstr ""
+
+#: ../../installation/apps_management_installation.rst:11
+msgid "See :doc:`apps_supported` for a list of supported Enterprise edition apps."
+msgstr ""
+
+#: ../../installation/apps_management_installation.rst:14
+msgid "Viewing Enabled Apps"
+msgstr ""
+
+#: ../../installation/apps_management_installation.rst:16
+msgid ""
+"During the ownCloud installation, some apps are enabled by default. To "
+"see which apps are enabled go to your Apps page."
+msgstr ""
+
+#: ../../installation/apps_management_installation.rst:22
+msgid ""
+"You will see which apps are enabled, not enabled, and recommended. You'll"
+" also see additional filters, such as Multimedia, Productivity, and Tool "
+"for finding more apps quickly."
+msgstr ""
+
+#: ../../installation/apps_management_installation.rst:27
+msgid "Managing Apps"
+msgstr ""
+
+#: ../../installation/apps_management_installation.rst:29
+msgid ""
+"In the Apps page you can enable or disable applications. Some apps have "
+"configurable options on the Apps page, such as **Enable only for specific"
+" groups**, but mainly they are enabled or disabled here, and are "
+"configured on your ownCloud Admin page, Personal page, or in "
+"``config.php``."
+msgstr ""
+
+#: ../../installation/apps_management_installation.rst:35
+msgid "Adding Third Party Apps"
+msgstr ""
+
+#: ../../installation/apps_management_installation.rst:37
+msgid ""
+"Some apps are developed and supported by ownCloud directly. These have an"
+" **Official** tag. Apps with the **Approved** tag are community-developed"
+" and supported; they are maintained by trusted developers, and are under "
+"active development. Only **Official** and **Approved** apps are linked on"
+" the Apps page by default."
+msgstr ""
+
+#: ../../installation/apps_management_installation.rst:43
+msgid ""
+"Click the app name to view a description of the app and any of the app "
+"settings in the Application View field.  Clicking the **Enable** button "
+"will enable the app.  If the app is not part of the ownCloud "
+"installation, it will be downloaded from the app store, installed and "
+"enabled."
+msgstr ""
+
+#: ../../installation/apps_management_installation.rst:45
+msgid ""
+"Click the gear icon on the lower left to browse experimental apps in the "
+"`ownCloud Apps Store <https://apps.owncloud.com/>`_. Install experimental"
+" apps at your own risk."
+msgstr ""
+
+#: ../../installation/apps_management_installation.rst:48
+msgid ""
+"Sometimes the installation of a third-party app fails silently, possibly "
+"because ``'appcodechecker' => true,`` is enabled in ``config.php``. When "
+"``appcodechecker`` is enabled it checks if third-party apps are using the"
+" private API, rather than the public API. If they are then they will not "
+"be installed."
+msgstr ""
+
+#: ../../installation/apps_management_installation.rst:53
+msgid ""
+"If you would like to create or add your own ownCloud app, please refer to"
+" the `developer manual "
+"<https://doc.owncloud.org/server/9.0/developer_manual/app/index.html>`_."
+msgstr ""
+
+#: ../../installation/apps_management_installation.rst:58
+msgid "Using Custom App Directories"
+msgstr ""
+
+#: ../../installation/apps_management_installation.rst:60
+msgid ""
+"Use the **apps_paths** array in ``config.php`` to set any custom apps "
+"directory locations. The key **path** defines the absolute file system "
+"path to the app folder. The key **url** defines the HTTP web path to that"
+" folder, starting at the ownCloud web root. The key **writable** "
+"indicates if a user can install apps in that folder."
+msgstr ""
+
+#: ../../installation/apps_management_installation.rst:66
+msgid ""
+"To ensure that the default **/apps/** folder only contains apps shipped "
+"with ownCloud, follow this example to setup an **/apps2/** folder which "
+"will be used to store all other apps."
+msgstr ""
+
+#: ../../installation/apps_management_installation.rst:88
+msgid "Using Your Own Appstore"
+msgstr ""
+
+#: ../../installation/apps_management_installation.rst:90
+msgid ""
+"You can enable the installation of apps from your own apps store. This "
+"requires that you can write to at least one of the configured apps "
+"directories."
+msgstr ""
+
+#: ../../installation/apps_management_installation.rst:93
+msgid "To enable installation from your own apps store:"
+msgstr ""
+
+#: ../../installation/apps_management_installation.rst:95
+msgid "Set the **appstoreenabled** parameter to \"true\"."
+msgstr ""
+
+#: ../../installation/apps_management_installation.rst:97
+msgid "This parameter is used to enable your apps store in ownCloud."
+msgstr ""
+
+#: ../../installation/apps_management_installation.rst:99
+msgid "Set the **appstoreurl** to the URL of your ownCloud apps store."
+msgstr ""
+
+#: ../../installation/apps_management_installation.rst:101
+msgid ""
+"This parameter is used to set the http path to the ownCloud apps store. "
+"The appstore server must use :abbr:`OCS (Open Collaboration Services)`."
+msgstr ""
+

@@ -1,0 +1,49 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../configuration_server/knowledgebase_configuration.rst:2
+msgid "Knowledge Base Configuration"
+msgstr ""
+
+#: ../../configuration_server/knowledgebase_configuration.rst:3
+msgid ""
+"The usage of ownCloud is more or less self explaining but nevertheless a "
+"user might run into a problem where he needs to consult the documentation"
+" or knowledge base. To ease access to the ownCloud documentation and "
+"knowledge base, a help menu item is shown in the settings menu by "
+"default."
+msgstr ""
+
+#: ../../configuration_server/knowledgebase_configuration.rst:8
+msgid "Parameters"
+msgstr ""
+
+#: ../../configuration_server/knowledgebase_configuration.rst:10
+msgid ""
+"If you want to disable the ownCloud help menu item you can use the "
+"**knowledgebaseenabled** parameter inside the :file:`config/config.php`."
+msgstr ""
+
+#: ../../configuration_server/knowledgebase_configuration.rst:19
+msgid ""
+"Disabling the help menu item might increase the number of support "
+"requests you have to answer in the future"
+msgstr ""
+

@@ -1,0 +1,130 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../configuration_files/file_versioning.rst:3
+msgid "Controlling File Versions and Aging"
+msgstr ""
+
+#: ../../configuration_files/file_versioning.rst:5
+msgid ""
+"The Versions app (files_versions) expires old file versions automatically"
+" to ensure that users don't exceed their storage quotas. This is the "
+"default pattern used to delete old versions:"
+msgstr ""
+
+#: ../../configuration_files/file_versioning.rst:9
+msgid "For the first second we keep one version"
+msgstr ""
+
+#: ../../configuration_files/file_versioning.rst:10
+msgid "For the first 10 seconds ownCloud keeps one version every 2 seconds"
+msgstr ""
+
+#: ../../configuration_files/file_versioning.rst:11
+msgid "For the first minute ownCloud keeps one version every 10 seconds"
+msgstr ""
+
+#: ../../configuration_files/file_versioning.rst:12
+msgid "For the first hour ownCloud keeps one version every minute"
+msgstr ""
+
+#: ../../configuration_files/file_versioning.rst:13
+msgid "For the first 24 hours ownCloud keeps one version every hour"
+msgstr ""
+
+#: ../../configuration_files/file_versioning.rst:14
+msgid "For the first 30 days ownCloud keeps one version every day"
+msgstr ""
+
+#: ../../configuration_files/file_versioning.rst:15
+msgid "After the first 30 days ownCloud keeps one version every week"
+msgstr ""
+
+#: ../../configuration_files/file_versioning.rst:17
+msgid ""
+"The versions are adjusted along this pattern every time a new version is "
+"created."
+msgstr ""
+
+#: ../../configuration_files/file_versioning.rst:20
+#, python-format
+msgid ""
+"The Versions app never uses more that 50% of the user's currently "
+"available free space. If the stored versions exceed this limit, ownCloud "
+"deletes the oldest file versions until it meets the disk space limit "
+"again."
+msgstr ""
+
+#: ../../configuration_files/file_versioning.rst:24
+msgid ""
+"You may alter the default pattern in ``config.php``. The default setting "
+"is ``auto``, which sets the default pattern::"
+msgstr ""
+
+#: ../../configuration_files/file_versioning.rst:29
+msgid "Additional options are:"
+msgstr ""
+
+#: ../../configuration_files/file_versioning.rst:33
+msgid "``D, auto``"
+msgstr ""
+
+#: ../../configuration_files/file_versioning.rst:32
+msgid ""
+"Keep versions at least for D days, apply expiration rules to all versions"
+" that are older than D days"
+msgstr ""
+
+#: ../../configuration_files/file_versioning.rst:37
+msgid "``auto, D``"
+msgstr ""
+
+#: ../../configuration_files/file_versioning.rst:36
+msgid ""
+"Delete all versions that are older than D days automatically, delete "
+"other versions according to expiration rules"
+msgstr ""
+
+#: ../../configuration_files/file_versioning.rst:40
+msgid "``D1, D2``"
+msgstr ""
+
+#: ../../configuration_files/file_versioning.rst:40
+msgid "Keep versions for at least D1 days and delete when they exceed D2 days."
+msgstr ""
+
+#: ../../configuration_files/file_versioning.rst:43
+msgid "``disabled``"
+msgstr ""
+
+#: ../../configuration_files/file_versioning.rst:43
+msgid "Disable Versions; no files will be deleted."
+msgstr ""
+
+#: ../../configuration_files/file_versioning.rst:46
+msgid "Enterprise File Retention"
+msgstr ""
+
+#: ../../configuration_files/file_versioning.rst:48
+msgid ""
+"Enterprise customers have additional tools for managing file retention "
+"policies; see :doc:`../enterprise_file_management/files_tagging`."
+msgstr ""
+

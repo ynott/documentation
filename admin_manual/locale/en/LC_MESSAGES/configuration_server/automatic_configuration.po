@@ -1,0 +1,148 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../configuration_server/automatic_configuration.rst:2
+msgid "Automatic Configuration Setup"
+msgstr ""
+
+#: ../../configuration_server/automatic_configuration.rst:4
+msgid ""
+"If you need to install ownCloud on multiple servers, you normally do not "
+"want to set up each instance separately as described in "
+":doc:`../configuration_database/linux_database_configuration`. For this "
+"reason, ownCloud provides an automatic configuration feature."
+msgstr ""
+
+#: ../../configuration_server/automatic_configuration.rst:9
+msgid ""
+"To take advantage of this feature, you must create a configuration file, "
+"called :file:`../owncloud/config/autoconfig.php`, and set the file "
+"parameters as required. You can specify any number of parameters in this "
+"file.  Any unspecified parameters appear on the \"Finish setup\" screen "
+"when you first launch ownCloud."
+msgstr ""
+
+#: ../../configuration_server/automatic_configuration.rst:13
+msgid ""
+"The :file:`../owncloud/config/autoconfig.php` is automatically removed "
+"after the initial configuration has been applied."
+msgstr ""
+
+#: ../../configuration_server/automatic_configuration.rst:16
+msgid "Parameters"
+msgstr ""
+
+#: ../../configuration_server/automatic_configuration.rst:17
+msgid ""
+"When configuring parameters, you must understand that two parameters are "
+"named differently in this configuration file when compared to the "
+"standard :file:`config.php` file."
+msgstr ""
+
+#: ../../configuration_server/automatic_configuration.rst:20
+msgid "autoconfig.php"
+msgstr ""
+
+#: ../../configuration_server/automatic_configuration.rst:20
+msgid "config.php"
+msgstr ""
+
+#: ../../configuration_server/automatic_configuration.rst:22
+msgid "directory"
+msgstr ""
+
+#: ../../configuration_server/automatic_configuration.rst:22
+msgid "datadirectory"
+msgstr ""
+
+#: ../../configuration_server/automatic_configuration.rst:24
+msgid "dbpass"
+msgstr ""
+
+#: ../../configuration_server/automatic_configuration.rst:24
+msgid "dbpassword"
+msgstr ""
+
+#: ../../configuration_server/automatic_configuration.rst:28
+msgid "Automatic Configurations Examples"
+msgstr ""
+
+#: ../../configuration_server/automatic_configuration.rst:30
+msgid ""
+"The following sections provide sample automatic configuration examples "
+"and what information is requested at the end of the configuration."
+msgstr ""
+
+#: ../../configuration_server/automatic_configuration.rst:33
+msgid "Data Directory"
+msgstr ""
+
+#: ../../configuration_server/automatic_configuration.rst:34
+msgid ""
+"Using the following parameter settings, the \"Finish setup\" screen "
+"requests database and admin credentials settings."
+msgstr ""
+
+#: ../../configuration_server/automatic_configuration.rst:45
+msgid "SQLite Database"
+msgstr ""
+
+#: ../../configuration_server/automatic_configuration.rst:46
+#: ../../configuration_server/automatic_configuration.rst:59
+#: ../../configuration_server/automatic_configuration.rst:79
+msgid ""
+"Using the following parameter settings, the \"Finish setup\" screen "
+"requests data directory and admin credentials settings."
+msgstr ""
+
+#: ../../configuration_server/automatic_configuration.rst:58
+msgid "MySQL Database"
+msgstr ""
+
+#: ../../configuration_server/automatic_configuration.rst:73
+msgid ""
+"Keep in mind that the automatic configuration does not eliminate the need"
+" for creating the  database user and database in advance, as described in"
+" :doc:`../configuration_database/linux_database_configuration`."
+msgstr ""
+
+#: ../../configuration_server/automatic_configuration.rst:78
+msgid "PostgreSQL Database"
+msgstr ""
+
+#: ../../configuration_server/automatic_configuration.rst:93
+#: ../../configuration_server/automatic_configuration.rst:117
+msgid ""
+"Keep in mind that the automatic configuration does not eliminate the need"
+" for creating the database user and database in advance, as described in "
+":doc:`../configuration_database/linux_database_configuration`."
+msgstr ""
+
+#: ../../configuration_server/automatic_configuration.rst:98
+msgid "All Parameters"
+msgstr ""
+
+#: ../../configuration_server/automatic_configuration.rst:100
+msgid ""
+"Using the following parameter settings, because all parameters are "
+"already configured in the file, the ownCloud installation skips the "
+"\"Finish setup\" screen."
+msgstr ""
+

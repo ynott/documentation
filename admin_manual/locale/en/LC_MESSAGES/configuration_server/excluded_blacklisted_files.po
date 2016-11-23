@@ -1,0 +1,160 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../configuration_server/excluded_blacklisted_files.rst:3
+msgid "Excluding Directories and Blacklisting Files"
+msgstr ""
+
+#: ../../configuration_server/excluded_blacklisted_files.rst:6
+msgid "Definitions of terms"
+msgstr ""
+
+#: ../../configuration_server/excluded_blacklisted_files.rst:9
+msgid ""
+"Files that may harm the ownCloud environment like a foreign ``.htaccess``"
+" file. Blacklisting prevents anyone from uploading blacklisted files to "
+"the ownCloud server."
+msgstr ""
+
+#: ../../configuration_server/excluded_blacklisted_files.rst:11
+msgid ""
+"Existing directories on your ownCloud server, including external storage "
+"mounts, that are excluded from being processed by ownCloud. In effect "
+"they are invisible to ownCloud."
+msgstr ""
+
+#: ../../configuration_server/excluded_blacklisted_files.rst:13
+msgid ""
+"Both types are defined in ``config.php``. Blacklisted files and excluded "
+"directories are not scanned by ownCloud, not viewed, not synced, and "
+"cannot be created, renamed, deleted, or accessed via direct path input "
+"from a file explorer. Even when a filepath is entered manually via a file"
+" explorer, the path cannot be accessed."
+msgstr ""
+
+#: ../../configuration_server/excluded_blacklisted_files.rst:15
+msgid ""
+"For example configurations please see "
+"``owncloud/config/config.sample.php``."
+msgstr ""
+
+#: ../../configuration_server/excluded_blacklisted_files.rst:18
+msgid "Impact on System Performance"
+msgstr ""
+
+#: ../../configuration_server/excluded_blacklisted_files.rst:20
+msgid ""
+"If you have a filesystem mounted with 200,000 files and directories and "
+"15 snapshots in rotation, you would now scan and process 200,000 elements"
+" plus 200,000 x 15 = 3,000,000 elements additionally. These additional "
+"3,000,000 elements, 15 times more than the original quantity, would also "
+"be available for viewing and synchronisation. Because this is a big and "
+"unnecessary overhead, most times confusing to clients, further processing"
+" can be eliminated by using excluded directories."
+msgstr ""
+
+#: ../../configuration_server/excluded_blacklisted_files.rst:23
+msgid "Blacklisted Files"
+msgstr ""
+
+#: ../../configuration_server/excluded_blacklisted_files.rst:25
+msgid ""
+"By default, ownCloud blacklists the file ``.htaccess`` to secure the "
+"running instance, which is important when using Apache as webserver. A "
+"foreign ``.htaccess`` file could overwrite rules defined by ownCloud. "
+"There is no explicit need to enter the file name ``.htaccess`` as "
+"parameter to the ``blacklisted_files`` array in ``config.php``, but you "
+"can add more blacklisted file names if necessary."
+msgstr ""
+
+#: ../../configuration_server/excluded_blacklisted_files.rst:28
+msgid "Excluded Directories"
+msgstr ""
+
+#: ../../configuration_server/excluded_blacklisted_files.rst:30
+msgid "**Reason for excluding directories:**"
+msgstr ""
+
+#: ../../configuration_server/excluded_blacklisted_files.rst:32
+msgid ""
+"Enterprise storage systems, or special filesystems like ZFS and BtrFS are"
+" capable of snapshots. These snapshots are directories and keep point-in-"
+"time views of the data."
+msgstr ""
+
+#: ../../configuration_server/excluded_blacklisted_files.rst:33
+msgid "Snapshot directories are read-only."
+msgstr ""
+
+#: ../../configuration_server/excluded_blacklisted_files.rst:34
+msgid ""
+"There is no common naming for these directories, and most likely will "
+"never be. NetApp uses ``.snapshot`` and ``~snapshot``, EMC eg ``.ckpt``, "
+"HDS eg ``.latest`` and ``~latest``, the ZFS filesystem uses ``.zfs`` and "
+"so on."
+msgstr ""
+
+#: ../../configuration_server/excluded_blacklisted_files.rst:35
+msgid ""
+"Viewing and scanning of these directories does not make any sense as "
+"these directories are used to ease backup, restores, and cloning"
+msgstr ""
+
+#: ../../configuration_server/excluded_blacklisted_files.rst:36
+msgid ""
+"Directories which are part of the mounted filesystem, but must not be "
+"accessible via ownCloud."
+msgstr ""
+
+#: ../../configuration_server/excluded_blacklisted_files.rst:38
+msgid "**Example:**"
+msgstr ""
+
+#: ../../configuration_server/excluded_blacklisted_files.rst:40
+msgid ""
+"If you have a snapshot-capable storage or filesystem where snapshots are "
+"enabled and presented to clients, each directory will contain a "
+"\"special\" visible directory named e.g. ``.snapshot``. Depending on the "
+"system, you may find underneath a list of snapshots taken and in the next"
+" lower level the complete set of files and directories which were present"
+" when the snapshot was created. In most systems, this mechanism is true "
+"in all directory levels::"
+msgstr ""
+
+#: ../../configuration_server/excluded_blacklisted_files.rst:69
+msgid ""
+"Example ``excluded_directories`` entries in ``config.php`` look like "
+"this::"
+msgstr ""
+
+#: ../../configuration_server/excluded_blacklisted_files.rst:79
+msgid ""
+"Note that these are not pathnames, but directory names without any "
+"slashes. Excluding ``dir1`` excludes::"
+msgstr ""
+
+#: ../../configuration_server/excluded_blacklisted_files.rst:84
+msgid "But not::"
+msgstr ""
+
+#: ../../configuration_server/excluded_blacklisted_files.rst:89
+msgid "Example ``blacklisted_files`` entries in ``config.php`` look like this::"
+msgstr ""
+

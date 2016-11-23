@@ -1,0 +1,300 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../maintenance/update.rst:3
+msgid "Upgrading ownCloud with the Updater App"
+msgstr ""
+
+#: ../../maintenance/update.rst:5
+msgid ""
+"The Updater app automates many of the steps of upgrading an ownCloud "
+"installation. It is useful for installations that do not have root "
+"access, such as shared hosting, for installations with a smaller number "
+"of users and data, and it automates updating :doc:`manual installations "
+"<../installation/source_installation>`."
+msgstr ""
+
+#: ../../maintenance/update.rst:11
+msgid ""
+"When upgrading from oC 9.0 to 9.1 with existing Calendars or Adressbooks "
+"please have a look at the :doc:`../release_notes` of oC 9.0 for important"
+" info about this migration."
+msgstr ""
+
+#: ../../maintenance/update.rst:15
+msgid ""
+"New in 9.0, the Updater app has :ref:`command-line options "
+"<updater_cli_label>`."
+msgstr ""
+
+#: ../../maintenance/update.rst:17
+msgid ""
+"The Updater app is **not enabled and not supported** in ownCloud "
+"Enterprise edition."
+msgstr ""
+
+#: ../../maintenance/update.rst:20
+msgid ""
+"The Updater app is **not included** in the `Linux packages on our Open "
+"Build Service "
+"<https://download.owncloud.org/download/repositories/stable/owncloud/>`_,"
+" but only in the `tar and zip archives <https://owncloud.org/install"
+"/#instructions-server>`_. When you install ownCloud from packages you "
+"should keep it updated with your package manager."
+msgstr ""
+
+#: ../../maintenance/update.rst:27
+msgid ""
+"**Downgrading** is not supported and risks corrupting your data! If you "
+"want to revert to an older ownCloud version, install it from scratch and "
+"then restore your data from backup. Before doing this, file a support "
+"ticket (if you have paid support) or ask for help in the ownCloud forums "
+"to see if your issue can be resolved without downgrading."
+msgstr ""
+
+#: ../../maintenance/update.rst:33
+msgid ""
+"You should maintain regular backups (see :doc:`backup`), and make a "
+"backup before every update. The Updater app does not backup your database"
+" or data directory."
+msgstr ""
+
+#: ../../maintenance/update.rst:37
+msgid "The Updater app performs these operations:"
+msgstr ""
+
+#: ../../maintenance/update.rst:39
+msgid "Creates an ``updater_backup`` directory under your ownCloud data directory"
+msgstr ""
+
+#: ../../maintenance/update.rst:40
+msgid ""
+"Downloads and extracts updated package content into the "
+"``updater_backup/packageVersion`` directory"
+msgstr ""
+
+#: ../../maintenance/update.rst:42
+msgid ""
+"Makes a copy of your current ownCloud instance, except for your data "
+"directory, to ``updater_backup/currentVersion-randomstring``"
+msgstr ""
+
+#: ../../maintenance/update.rst:44
+msgid ""
+"Moves all directories except ``data``, ``config`` and ``themes`` from the"
+" current instance to ``updater_backup/tmp``"
+msgstr ""
+
+#: ../../maintenance/update.rst:46
+msgid ""
+"Moves all directories from ``updater_backup/packageVersion`` to the "
+"current version"
+msgstr ""
+
+#: ../../maintenance/update.rst:48
+msgid "Copies your old ``config.php`` to the new ``config/`` directory"
+msgstr ""
+
+#: ../../maintenance/update.rst:50
+msgid ""
+"Using the Updater app to update your ownCloud installation is just a few "
+"steps:"
+msgstr ""
+
+#: ../../maintenance/update.rst:53
+msgid ""
+"You should see a notification at the top of any ownCloud page when there "
+"is a new update available."
+msgstr ""
+
+#: ../../maintenance/update.rst:56
+msgid ""
+"Even though the Updater app backs up important directories, you should "
+"always have your own current backups (See :doc:`backup` for details.)"
+msgstr ""
+
+#: ../../maintenance/update.rst:59
+msgid ""
+"Verify that the HTTP user on your system can write to your whole ownCloud"
+" directory; see the :ref:`set_updating_permissions_label` section below."
+msgstr ""
+
+#: ../../maintenance/update.rst:62
+msgid ""
+"Navigate to your Admin page and click the **Update Center** button under "
+"Updater. This takes you to the Updater control panel."
+msgstr ""
+
+#: ../../maintenance/update.rst:65
+msgid ""
+"Click Update, and carefully read the messages. If there are any problems "
+"it will tell you. The most common issue is directory permissions; your "
+"HTTP user needs write permissions to your whole ownCloud directory. (See "
+":ref:`strong_perms_label`.) Another common issue is SELinux rules (see "
+":ref:`selinux-config-label`.) Otherwise you will see messages about "
+"checking your installation and making backups."
+msgstr ""
+
+#: ../../maintenance/update.rst:72
+msgid ""
+"Click Proceed, and then it performs the remaining steps, which takes a "
+"few minutes."
+msgstr ""
+
+#: ../../maintenance/update.rst:75
+msgid ""
+"If your directory permissions are correct, a backup was made, and "
+"downloading the new ownCloud archive succeeded you will see the following"
+" screen. Click the Start Update button to complete your update:"
+msgstr ""
+
+#: ../../maintenance/update.rst:83
+msgid ""
+"If you have a large ownCloud installation and have shell access, you "
+"should use the ``occ upgrade`` command, running it as your HTTP user, "
+"instead of clicking the Start Update button, in order to avoid PHP "
+"timeouts."
+msgstr ""
+
+#: ../../maintenance/update.rst:88
+msgid "This example is for Ubuntu Linux::"
+msgstr ""
+
+#: ../../maintenance/update.rst:92
+msgid ""
+"The optional parameter to skip migration tests during this step was "
+"removed in oC 9.2. See :ref:`migration_test_label` for more information."
+msgstr ""
+
+#: ../../maintenance/update.rst:95
+msgid ""
+"It runs for a few minutes, and when it is finished displays a success "
+"message, which disappears after a short time."
+msgstr ""
+
+#: ../../maintenance/update.rst:98
+msgid ""
+"Refresh your Admin page to verify your new version number. In the Updater"
+" section of your Admin page you can see the current status and backups. "
+"These are backups of your old and new ownCloud installations, and do not "
+"contain your data files. If your update works and there are no problems "
+"you can delete the backups from this screen."
+msgstr ""
+
+#: ../../maintenance/update.rst:104
+msgid ""
+"If the update fails, then you must update manually. (See :doc:`Manually "
+"upgrading <manual_upgrade>`.)"
+msgstr ""
+
+#: ../../maintenance/update.rst:110
+msgid "Setting Permissions for Updating"
+msgstr ""
+
+#: ../../maintenance/update.rst:112
+msgid ""
+"For hardened security we  highly recommend setting the permissions on "
+"your ownCloud directory as strictly as possible. These commands should be"
+" executed immediately after the initial installation. Please follow the "
+"steps in :ref:`strong_perms_label`."
+msgstr ""
+
+#: ../../maintenance/update.rst:117
+msgid ""
+"These strict permissions will prevent the Updater app from working, as it"
+" needs your whole ownCloud directory to be owned by the HTTP user. Run "
+"this script to set the appropriate permissions for updating. Replace the "
+"``ocpath`` variable with the path to your ownCloud directory, and replace"
+" the ``htuser`` and ``htgroup`` variables with your HTTP user and "
+"group.::"
+msgstr ""
+
+#: ../../maintenance/update.rst:132
+msgid ""
+"You can find your HTTP user in your HTTP server configuration files. Or "
+"you can use :ref:`label-phpinfo` (Look for the **User/Group** line)."
+msgstr ""
+
+#: ../../maintenance/update.rst:135
+msgid "The HTTP user and group in Debian/Ubuntu is ``www-data``."
+msgstr ""
+
+#: ../../maintenance/update.rst:136
+msgid "The HTTP user and group in Fedora/CentOS is ``apache``."
+msgstr ""
+
+#: ../../maintenance/update.rst:137
+msgid "The HTTP user and group in Arch Linux is ``http``."
+msgstr ""
+
+#: ../../maintenance/update.rst:138
+msgid "The HTTP user in openSUSE is ``wwwrun``, and the HTTP group is ``www``."
+msgstr ""
+
+#: ../../maintenance/update.rst:140
+msgid ""
+"After the update is completed, re-apply the strong directory permissions "
+"immediately by running the script in :ref:`strong_perms_label`."
+msgstr ""
+
+#: ../../maintenance/update.rst:146
+msgid "Command Line Options"
+msgstr ""
+
+#: ../../maintenance/update.rst:148
+msgid ""
+"The Updater app includes command-line options to automate updates, to "
+"create checkpoints and to roll back to older checkpoints. You must run it"
+" as your HTTP user. This example on Ubuntu Linux displays command "
+"options::"
+msgstr ""
+
+#: ../../maintenance/update.rst:154
+msgid ""
+"See usage for commands, like this example for the ``upgrade:checkpoint`` "
+"command::"
+msgstr ""
+
+#: ../../maintenance/update.rst:159
+msgid "You can display a help summary::"
+msgstr ""
+
+#: ../../maintenance/update.rst:163
+msgid "When you run it without options it runs a system check::"
+msgstr ""
+
+#: ../../maintenance/update.rst:173
+msgid "Create a checkpoint::"
+msgstr ""
+
+#: ../../maintenance/update.rst:178
+msgid "List checkpoints::"
+msgstr ""
+
+#: ../../maintenance/update.rst:182
+msgid "Restore an earlier checkpoint::"
+msgstr ""
+
+#: ../../maintenance/update.rst:187
+msgid ""
+"Add a line like this to your crontab to automatically create daily "
+"checkpoints::"
+msgstr ""
+

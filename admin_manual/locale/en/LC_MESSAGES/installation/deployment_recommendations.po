@@ -1,0 +1,818 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../installation/deployment_recommendations.rst:3
+msgid "ownCloud Deployment Recommendations"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:5
+msgid ""
+"What is the best way to install and maintain ownCloud? The answer to that"
+" is *\"it depends\"* because every ownCloud customer has their own "
+"particular needs and IT infrastructure. ownCloud and the LAMP stack are "
+"highly-configurable, so we will present three typical scenarios and make "
+"best-practice recommendations for both software and hardware."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:12
+msgid "General Recommendations"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:14
+msgid ""
+"Whatever the size of your organization, always keep one thing in mind: "
+"the amount of data stored in ownCloud will only grow. Plan ahead."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:17
+msgid ""
+"Consider setting up a scale-out deployment, or using Federated Cloud "
+"Sharing to keep individual ownCloud instances to a manageable size."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:20
+msgid "Operating system: Linux."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:21
+msgid "Web server: Apache 2.4."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:22
+msgid ""
+"Database: MySQL/MariaDB with InnoDB storage engine (MyISAM is not "
+"supported, see: :ref:`db-storage-engine-label`)"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:23
+msgid "PHP 5.6+."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:26
+msgid "Small Workgroups or Departments"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:29
+#: ../../installation/deployment_recommendations.rst:116
+#: ../../installation/deployment_recommendations.rst:208
+msgid "Number of users"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:29
+msgid "Up to 150 users."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:32
+#: ../../installation/deployment_recommendations.rst:119
+#: ../../installation/deployment_recommendations.rst:211
+msgid "Storage size"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:32
+msgid "100 GB to 10TB."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:37
+#: ../../installation/deployment_recommendations.rst:123
+msgid "High availability level"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:35
+msgid ""
+"Zero-downtime backups via Btrfs snapshots, component failure leads to "
+"interruption of service. Alternate backup scheme on other filesystems: "
+"nightly backups with service interruption."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:40
+#: ../../installation/deployment_recommendations.rst:126
+#: ../../installation/deployment_recommendations.rst:218
+msgid "Recommended System Requirements"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:42
+msgid ""
+"One machine running the application server, Web server, database server "
+"and local storage."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:45
+#: ../../installation/deployment_recommendations.rst:134
+msgid "Authentication via an existing LDAP or Active Directory server."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:51
+#: ../../installation/deployment_recommendations.rst:143
+#: ../../installation/deployment_recommendations.rst:238
+msgid "Components"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:51
+msgid "One server with at least 2 CPU cores, 16GB RAM, local storage as needed."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:55
+#: ../../installation/deployment_recommendations.rst:147
+#: ../../installation/deployment_recommendations.rst:241
+msgid "Operating system"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:54
+msgid ""
+"Enterprise-grade Linux distribution with full support from OS vendor. We "
+"recommend Red Hat Enterprise Linux or SUSE Linux Enterprise Server 12."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:59
+#: ../../installation/deployment_recommendations.rst:151
+#: ../../installation/deployment_recommendations.rst:245
+msgid "SSL Configuration"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:58
+msgid ""
+"The SSL termination is done in Apache. A standard SSL certificate is "
+"needed, installed according to the Apache documentation."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:62
+#: ../../installation/deployment_recommendations.rst:156
+#: ../../installation/deployment_recommendations.rst:249
+msgid "Load Balancer"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:62
+msgid "None."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:67
+#: ../../installation/deployment_recommendations.rst:159
+#: ../../installation/deployment_recommendations.rst:252
+msgid "Database"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:65
+msgid ""
+"MySQL, MariaDB or PostgreSQL. We currently recommend MySQL / MariaDB, as "
+"our customers have had good experiences when moving to a Galera cluster "
+"to scale the DB. (InnoDB storage engine, MyISAM is not supported, see: "
+":ref:`db-storage-engine-label`)"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:84
+#: ../../installation/deployment_recommendations.rst:171
+#: ../../installation/deployment_recommendations.rst:264
+msgid "Backup"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:70
+msgid ""
+"Install owncloud, ownCloud data directory and database on Btrfs "
+"filesystem. Make regular snapshots at desired intervals for zero downtime"
+" backups. Mount DB partitions with the \"nodatacow\" option to prevent "
+"fragmentation."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:74
+msgid "Alternatively, make nightly backups with service interruption:"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:76
+msgid "Shut down Apache."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:77
+msgid "Create database dump."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:78
+msgid "Push data directory to backup."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:79
+msgid "Push database dump to backup."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:80
+msgid "Start Apache."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:82
+msgid ""
+"Then optionally rsync to a backup storage or tape backup. (See the "
+"`Maintenance`_ section of the Administration manual for tips on backups "
+"and restores.)"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:89
+#: ../../installation/deployment_recommendations.rst:176
+#: ../../installation/deployment_recommendations.rst:269
+msgid "Authentication"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:87
+msgid ""
+"User authentication via one or several LDAP or Active Directory servers. "
+"(See `User Authentication with LDAP`_ for information on configuring "
+"ownCloud to use LDAP and AD.)"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:98
+#: ../../installation/deployment_recommendations.rst:189
+#: ../../installation/deployment_recommendations.rst:276
+msgid "Session Management"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:92
+msgid ""
+"Local session management on the application server. PHP sessions are "
+"stored in a tmpfs mounted at the operating system-specific session "
+"storage location. You can find out where that is by running ``grep -R "
+"'session.save_path' /etc/php5`` and then add it to the ``/etc/fstab`` "
+"file, for example: ``echo \"tmpfs /var/lib/php5/pool-www tmpfs "
+"defaults,noatime,mode=1777 0 0\" >> /etc/fstab``."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:103
+#: ../../installation/deployment_recommendations.rst:194
+msgid "Memory Caching"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:101
+#: ../../installation/deployment_recommendations.rst:192
+msgid ""
+"A memcache speeds up server performance, and ownCloud supports four "
+"memcaches; refer to `Configuring Memory Caching`_ for information on "
+"selecting and configuring a memcache."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:106
+#: ../../installation/deployment_recommendations.rst:198
+#: ../../installation/deployment_recommendations.rst:285
+msgid "Storage"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:106
+msgid "Local storage."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:110
+#: ../../installation/deployment_recommendations.rst:202
+#: ../../installation/deployment_recommendations.rst:289
+msgid "ownCloud Edition"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:109
+msgid ""
+"Standard Edition. (See `ownCloud Server or Enterprise Edition`_ for "
+"comparisons of the ownCloud editions.)"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:113
+msgid "Mid-sized Enterprises"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:116
+msgid "150 to 1,000 users."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:119
+msgid "Up to 200TB."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:122
+#: ../../installation/deployment_recommendations.rst:214
+msgid ""
+"Every component is fully redundant and can fail without service "
+"interruption. Backups without service interruption"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:128
+msgid "2 to 4 application servers."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:130
+msgid "A cluster of two database servers."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:132
+msgid "Storage on an NFS server."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:140
+msgid "2 to 4 application servers with 4 sockets and 32GB RAM."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:141
+msgid "2 DB servers with 4 sockets and 64GB RAM."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:142
+msgid "1 HAproxy load balancer with 2 sockets and 16GB RAM."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:143
+#: ../../installation/deployment_recommendations.rst:238
+msgid "NFS storage server as needed."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:146
+msgid ""
+"Enterprise grade Linux distribution with full support from OS vendor. Red"
+" Hat Enterprise Linux or SUSE Linux Enterprise Server 12 are recommended."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:150
+msgid ""
+"The SSL termination is done in the HAProxy load balancer. A standard SSL "
+"certificate is needed, installed according to the `HAProxy "
+"documentation`_."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:154
+msgid ""
+"HAProxy running on a dedicated server in front of the application "
+"servers. Sticky session needs to be used because of local session "
+"management on the application servers."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:159
+msgid ""
+"MySQL/MariaDB Galera cluster with master-master replication. (InnoDB "
+"storage engine, MyISAM is not supported, see: :ref:`db-storage-engine-"
+"label`)"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:162
+#: ../../installation/deployment_recommendations.rst:255
+msgid ""
+"Minimum daily backup without downtime. All MySQL/MariaDB statements "
+"should be replicated to a backup MySQL/MariaDB slave instance."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:165
+#: ../../installation/deployment_recommendations.rst:258
+msgid "Create a snapshot on the NFS storage server."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:166
+#: ../../installation/deployment_recommendations.rst:259
+msgid "At the same time stop the MySQL replication."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:167
+#: ../../installation/deployment_recommendations.rst:260
+msgid "Create a MySQL dump of the backup slave."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:168
+#: ../../installation/deployment_recommendations.rst:261
+msgid "Push the NFS snapshot to the backup."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:169
+#: ../../installation/deployment_recommendations.rst:262
+msgid "Push the MySQL dump to the backup."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:170
+#: ../../installation/deployment_recommendations.rst:263
+msgid "Delete the NFS snapshot."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:171
+#: ../../installation/deployment_recommendations.rst:264
+msgid "Restart MySQL replication."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:174
+msgid ""
+"User authentication via one or several LDAP or Active Directory servers. "
+"(See `User Authentication with LDAP`_  for information on configuring "
+"ownCloud to use LDAP and AD.)"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:180
+#: ../../installation/deployment_recommendations.rst:273
+msgid "LDAP"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:179
+msgid ""
+"Read-only slaves should be deployed on every application server for "
+"optimal scalability"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:183
+msgid ""
+"Session management on the application server. PHP sessions are stored in "
+"a tmpfs mounted at the operating system-specific session storage "
+"location. You can find out where that is by running ``grep -R "
+"'session.save_path' /etc/php5`` and then add it to the ``/etc/fstab`` "
+"file, for example: ``echo \"tmpfs /var/lib/php5/pool-www tmpfs "
+"defaults,noatime,mode=1777 0 0\" >> /etc/fstab``."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:197
+msgid ""
+"Use an off-the-shelf NFS solution, such as IBM Elastic Storage or RedHat "
+"Ceph."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:201
+#: ../../installation/deployment_recommendations.rst:288
+msgid ""
+"Enterprise Edition. (See `ownCloud Server or Enterprise Edition`_ for "
+"comparisons of the ownCloud editions.)"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:205
+msgid "Large Enterprises and Service Providers"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:208
+msgid "5,000 to >100,000 users."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:211
+msgid "Up to 1 petabyte."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:215
+msgid "High availabily level"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:220
+msgid "4 to 20 application/Web servers."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:222
+msgid "A cluster of two or more database servers."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:224
+msgid "Storage is an NFS server, or an object store that is S3 compatible."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:226
+msgid "Cloud federation for a distributed setup over several data centers."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:228
+msgid "Authentication via an existing LDAP or Active Directory server, or SAML."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:235
+msgid "4 to 20 application servers with 4 sockets and 64GB  RAM."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:236
+msgid "4 DB servers with 4 sockets and 128GB RAM"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:237
+msgid "2 Hardware load balancer, for example BIG IP from F5"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:241
+msgid "RHEL 7 with latest service packs."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:244
+msgid ""
+"The SSL termination is done in the load balancer. A standard SSL "
+"certificate is needed, installed according to the load balancer "
+"documentation."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:248
+msgid ""
+"A redundant hardware load-balancer with heartbeat, for example `F5 Big-"
+"IP`_. This runs two load balancers in front of the application servers."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:252
+msgid ""
+"MySQL/MariaDB Galera Cluster with 4x master -- master replication. "
+"(InnoDB storage engine, MyISAM is not supported, see: :ref:`db-storage-"
+"engine-label`)"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:267
+msgid ""
+"User authentication via one or several LDAP or Active Directory servers, "
+"or SAML/Shibboleth. (See `User Authentication with LDAP`_ and `Shibboleth"
+" Integration`_.)"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:272
+msgid ""
+"Read-only slaves should be deployed on every application server for "
+"optimal scalability."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:276
+msgid "Redis should be used for the session management storage."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:280
+msgid "Caching"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:279
+msgid ""
+"Redis for distributed in-memory caching (see `Configuring Memory "
+"Caching`_)."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:283
+msgid ""
+"An off-the-shelf NFS solution should be used. Examples are IBM Elastic "
+"Storage or RedHAT Ceph. Optionally, an S3 compatible object store can "
+"also be used."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:292
+msgid "Hardware Considerations"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:294
+msgid "Solid-state drives (SSDs) for I/O."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:295
+msgid "Separate hard disks for storage and database, SSDs for databases."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:296
+msgid ""
+"Multiple network interfaces to distribute server synchronisation and "
+"backend traffic across multiple subnets."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:300
+msgid "Single Machine / Scale-Up Deployment"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:302
+msgid "The single-machine deployment is widely used in the community."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:304
+#: ../../installation/deployment_recommendations.rst:333
+msgid "Pros:"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:306
+msgid ""
+"Easy setup: no session storage daemon, use tmpfs and memory caching to "
+"enhance performance, local storage."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:308
+msgid "No network latency to consider."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:309
+msgid ""
+"To scale buy a bigger CPU, more memory, larger hard drive, or additional "
+"hard drives."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:312
+#: ../../installation/deployment_recommendations.rst:339
+msgid "Cons:"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:314
+msgid "Fewer high availability options."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:315
+msgid ""
+"The amount of data in ownCloud tends to continually grow. Eventually a "
+"single machine will not scale; I/O performance decreases and becomes a "
+"bottleneck with multiple up- and downloads, even with solid-state drives."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:320
+msgid "Scale-Out Deployment"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:322
+msgid "Provider setup:"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:324
+msgid ""
+"DNS round robin to HAProxy servers (2-n, SSL offloading, cache static "
+"resources)"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:326
+msgid "Least load to Apache servers (2-n)"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:327
+msgid "Memcached/Redis for shared session storage (2-n)"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:328
+msgid ""
+"Database cluster with single Master, multiple slaves and proxy to split "
+"requests accordingly (2-n)"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:330
+msgid ""
+"GPFS or Ceph via phprados (2-n, 3 to be safe, Ceph 10+ nodes to see speed"
+" benefits under load)"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:335
+msgid "Components can be scaled as needed."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:336
+msgid "High availability."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:337
+msgid "Test migrations easier."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:341
+msgid "More complicated to setup."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:342
+msgid "Network becomes the bottleneck (10GB Ethernet recommended)."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:343
+msgid ""
+"Currently DB filecache table will grow rapidly, making migrations painful"
+" in case the table is altered."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:347
+msgid "What About Nginx / PHP-FPM?"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:349
+msgid ""
+"Could be used instead of HAproxy as the load balancer. But on uploads "
+"stores the whole file on disk before handing it over to PHP-FPM."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:353
+msgid "A Single Master DB is Single Point of Failure, Does Not Scale"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:355
+msgid ""
+"When master fails another slave can become master. However, the increased"
+" complexity carries some risks: Multi-master has the risk of split brain,"
+" and deadlocks. ownCloud tries to solve the problem of deadlocks with "
+"high-level file locking."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:361
+msgid "Software Considerations"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:364
+msgid "Operating System"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:366
+msgid ""
+"We are dependent on distributions that offer an easy way to install the "
+"various components in up-to-date versions. ownCloud has a partnership "
+"with RedHat and SUSE for customers who need commercial support. "
+"Canonical, the parent company of Ubuntu Linux, also offers enterprise "
+"service and support. Debian and Ubuntu are free of cost, and include "
+"newer software packages. CentOS is the community-supported free-of-cost "
+"Red Hat Enterprise Linux clone. openSUSE is community-supported, and "
+"includes many of the same system administration tools as SUSE Linux "
+"Enterprise Server."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:376
+msgid "Web server"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:378
+msgid ""
+"Taking Apache and Nginx as the contenders, Apache with mod_php is "
+"currently the best option, as Nginx does not support all features "
+"necessary for enterprise deployments. Mod_php is recommended instead of "
+"PHP_FPM, because in scale-out deployments separate PHP pools are simply "
+"not necessary."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:384
+msgid "Relational Database"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:386
+msgid ""
+"More often than not the customer already has an opinion on what database "
+"to use. In general, the recommendation is to use what their database "
+"administrator is most familiar with. Taking into account what we are "
+"seeing at customer deployments, we recommend MySQL/MariaDB in a master-"
+"slave deployment with a MySQL proxy in front of them to send updates to "
+"master, and selects to the slave(s)."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:393
+msgid ""
+"The second best option is PostgreSQL (alter table does not lock table, "
+"which makes migration less painful) although we have yet to find a "
+"customer who uses a master-slave setup."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:397
+msgid "What about the other DBMS?"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:399
+msgid ""
+"Sqlite is adequate for simple testing, and for low-load single-user "
+"deployments. It is not adequate for production systems."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:401
+msgid "Microsoft SQL Server is not a supported option."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:402
+msgid ""
+"Oracle DB is the de facto standard at large enterprises and is fully "
+"supported with ownCloud Enterprise Edition only."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:406
+msgid "File Storage"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:408
+msgid ""
+"While many customers are starting with NFS, sooner or later that requires"
+" scale-out storage. Currently the options are GPFS or GlusterFS, or an "
+"object store protocol like S3 (supported in Enterprise Edition only) or "
+"Swift. S3 also allows access to Ceph Storage."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:411
+msgid "Session Storage"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:413
+msgid ""
+"Redis: provides persistence, nice graphical inspection tools available, "
+"supports ownCloud high-level file locking."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:416
+msgid ""
+"If Shibboleth is a requirement you must use Memcached, and it can also be"
+" used to scale-out shibd session storage (see `Memcache "
+"StorageService`_)."
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:420
+msgid "References"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:422
+msgid "`Database High Availability`_"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:424
+msgid "`Performance enhancements for Apache and PHP`_"
+msgstr ""
+
+#: ../../installation/deployment_recommendations.rst:426
+msgid ""
+"`How to Set Up a Redis Server as a Session Handler for PHP on Ubuntu "
+"14.04`_"
+msgstr ""
+

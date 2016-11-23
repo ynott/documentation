@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../configuration_files/trashbin_options.rst:3
+msgid "Managing the Trashbin"
+msgstr ""
+
+#: ../../configuration_files/trashbin_options.rst:5
+msgid ""
+"The ownCloud Trashbin (``files_trashbin``) permanently deletes files "
+"according to users' storage quotas and age of files. When a user deletes "
+"a file it is not immediately removed from your ownCloud server, but goes "
+"into the Trashbin. Then the user has the options to un-delete the file, "
+"or to delete it permanently."
+msgstr ""
+
+#: ../../configuration_files/trashbin_options.rst:9
+msgid ""
+"As the ownCloud server administrator, you have two ``occ`` commands for "
+"permanently deleting files from the Trashbin manually, without waiting "
+"for the normal aging-out process::"
+msgstr ""
+
+#: ../../configuration_files/trashbin_options.rst:15
+msgid ""
+"The ``trashbin:cleanup`` command removes the deleted files of all users, "
+"or you may specify certain users in a space-delimited list. This example "
+"removes all the deleted files of all users::"
+msgstr ""
+
+#: ../../configuration_files/trashbin_options.rst:25
+msgid "This example removes the deleted files of user2 and user4::"
+msgstr ""
+
+#: ../../configuration_files/trashbin_options.rst:31
+msgid ""
+"``trashbin:expire`` deletes only expired files according to the "
+"``trashbin_retention_obligation`` setting in ``config.php``. The default "
+"setting is ``auto``, which keeps files in the trashbin for 30 days, then "
+"deletes the oldest files as space is needed to keep users within their "
+"storage quotas. Files may not be deleted if the space is not needed."
+msgstr ""
+
+#: ../../configuration_files/trashbin_options.rst:33
+msgid ""
+"The default is to delete expired files for all users, or you may list "
+"users in a space-delimited list::"
+msgstr ""
+
+#: ../../configuration_files/trashbin_options.rst:39
+msgid ""
+"See the **Deleted Files** section in "
+":doc:`../configuration_server/config_sample_php_parameters`, and the "
+":ref:`trashbin_label` section of "
+":doc:`../configuration_server/occ_command`."
+msgstr ""
+

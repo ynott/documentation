@@ -1,0 +1,412 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../installation/nginx_examples.rst:3
+msgid "nginx Example Configurations"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:5
+msgid ""
+"This page covers example nginx configurations to use with running an "
+"ownCloud server. Note that nginx is not officially supported, and this "
+"page is community-maintained. (Thank you, contributors!)"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:9
+msgid ""
+"You need to insert the following code into **your nginx configuration "
+"file.**"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:10
+msgid ""
+"The configuration assumes that ownCloud is installed in "
+"``/var/www/owncloud`` and that it is accessed via "
+"``http(s)://cloud.example.com``."
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:13
+msgid ""
+"Adjust **server_name**, **root**, **ssl_certificate** and "
+"**ssl_certificate_key** to suit your needs."
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:15
+msgid ""
+"Make sure your SSL certificates are readable by the server (see `nginx "
+"HTTP SSL Module documentation <http://wiki.nginx.org/HttpSslModule>`_)."
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:17
+msgid ""
+"``add_header`` statements are only taken from the current level and are "
+"not cascaded from or to a different level. All necessary ``add_header`` "
+"statements must be defined in each level needed. For better readability "
+"it is possible to move *common* add header statements into a separate "
+"file and include that file wherever necessary. However, each "
+"``add_header`` statement must be written in a single line to prevent "
+"connection problems with sync clients."
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:26
+msgid "Example Configurations"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:28
+msgid ""
+"Be careful about line breaks if you copy the examples, as long lines may "
+"be broken for page formatting."
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:31
+msgid ""
+"Thanks to `@josh4trunks <https://github.com/josh4trunks>`_ for providing "
+"/ creating these configuration examples."
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:34
+msgid ""
+"You can use ownCloud over plain http, but we strongly encourage you to "
+"use SSL/TLS to encrypt all of your server traffic, and to protect user's "
+"logins and data in transit."
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:38
+msgid "Remove the server block containing the redirect"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:39
+msgid "Change **listen 443 ssl** to **listen 80;**"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:40
+msgid "Remove **ssl_certificate** and **ssl_certificate_key**."
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:41
+msgid "Remove **fastcgi_params HTTPS on;**"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:44
+msgid "ownCloud in the webroot of nginx"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:46
+msgid ""
+"The following config should be used when ownCloud is placed in the "
+"webroot of your nginx installation."
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:172
+msgid "ownCloud in a subdir of nginx"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:174
+msgid ""
+"The following config should be used when ownCloud is placed within a "
+"subdir of your nginx installation."
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:303
+msgid "Suppressing Log Messages"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:305
+msgid ""
+"If you're seeing meaningless messages in your logfile, for example "
+"`client denied by server configuration: /var/www/data/htaccesstest.txt "
+"<https://central.owncloud.org/t/htaccesstest-txt-errors-in-"
+"logfiles/831>`_, add this section to your nginx configuration to suppress"
+" them::"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:317
+msgid "JavaScript (.js) or CSS (.css) files not served properly"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:319
+msgid ""
+"A common issue with custom nginx configs is that JavaScript (.js) or CSS "
+"(.css) files are not served properly leading to a 404 (File not found) "
+"error on those files and a broken webinterface."
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:323
+msgid "This could be caused by the::"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:327
+msgid "block shown above not located **below** the::"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:331
+msgid ""
+"block. Other custom configurations like caching JavaScript (.js) or CSS "
+"(.css) files via gzip could also cause such issues."
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:335
+msgid "Performance Tuning"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:337
+msgid ""
+"`nginx (<1.9.5) <ngx_http_spdy_module "
+"<http://nginx.org/en/docs/http/ngx_http_spdy_module.html>`_ `nginx "
+"(+1.9.5) <ngx_http_http2_module "
+"<http://nginx.org/en/docs/http/ngx_http_v2_module.html>`_"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:342
+msgid "To use http_v2 for nginx you have to check two things:"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:344
+msgid ""
+"1.) be aware that this module is not built in by default due to a "
+"dependency to the openssl version used on your system. It will be enabled"
+" with the ``--with-http_v2_module`` configuration parameter during "
+"compilation. The dependency should be checked automatically. You can "
+"check the presence of http_v2 with ``nginx -V 2>&1 | grep http_v2 -o``. "
+"An example of how to compile nginx can be found in section \"Configure "
+"nginx with the ``nginx-cache-purge`` module\" below."
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:352
+msgid ""
+"2.) When you have used SPDY before, the nginx config has to be changed "
+"from ``listen 443 ssl spdy;`` to ``listen 443 ssl http2;``"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:356
+msgid "nginx: caching ownCloud gallery thumbnails"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:358
+msgid ""
+"One of the optimizations for ownCloud when using nginx as the Web server "
+"is to combine FastCGI caching with \"Cache Purge\", a `3rdparty nginx "
+"module <http://wiki.nginx.org/3rdPartyModules>`_  that adds the ability "
+"to purge content from `FastCGI`, `proxy`, `SCGI` and `uWSGI` caches. This"
+" mechanism speeds up thumbnail presentation as it shifts requests to "
+"nginx and minimizes php invocations which otherwise would take place for "
+"every thumbnail presented every time."
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:366
+msgid ""
+"The following procedure is based on an Ubuntu 14.04 system. You may need "
+"to adapt it according your OS type and release."
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:370
+msgid ""
+"Unlike Apache, nginx does not dynamically load modules. All modules "
+"needed must be compiled into nginx. This is one of the reasons for "
+"nginx´s performance. It is expected to have an already running nginx "
+"installation with a working configuration set up as described in the "
+"ownCloud documentation."
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:377
+msgid "nginx module check"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:379
+msgid ""
+"As a first step, it is necessary to check if your nginx installation has "
+"the ``nginx cache purge`` module compiled in::"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:384
+msgid ""
+"If your output contains ``ngx_cache_purge``, you can continue with the "
+"configuration, otherwise you need to manually compile nginx with the "
+"module needed."
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:389
+msgid "Compile nginx with the ``nginx-cache-purge`` module"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:391
+msgid "**Preparation:**"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:400
+msgid ""
+"Add the following lines (if different, replace ``{trusty}`` by your "
+"distribution name)::"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:406
+msgid "Then run ``sudo apt-get update``"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:408
+msgid ""
+"If you're not overly cautious and wish to install the latest and greatest"
+" nginx packages and features, you may have to install nginx from its "
+"mainline repository. From the nginx homepage: \"In general, you should "
+"deploy nginx from its mainline branch at all times.\" If you would like "
+"to use standard nginx from the latest mainline branch but without "
+"compiling in any additional modules, just run ``sudo apt-get install "
+"nginx``."
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:415
+msgid "**Download the nginx source from the ppa repository**"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:423
+msgid "**Download module(s) to be compiled in and configure compiler arguments**"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:429
+msgid "Please replace ``{release}`` with the release downloaded::"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:433
+msgid "If folder \"modules\" is not present, do:"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:442
+msgid "If not present, add the following line at the top under::"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:447
+msgid "And at the end of every ``configure`` command add::"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:451
+msgid ""
+"Don't forget to escape preceeding lines with a backslash ``\\``. The "
+"parameters may now look like::"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:459
+msgid "**Compile and install nginx**"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:468
+msgid ""
+"**Check if the compilation and installation of the ngx_cache_purge module"
+" was successful**"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:475
+msgid "It should now show: ``ngx_cache_purge``"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:477
+msgid "Show nginx version including all features compiled and installed::"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:481
+msgid "**Mark nginx to be blocked from further updates via apt-get**"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:487
+msgid "For every nginx component listed run ``sudo apt-mark hold <component>``"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:489
+msgid "**Regular checks for nginx updates**"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:491
+msgid ""
+"Do a regular visit on the `nginx news page <http://nginx.org>`_ and "
+"proceed in case of updates with items 2 to 5."
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:495
+msgid "Configure nginx with the ``nginx-cache-purge`` module"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:497
+msgid ""
+"**Preparation** Create a directory where nginx will save the cached "
+"thumbnails. Use any path that fits to your environment. Replace "
+"``{path}`` in this example with your path created:"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:506
+msgid "**Configuration**"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:512
+msgid "Add at the *beginning*, but *outside* the ``server{}`` block::"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:523
+msgid ""
+"Please adopt or delete any regex line in the ``map`` block according your"
+" needs and the ownCloud version used. As an alternative to mapping, you "
+"can use as many ``if`` statements in your server block as necessary::"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:533
+msgid "Add *inside* the ``server{}`` block, as an example of a configuration::"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:558
+msgid ""
+"Note regarding the ``fastcgi_pass`` parameter: Use whatever fits your "
+"configuration. In the example above, an ``upstream`` was defined in an "
+"nginx global configuration file. This may look like::"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:569
+msgid "**Test the configuration**"
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:575
+msgid "Open your browser and clear your cache."
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:576
+msgid ""
+"Logon to your ownCloud instance, open the gallery app, move thru your "
+"folders and watch while the thumbnails are generated for the first time."
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:578
+msgid ""
+"You may also watch with eg. ``htop`` your system load while the "
+"thumbnails are processed."
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:580
+msgid "Go to another app or logout and relogon."
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:581
+msgid ""
+"Open the gallery app again and browse to the folders you accessed before."
+" Your thumbnails should appear more or less immediately."
+msgstr ""
+
+#: ../../installation/nginx_examples.rst:583
+msgid ""
+"``htop`` will not show up additional load while processing, compared to "
+"the high load before."
+msgstr ""
+

@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../configuration_files/external_storage/webdav.rst:3
+msgid "WebDAV"
+msgstr ""
+
+#: ../../configuration_files/external_storage/webdav.rst:5
+msgid ""
+"Use this backend to mount a directory from any WebDAV server, or another "
+"ownCloud server."
+msgstr ""
+
+#: ../../configuration_files/external_storage/webdav.rst:8
+msgid "You need the following information:"
+msgstr ""
+
+#: ../../configuration_files/external_storage/webdav.rst:10
+msgid "Folder name: The name of your local mountpoint."
+msgstr ""
+
+#: ../../configuration_files/external_storage/webdav.rst:11
+msgid "The URL of the WebDAV or ownCloud server."
+msgstr ""
+
+#: ../../configuration_files/external_storage/webdav.rst:12
+msgid "Username and password for the remote server"
+msgstr ""
+
+#: ../../configuration_files/external_storage/webdav.rst:13
+msgid ""
+"Secure https://: We always recommend https:// for security, though you "
+"can leave this unchecked for http://."
+msgstr ""
+
+#: ../../configuration_files/external_storage/webdav.rst:16
+msgid ""
+"Optionally, a ``Remote Subfolder`` can be specified to change the "
+"destination directory. The default is to use the whole root."
+msgstr ""
+
+#: ../../configuration_files/external_storage/webdav.rst:22
+msgid ""
+"CPanel users should install `Web Disk "
+"<https://documentation.cpanel.net/display/ALD/Web+Disk>`_ to enable "
+"WebDAV functionality."
+msgstr ""
+
+#: ../../configuration_files/external_storage/webdav.rst:26
+msgid ""
+"See :doc:`../external_storage_configuration_gui` for additional mount "
+"options and information."
+msgstr ""
+
+#: ../../configuration_files/external_storage/webdav.rst:29
+msgid "See :doc:`auth_mechanisms` for more information on authentication schemes."
+msgstr ""
+

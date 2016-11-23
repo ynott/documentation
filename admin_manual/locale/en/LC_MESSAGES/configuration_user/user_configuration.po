@@ -1,0 +1,366 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../configuration_user/user_configuration.rst:3
+msgid "User Management"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:5
+msgid "On the User management page of your ownCloud Web UI you can:"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:7
+msgid "Create new users"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:8
+msgid "View all of your users in a single scrolling window"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:9
+msgid "Filter users by group"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:10
+msgid "See what groups they belong to"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:11
+msgid "Edit their full names and passwords"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:12
+msgid "See their data storage locations"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:13
+msgid "View and set quotas"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:14
+msgid "Create and edit their email addresses"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:15
+msgid "Send an automatic email notification to new users"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:16
+msgid "Delete them with a single click"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:18
+msgid "The default view displays basic information about your users."
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:22
+msgid ""
+"The Group filters on the left sidebar lets you quickly filter users by "
+"their group memberships, and create new groups."
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:27
+msgid ""
+"Click the gear icon on the lower left sidebar to set a default storage "
+"quota, and to display additional fields: **Show storage location, Show "
+"last log in, Show user backend, Send email to new users,** and **Show "
+"email address**."
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:33
+msgid "User accounts have the following properties:"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:36
+msgid "*Login Name (Username)*"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:36
+msgid "The unique ID of an ownCloud user, and it cannot be changed."
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:41
+msgid "*Full Name*"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:39
+msgid ""
+"The user's display name that appears on file shares, the ownCloud Web "
+"interface, and emails. Admins and users may change the Full Name anytime."
+" If the Full Name is not set it defaults to the login name."
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:45
+msgid "*Password*"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:44
+msgid ""
+"The admin sets the new user's first password. Both the user and the admin"
+" can change the user's password at anytime."
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:49
+msgid "*Groups*"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:48
+msgid ""
+"You may create groups, and assign group memberships to users. By default "
+"new users are not assigned to any groups."
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:53
+msgid "*Group Admin*"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:52
+msgid ""
+"Group admins are granted administrative privileges on specific groups, "
+"and can add and remove users from their groups."
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:58
+msgid "*Quota*"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:56
+msgid ""
+"The maximum disk space assigned to each user. Any user that exceeds the "
+"quota cannot upload or sync data. You have the the option to include "
+"external storage in user quotas."
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:61
+msgid "Creating a New User"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:63
+msgid "To create a user account:"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:65
+msgid "Enter the new user's **Login Name** and their initial **Password**"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:66
+msgid "Optionally, assign **Groups** memberships"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:67
+msgid "Click the **Create** button"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:71
+msgid ""
+"Login names may contain letters (a-z, A-Z), numbers (0-9), dashes (-), "
+"underscores (_), periods (.) and at signs (@). After creating the user, "
+"you may fill in their **Full Name** if it is different than the login "
+"name, or leave it for the user to complete."
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:76
+msgid ""
+"If you have checked **Send email to new user** in the control panel on "
+"the lower left sidebar, you may also enter the new user's email address, "
+"and ownCloud will automatically send them a notification with their new "
+"login information. You may edit this email using the email template "
+"editor on your Admin page (see "
+":doc:`../configuration_server/email_configuration`)."
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:83
+msgid "Reset a User's Password"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:85
+msgid "You cannot recover a user's password, but you can set a new one:"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:87
+msgid "Hover your cursor over the user's **Password** field"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:88
+msgid "Click on the **pencil icon**"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:89
+msgid ""
+"Enter the user's new password in the password field, and remember to "
+"provide the user with their password"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:92
+msgid ""
+"If you have encryption enabled, there are special considerations for user"
+" password resets. Please see "
+":doc:`../configuration_files/encryption_configuration`."
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:97
+msgid "Renaming a User"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:99
+msgid ""
+"Each ownCloud user has two names: a unique **Login Name** used for "
+"authentication, and a **Full Name**, which is their display name. You can"
+" edit the display name of a user, but you cannot change the login name of"
+" any user."
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:103
+msgid "To set or change a user's display name:"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:105
+msgid "Hover your cursor over the user's **Full Name** field"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:106
+msgid "Click on the **Pencil icon**"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:107
+msgid "Enter the user's new display name"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:111
+msgid "Granting Administrator Privileges to a User"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:113
+msgid ""
+"ownCloud has two types of administrators: **Super Administrators** and "
+"**Group Administrators**. Group administrators have the rights to create,"
+" edit and delete users in their assigned groups. Group administrators "
+"cannot access system settings, or add or modify users in the groups that "
+"they are not **Group Administrators** for. Use the dropdown menus in the "
+"**Group Admin** column to assign group admin privileges."
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:122
+msgid ""
+"**Super Administrators** have full rights on your ownCloud server, and "
+"can access and modify all settings. To assign the **Super "
+"Administrators** role to a user, simply add them to the ``admin`` group."
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:128
+msgid "Managing Groups"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:130
+msgid ""
+"You can assign new users to groups when you create them, and create new "
+"groups when you create new users. You may also use the **Add Group** "
+"button at the top of the left pane to create new groups. New group "
+"members will immediately have access to file shares that belong to their "
+"new groups."
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:136
+msgid "Setting Storage Quotas"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:138
+msgid ""
+"Click the gear on the lower left pane to set a default storage quota. "
+"This is automatically applied to new users. You may assign a different "
+"quota to any user by selecting from the **Quota** dropdown, selecting "
+"either a preset value or entering a custom value. When you create custom "
+"quotas, use the normal abbreviations for your storage values such as 500 "
+"MB, 5 GB, 5 TB, and so on."
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:144
+msgid ""
+"You now have a configurable option in ``config.php`` that controls "
+"whether external storage is counted against user's quotas. This is still "
+"experimental, and may not work as expected. The default is to not count "
+"external storage as part of user storage quotas. If you prefer to include"
+" it, then change the default ``false`` to ``true``.::"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:152
+#, python-format
+msgid ""
+"Metadata (such as thumbnails, temporary files, and encryption keys) takes"
+" up about 10% of disk space, but is not counted against user quotas. "
+"Users can check their used and available space on their Personal pages. "
+"Only files that originate with users count against their quotas, and not "
+"files shared with them that originate from other users. For example, if "
+"you upload files to a different user's share, those files count against "
+"your quota. If you re-share a file that another user shared with you, "
+"that file does not count against your quota, but the originating user's."
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:161
+msgid ""
+"Encrypted files are a little larger than unencrypted files; the "
+"unencrypted size is calculated against the user's quota."
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:164
+#, python-format
+msgid ""
+"Deleted files that are still in the trash bin do not count against "
+"quotas. The trash bin is set at 50% of quota. Deleted file aging is set "
+"at 30 days. When deleted files exceed 50% of quota then the oldest files "
+"are removed until the total is below 50%."
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:169
+msgid ""
+"When version control is enabled, the older file versions are not counted "
+"against quotas."
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:172
+msgid ""
+"When a user creates a public share via URL, and allows uploads, any "
+"uploaded files count against that user's quota."
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:176
+msgid "Deleting users"
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:178
+msgid ""
+"Deleting a user is easy: hover your cursor over their name on the "
+"**Users** page until a trashcan icon appears at the far right. Click the "
+"trashcan, and they're gone. You'll see an undo button at the top of the "
+"page, which remains until you refresh the page. When the undo button is "
+"gone you cannot recover the deleted user."
+msgstr ""
+
+#: ../../configuration_user/user_configuration.rst:184
+msgid ""
+"All of the files owned by the user are deleted as well, including all "
+"files they have shared. If you need to preserve the user's files and "
+"shares, you must first download them from your ownCloud Files page, which"
+" compresses them into a zip file, or use a sync client to copy them to "
+"your local computer. See "
+":doc:`../configuration_files/file_sharing_configuration` to learn how to "
+"create persistent file shares that survive user deletions."
+msgstr ""
+

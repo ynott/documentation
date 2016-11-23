@@ -1,0 +1,114 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../configuration_user/user_auth_ftp_smb_imap.rst:3
+msgid "User Authentication with IMAP, SMB, and FTP"
+msgstr ""
+
+#: ../../configuration_user/user_auth_ftp_smb_imap.rst:5
+msgid ""
+"You may configure additional user backends in ownCloud's configuration "
+":file:`config/config.php` using the following syntax:"
+msgstr ""
+
+#: ../../configuration_user/user_auth_ftp_smb_imap.rst:22
+msgid ""
+"A non-blocking or correctly configured SELinux setup is needed for these "
+"backends to work. Please refer to the :ref:`selinux-config-label`."
+msgstr ""
+
+#: ../../configuration_user/user_auth_ftp_smb_imap.rst:25
+msgid ""
+"Currently the “External user support” (user_external) app, which you need"
+" to enable first (See "
+":doc:`../installation/apps_management_installation`) provides the "
+"following user backends:"
+msgstr ""
+
+#: ../../configuration_user/user_auth_ftp_smb_imap.rst:30
+msgid "IMAP"
+msgstr ""
+
+#: ../../configuration_user/user_auth_ftp_smb_imap.rst:31
+msgid "Provides authentication against IMAP servers"
+msgstr ""
+
+#: ../../configuration_user/user_auth_ftp_smb_imap.rst:33
+msgid "**Class:** OC_User_IMAP"
+msgstr ""
+
+#: ../../configuration_user/user_auth_ftp_smb_imap.rst:34
+msgid ""
+"**Arguments:**  a mailbox string as defined `in the PHP documentation "
+"<http://www.php.net/manual/en/function.imap-open.php>`_"
+msgstr ""
+
+#: ../../configuration_user/user_auth_ftp_smb_imap.rst:35
+msgid "**Dependency:** php-imap (See :doc:`../installation/source_installation`)"
+msgstr ""
+
+#: ../../configuration_user/user_auth_ftp_smb_imap.rst:36
+#: ../../configuration_user/user_auth_ftp_smb_imap.rst:59
+#: ../../configuration_user/user_auth_ftp_smb_imap.rst:82
+msgid "**Example:**"
+msgstr ""
+
+#: ../../configuration_user/user_auth_ftp_smb_imap.rst:52
+msgid "SMB"
+msgstr ""
+
+#: ../../configuration_user/user_auth_ftp_smb_imap.rst:53
+msgid "Provides authentication against Samba servers"
+msgstr ""
+
+#: ../../configuration_user/user_auth_ftp_smb_imap.rst:55
+msgid "**Class:** OC_User_SMB"
+msgstr ""
+
+#: ../../configuration_user/user_auth_ftp_smb_imap.rst:56
+msgid "**Arguments:** the samba server to authenticate against"
+msgstr ""
+
+#: ../../configuration_user/user_auth_ftp_smb_imap.rst:57
+msgid ""
+"**Dependency:** PHP smbclient module or smbclient (see "
+":doc:`../configuration_files/external_storage/smb`)"
+msgstr ""
+
+#: ../../configuration_user/user_auth_ftp_smb_imap.rst:75
+msgid "FTP"
+msgstr ""
+
+#: ../../configuration_user/user_auth_ftp_smb_imap.rst:77
+msgid "Provides authentication against FTP servers"
+msgstr ""
+
+#: ../../configuration_user/user_auth_ftp_smb_imap.rst:79
+msgid "**Class:** OC_User_FTP"
+msgstr ""
+
+#: ../../configuration_user/user_auth_ftp_smb_imap.rst:80
+msgid "**Arguments:** the FTP server to authenticate against"
+msgstr ""
+
+#: ../../configuration_user/user_auth_ftp_smb_imap.rst:81
+msgid "**Dependency:** php-ftp (See :doc:`../installation/source_installation`)"
+msgstr ""
+

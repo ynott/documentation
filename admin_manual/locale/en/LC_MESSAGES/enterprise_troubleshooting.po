@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../enterprise_troubleshooting.rst:3
+msgid "Enterprise Troubleshooting"
+msgstr ""
+
+#: ../../enterprise_troubleshooting.rst:5
+msgid ""
+"When you have problems with your ownCloud Enterprise installation, refer "
+"to :doc:`../issues/general_troubleshooting` to see if you can resolve "
+"your issue without opening a support ticket. If you need to open a "
+"support ticket, use the Open Ticket button in your account on "
+"`<https://customer.owncloud.com/owncloud/>`_."
+msgstr ""
+
+#: ../../enterprise_troubleshooting.rst:11
+msgid ""
+"Bug reports and trouble tickets usually need a copy of your ownCloud "
+"server configuration report. You have two ways to generate a "
+"configuration report."
+msgstr ""
+
+#: ../../enterprise_troubleshooting.rst:14
+msgid "Use the :ref:`occ config command <config_commands_label>`."
+msgstr ""
+
+#: ../../enterprise_troubleshooting.rst:15
+msgid ""
+"Use the **Enterprise license key** app on your ownCloud Admin page to "
+"generate the report with the click of a button."
+msgstr ""
+
+#: ../../enterprise_troubleshooting.rst:21
+msgid "Both methods automatically obscure passwords and secrets."
+msgstr ""
+

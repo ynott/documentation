@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../enterprise_file_management/files_drop.rst:3
+msgid "Enabling Anonymous Uploads with Files Drop (Enterprise Only)"
+msgstr ""
+
+#: ../../enterprise_file_management/files_drop.rst:5
+msgid ""
+"The Files Drop application, introduced in ownCloud 8.0.3 Enterprise "
+"Subscription, allows anyone to upload files with the click of a button to"
+" the directory of your choosing, without needing a login, and they cannot"
+" see or change the contents of the directory. It is the perfect "
+"replacement for attaching large files to email, maintaining an FTP "
+"server, and commercial file-sharing services."
+msgstr ""
+
+#: ../../enterprise_file_management/files_drop.rst:12
+msgid ""
+"When files are uploaded to your Files Drop directory, you can manage them"
+" just like any other ownCloud share: you may share them, restrict access,"
+" edit, and delete them."
+msgstr ""
+
+#: ../../enterprise_file_management/files_drop.rst:17
+msgid "Setting Up the Files Drop App"
+msgstr ""
+
+#: ../../enterprise_file_management/files_drop.rst:19
+msgid ""
+"Setting up Files Drop is a matter of a few clicks. First go to your Apps "
+"page and enable it."
+msgstr ""
+
+#: ../../enterprise_file_management/files_drop.rst:25
+msgid "Now your users will see a configuration section on their Personal pages."
+msgstr ""
+
+#: ../../enterprise_file_management/files_drop.rst:30
+msgid ""
+"Click the **Choose** button to open a dialog to select your upload "
+"directory. You may wish to first create a special upload directory (on "
+"your Files page), which in the following example is name **upload**."
+msgstr ""
+
+#: ../../enterprise_file_management/files_drop.rst:37
+msgid ""
+"On your Personal page you should now see a URL for your upload directory."
+" Share this URL with anyone you want to allow uploads to your File Drop "
+"folder. Note that the maximum upload size in this example is 512MB. (The "
+"default ownCloud upload file size limit is 512MB. See "
+":doc:`../configuration_files/big_file_upload_configuration` to learn how "
+"to customize this.)"
+msgstr ""
+
+#: ../../enterprise_file_management/files_drop.rst:48
+msgid "Using the Files Drop App"
+msgstr ""
+
+#: ../../enterprise_file_management/files_drop.rst:50
+msgid ""
+"Uploading files via the Files Drop app is simple. Open your Web browser "
+"to the share URL created by ownCloud:"
+msgstr ""
+
+#: ../../enterprise_file_management/files_drop.rst:56
+msgid ""
+"Click the **Click to upload file** button. This opens a file picker, and "
+"you select the file or directory you want to upload."
+msgstr ""
+
+#: ../../enterprise_file_management/files_drop.rst:62
+msgid ""
+"When your upload is completed, you'll see a confirmation message with the"
+" filenames."
+msgstr ""
+

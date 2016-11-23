@@ -1,0 +1,155 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../maintenance/manual_upgrade.rst:3
+msgid "Manual ownCloud Upgrade"
+msgstr ""
+
+#: ../../maintenance/manual_upgrade.rst:5
+msgid ""
+"When upgrading from oC 9.0 to 9.1 with existing Calendars or Adressbooks "
+"please have a look at the :doc:`../release_notes` of oC 9.0 for important"
+" info about the needed migration steps during that upgrade."
+msgstr ""
+
+#: ../../maintenance/manual_upgrade.rst:9
+msgid "Always start by making a fresh backup and disabling all 3rd party apps."
+msgstr ""
+
+#: ../../maintenance/manual_upgrade.rst:11
+msgid ""
+"Put your server in maintenance mode. This prevents new logins, locks the "
+"sessions of logged-in users, and displays a status screen so users know "
+"what is happening. There are two ways to do this, and the preferred "
+"method is to use the :doc:`occ command "
+"<../configuration_server/occ_command>`, which you must run as your HTTP "
+"user. This example is for Ubuntu Linux::"
+msgstr ""
+
+#: ../../maintenance/manual_upgrade.rst:19
+msgid ""
+"The other way is by entering your ``config.php`` file and changing "
+"``'maintenance' => false,`` to ``'maintenance' => true,``."
+msgstr ""
+
+#: ../../maintenance/manual_upgrade.rst:22
+msgid ""
+"Back up your existing ownCloud Server database, data directory, and "
+"``config.php`` file. (See :doc:`backup`.)"
+msgstr ""
+
+#: ../../maintenance/manual_upgrade.rst:24
+msgid ""
+"Download and unpack the latest ownCloud Server release (Archive file) "
+"from `owncloud.org/install/`_ into an empty directory outside of your "
+"current installation."
+msgstr ""
+
+#: ../../maintenance/manual_upgrade.rst:28
+msgid "To unpack your new tarball, run: tar xjf owncloud-[version].tar.bz2"
+msgstr ""
+
+#: ../../maintenance/manual_upgrade.rst:31
+msgid ""
+"Enterprise users must download their new ownCloud archives from their "
+"accounts on `<https://customer.owncloud.com/owncloud/>`_"
+msgstr ""
+
+#: ../../maintenance/manual_upgrade.rst:34
+msgid "Stop your Web server."
+msgstr ""
+
+#: ../../maintenance/manual_upgrade.rst:36
+msgid "Rename your current ownCloud directory, for example ``owncloud-old``."
+msgstr ""
+
+#: ../../maintenance/manual_upgrade.rst:38
+msgid ""
+"Unpacking the new archive creates a new ``owncloud`` directory populated "
+"with your new server files. Copy this directory and its contents to the "
+"original location of your old server, for example ``/var/www/``, so that "
+"once again you have ``/var/www/owncloud``."
+msgstr ""
+
+#: ../../maintenance/manual_upgrade.rst:43
+msgid ""
+"Copy the ``config.php`` file from your old ownCloud directory to your new"
+" ownCloud directory."
+msgstr ""
+
+#: ../../maintenance/manual_upgrade.rst:46
+msgid ""
+"If you keep your ``data/`` directory in your ``owncloud/`` directory, "
+"copy it from your old version of ownCloud to your new ``owncloud/``. If "
+"you keep it outside of ``owncloud/`` then you don't have to do anything "
+"with it, because its location is configured in your original "
+"``config.php``, and none of the upgrade steps touch it."
+msgstr ""
+
+#: ../../maintenance/manual_upgrade.rst:52
+msgid ""
+"If you are using 3rd party applications, look in your new "
+"``owncloud/apps/`` directory to see if they are there. If not, copy them "
+"from your old ``apps/`` directory to your new one. Make sure the "
+"directory permissions of your third party application directories are the"
+" same as for the other ones."
+msgstr ""
+
+#: ../../maintenance/manual_upgrade.rst:57
+msgid "Restart your Web server."
+msgstr ""
+
+#: ../../maintenance/manual_upgrade.rst:59
+msgid ""
+"Now launch the upgrade from the command  line using ``occ``, like this "
+"example on CentOS Linux::"
+msgstr ""
+
+#: ../../maintenance/manual_upgrade.rst:64
+msgid ""
+"The optional parameter to skip migration tests during this step was "
+"removed in oC 9.2. See :ref:`migration_test_label` for background "
+"information."
+msgstr ""
+
+#: ../../maintenance/manual_upgrade.rst:67
+msgid "See :doc:`../configuration_server/occ_command` to learn more."
+msgstr ""
+
+#: ../../maintenance/manual_upgrade.rst:69
+msgid ""
+"The upgrade operation takes a few minutes to a few hours, depending on "
+"the size of your installation. When it is finished you will see a success"
+" message, or an error message that will tell where it went wrong."
+msgstr ""
+
+#: ../../maintenance/manual_upgrade.rst:73
+msgid "Assuming your upgrade succeeded, disable the maintenance mode::"
+msgstr ""
+
+#: ../../maintenance/manual_upgrade.rst:77
+msgid ""
+"Login and take a look at the bottom of your Admin page to verify the "
+"version number. Check your other settings to make sure they're correct. "
+"Go to the Apps page and review the core apps to make sure the right ones "
+"are enabled. Re-enable your third-party apps. Then apply strong "
+"permissions to your ownCloud directories (:ref:`strong_perms_label`)."
+msgstr ""
+

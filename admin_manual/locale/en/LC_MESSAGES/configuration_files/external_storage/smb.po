@@ -1,0 +1,106 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../configuration_files/external_storage/smb.rst:3
+msgid "SMB/CIFS"
+msgstr ""
+
+#: ../../configuration_files/external_storage/smb.rst:5
+msgid ""
+"ownCloud can connect to Windows file servers or other SMB-compatible "
+"servers with the SMB/CIFS backend."
+msgstr ""
+
+#: ../../configuration_files/external_storage/smb.rst:8
+msgid ""
+"The SMB/CIFS backend requires the PHP smbclient module, version 0.8.0+, "
+"to be installed on the ownCloud server. This should be included in any "
+"Linux distribution; on Debian, Ubuntu, CentOS, and Fedora it is ``php-"
+"smbclient``. See `eduardok/libsmbclient-php <https://github.com/eduardok"
+"/libsmbclient-php>`_ if your distribution does not include it; this "
+"provides source archives and instructions how to install binary packages."
+msgstr ""
+
+#: ../../configuration_files/external_storage/smb.rst:10
+msgid ""
+"You also need the Samba client installed on your Linux system. This is "
+"included in all Linux distributions; on Debian, Ubuntu, and other Debian "
+"derivatives this is ``smbclient``. On SUSE, Red Hat, CentOS, and other "
+"Red Hat derivatives it is ``samba-client``. You also need ``which`` and "
+"``stdbuf``, which should be included in most Linux distributions."
+msgstr ""
+
+#: ../../configuration_files/external_storage/smb.rst:15
+msgid "You need the following information:"
+msgstr ""
+
+#: ../../configuration_files/external_storage/smb.rst:17
+msgid "Folder name for your local mountpoint."
+msgstr ""
+
+#: ../../configuration_files/external_storage/smb.rst:18
+msgid "Host: The URL of the Samba server."
+msgstr ""
+
+#: ../../configuration_files/external_storage/smb.rst:19
+msgid ""
+"Username: The username or domain/username used to login to the Samba "
+"server."
+msgstr ""
+
+#: ../../configuration_files/external_storage/smb.rst:21
+msgid "Password: the password to login to the Samba server."
+msgstr ""
+
+#: ../../configuration_files/external_storage/smb.rst:22
+msgid "Share: The share on the Samba server to mount."
+msgstr ""
+
+#: ../../configuration_files/external_storage/smb.rst:23
+msgid ""
+"Remote Subfolder: The remote subfolder inside the Samba share to mount "
+"(optional, defaults to /). To assign the ownCloud logon username "
+"automatically to the subfolder, use ``$user`` instead of a particular "
+"subfolder name."
+msgstr ""
+
+#: ../../configuration_files/external_storage/smb.rst:27
+msgid "And finally, the ownCloud users and groups who get access to the share."
+msgstr ""
+
+#: ../../configuration_files/external_storage/smb.rst:29
+msgid ""
+"Optionally, you can specify a ``Domain``. This is useful in cases where "
+"the SMB server requires a domain and a username, and an advanced "
+"authentication mechanism like session credentials is used so that the "
+"username cannot be modified. This is concatenated with the username, so "
+"the backend gets ``domain\\username``"
+msgstr ""
+
+#: ../../configuration_files/external_storage/smb.rst:40
+msgid ""
+"See :doc:`../external_storage_configuration_gui` for additional mount "
+"options and information."
+msgstr ""
+
+#: ../../configuration_files/external_storage/smb.rst:43
+msgid "See :doc:`auth_mechanisms` for more information on authentication schemes."
+msgstr ""
+

@@ -1,0 +1,144 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../configuration_files/files_locking_transactional.rst:3
+msgid "Transactional File Locking"
+msgstr ""
+
+#: ../../configuration_files/files_locking_transactional.rst:5
+msgid ""
+"ownCloud's Transactional File Locking mechanism locks files to avoid file"
+" corruption during normal operation. It performs these functions:"
+msgstr ""
+
+#: ../../configuration_files/files_locking_transactional.rst:8
+msgid ""
+"Operates at a higher level than the filesystem, so you don't need to use "
+"a filesystem that supports locking"
+msgstr ""
+
+#: ../../configuration_files/files_locking_transactional.rst:10
+msgid ""
+"Locks parent directories so they cannot be renamed during any activity on"
+" files inside the directories"
+msgstr ""
+
+#: ../../configuration_files/files_locking_transactional.rst:12
+msgid ""
+"Releases locks after file transactions are interrupted, for example when "
+"a sync client loses the connection during an upload"
+msgstr ""
+
+#: ../../configuration_files/files_locking_transactional.rst:14
+msgid ""
+"Manages locking and releasing locks correctly on shared files during "
+"changes from multiple users"
+msgstr ""
+
+#: ../../configuration_files/files_locking_transactional.rst:16
+msgid "Manages locks correctly on external storage mounts"
+msgstr ""
+
+#: ../../configuration_files/files_locking_transactional.rst:17
+msgid "Manages encrypted files correctly"
+msgstr ""
+
+#: ../../configuration_files/files_locking_transactional.rst:19
+msgid ""
+"What Transactional File locking is not for: it is not for preventing "
+"collisions in collaborative document editing (see "
+":doc:`collaborative_documents_configuration` to learn about collaboration"
+" with the Documents app), nor will it prevent multiple users from editing"
+" the same document, or give notice that other users are working on the "
+"same document. Multiple users can open and edit a file at the same time "
+"and Transactional File locking does not prevent this. Rather, it prevents"
+" simultaneous file saving."
+msgstr ""
+
+#: ../../configuration_files/files_locking_transactional.rst:27
+msgid ""
+"Transactional file locking is in ownCloud core, and replaces the old File"
+" Locking app. The File Locking app has been removed from ownCloud in "
+"version 8.2.1. If your ownCloud server still has the File Locking app, "
+"you must visit your Apps page to verify that it is disabled; the File "
+"Locking app and Transactional File Locking cannot both operate at the "
+"same time."
+msgstr ""
+
+#: ../../configuration_files/files_locking_transactional.rst:33
+msgid ""
+"File locking is enabled by default, using the database locking backend. "
+"This places a significant load on your database. Using "
+"``memcache.locking`` relieves the database load and improves performance."
+" Admins of ownCloud servers with heavy workloads should install a "
+"memcache. (See :doc:`../configuration_server/caching_configuration`.)"
+msgstr ""
+
+#: ../../configuration_files/files_locking_transactional.rst:39
+msgid ""
+"To use a memcache with Transactional File Locking, you must install the "
+"Redis server and corresponding PHP module. After installing Redis you "
+"must enter a configuration in your ``config.php`` file like this "
+"example::"
+msgstr ""
+
+#: ../../configuration_files/files_locking_transactional.rst:52
+msgid ""
+"For enhanced security it is recommended to configure Redis to require a "
+"password. See http://redis.io/topics/security for more information."
+msgstr ""
+
+#: ../../configuration_files/files_locking_transactional.rst:55
+msgid ""
+"If you want to configure Redis to listen on an Unix socket (which is "
+"recommended if Redis is running on the same system as ownCloud) use this "
+"example ``config.php`` configuration::"
+msgstr ""
+
+#: ../../configuration_files/files_locking_transactional.rst:67
+msgid ""
+"See ``config.sample.php`` to see configuration examples for Redis, and "
+"for all supported memcaches."
+msgstr ""
+
+#: ../../configuration_files/files_locking_transactional.rst:70
+msgid ""
+"If you are on Ubuntu you can follow `this guide <https://www.techandme.se"
+"/how-to-configure-redis-cache-in-ubuntu-14-04-with-owncloud/>`_ for a "
+"complete installation from scratch."
+msgstr ""
+
+#: ../../configuration_files/files_locking_transactional.rst:73
+msgid ""
+"Learn more about Reds at `Redis <http://redis.io/>`_. Memcached, the "
+"popular distributed memory caching system, is not suitable for the new "
+"file locking because it is not designed to store locks, and data can "
+"disappear from the cache at any time. Redis is a key-value store, and it "
+"guarantees that cached objects are available for as long as they are "
+"needed."
+msgstr ""
+
+#: ../../configuration_files/files_locking_transactional.rst:79
+msgid ""
+"Debian Jesse users, please see this `Github discussion "
+"<https://github.com/owncloud/core/issues/20675>`_ if you have problems "
+"with LDAP authentication."
+msgstr ""
+

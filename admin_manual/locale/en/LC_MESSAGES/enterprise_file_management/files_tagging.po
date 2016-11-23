@@ -1,0 +1,171 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../enterprise_file_management/files_tagging.rst:3
+msgid "Advanced File Tagging With the Workflow App (Enterprise only)"
+msgstr ""
+
+#: ../../enterprise_file_management/files_tagging.rst:5
+msgid ""
+"New in ownCloud 9.0, the Workflow App provides advanced management of "
+"file tagging. The app has three parts: Tag Manager, Automatic Tagging, "
+"and Retention."
+msgstr ""
+
+#: ../../enterprise_file_management/files_tagging.rst:8
+msgid ""
+"The Workflow App should be enabled by default (Apps page), and the three "
+"configuration modules visible on your ownCloud Admin page."
+msgstr ""
+
+#: ../../enterprise_file_management/files_tagging.rst:11
+msgid ""
+"See `Tagging Files "
+"<https://doc.owncloud.com/server/9.2/user_manual/files/access_webgui.html>`_"
+" in the ownCloud User manual to learn how to apply and filter tags on "
+"files."
+msgstr ""
+
+#: ../../enterprise_file_management/files_tagging.rst:16
+msgid "Tag Manager"
+msgstr ""
+
+#: ../../enterprise_file_management/files_tagging.rst:18
+msgid ""
+"The Tag Manager is for creating new tags, editing existing tags, and "
+"deleting tags. Tags may be marked as **Visible**, **Restricted**, or "
+"**Invisible**."
+msgstr ""
+
+#: ../../enterprise_file_management/files_tagging.rst:20
+msgid ""
+"**Visible** means that all users may see, rename, and apply these tags to"
+" files and folders."
+msgstr ""
+
+#: ../../enterprise_file_management/files_tagging.rst:22
+msgid ""
+"**Restricted** means tags are assignable and editable only to the user "
+"groups that you select. Other users can filter files by restricted tags, "
+"but cannot tag files with them or rename them. The tags are marked "
+"(restricted)."
+msgstr ""
+
+#: ../../enterprise_file_management/files_tagging.rst:24
+msgid "**Invisible** means visible only to ownCloud admins."
+msgstr ""
+
+#: ../../enterprise_file_management/files_tagging.rst:26
+msgid ""
+"Use the **Collaborative tag management** module on your ownCloud admin "
+"page to edit and create tags."
+msgstr ""
+
+#: ../../enterprise_file_management/files_tagging.rst:31
+msgid ""
+"This is what your tags look like in the **Tags** view on your files page."
+" Non-admin users will not see invisible tags, but they will see visible "
+"and restricted tags."
+msgstr ""
+
+#: ../../enterprise_file_management/files_tagging.rst:38
+msgid "Automatic Tagging"
+msgstr ""
+
+#: ../../enterprise_file_management/files_tagging.rst:40
+msgid ""
+"The Automatic Tagging module operates on newly-uploaded files. Create a "
+"set of conditions, and then when a file or folder matches those "
+"conditions it is automatically tagged. The tag must already have been "
+"created with the Tag Manager."
+msgstr ""
+
+#: ../../enterprise_file_management/files_tagging.rst:45
+msgid ""
+"For example, you can assign the invisible tag **iOS Uploads** to all "
+"files uploaded from iOS devices. This tag is visible only to admins."
+msgstr ""
+
+#: ../../enterprise_file_management/files_tagging.rst:51
+msgid ""
+"When files with this tag are shared with you, you can view them with the "
+"Tags filter on the Files page."
+msgstr ""
+
+#: ../../enterprise_file_management/files_tagging.rst:57
+msgid "Automatic Tagging is especially useful with the Retention module."
+msgstr ""
+
+#: ../../enterprise_file_management/files_tagging.rst:60
+msgid "Retention"
+msgstr ""
+
+#: ../../enterprise_file_management/files_tagging.rst:62
+msgid ""
+"The Retention module is your housecleaning power tool, because it "
+"automatically deletes files after a time period that you specify. Select "
+"which tag to set a time limit on, and then set your time limit. File age "
+"is calculated from the file mtime (modification time)."
+msgstr ""
+
+#: ../../enterprise_file_management/files_tagging.rst:70
+msgid ""
+"For best performance, retention tags should be applied high in your file "
+"hierarchy. If subfolders have the same tags as their parent folders, "
+"their tags must also be processed, so it will take a little longer."
+msgstr ""
+
+#: ../../enterprise_file_management/files_tagging.rst:75
+msgid "Retention Engines"
+msgstr ""
+
+#: ../../enterprise_file_management/files_tagging.rst:77
+msgid ""
+"There are two retention engines that further allow you to fine-tune your "
+"retention settings: **TagBasedRetention** and **UserBasedRetention**. "
+"**TagBasedRetention** is the default."
+msgstr ""
+
+#: ../../enterprise_file_management/files_tagging.rst:81
+msgid ""
+"**TagBasedRetention**: This checks files that have a particular tag "
+"assigned. Then it checks (depth-first) the children of the tagged item, "
+"before continuing with the other tagged items. Children that have already"
+" been checked will not be checked a second time."
+msgstr ""
+
+#: ../../enterprise_file_management/files_tagging.rst:86
+msgid ""
+"This is optimised for processing smaller numbers of files that have "
+"multiple retention tags."
+msgstr ""
+
+#: ../../enterprise_file_management/files_tagging.rst:89
+msgid ""
+"**UserBasedRetention**: Examines files per user. It first iterates over "
+"all files and folders (siblings first), then examines the tags for those "
+"items and checks their respective retention periods. This is optimised "
+"for many files with few retention tags."
+msgstr ""
+
+#: ../../enterprise_file_management/files_tagging.rst:94
+msgid "To select UserBasedRetention, add this line to your ee.config.php::"
+msgstr ""
+

@@ -1,0 +1,102 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../enterprise_external_storage/ldap_home_connector_configuration.rst:3
+msgid "LDAP Home Connector"
+msgstr ""
+
+#: ../../enterprise_external_storage/ldap_home_connector_configuration.rst:5
+msgid ""
+"The LDAP Home Connector App enables you to configure your ownCloud server"
+" to display your users' Windows home directories on their Files pages, "
+"just like any other folder. Typically, Windows home directories are "
+"stored on a network server in a root folder, such as Users, which then "
+"contains individual folders for each user."
+msgstr ""
+
+#: ../../enterprise_external_storage/ldap_home_connector_configuration.rst:11
+msgid ""
+"You must already have the LDAP app enabled and a working LDAP/Active "
+"Directory configuration in ownCloud."
+msgstr ""
+
+#: ../../enterprise_external_storage/ldap_home_connector_configuration.rst:14
+msgid ""
+"Next, configure the root Windows home directory to be mounted on your "
+"ownCloud server. Then use the LDAP Home Connector and LDAP app to connect"
+" it to ownCloud."
+msgstr ""
+
+#: ../../enterprise_external_storage/ldap_home_connector_configuration.rst:18
+msgid "Mount Home Directory"
+msgstr ""
+
+#: ../../enterprise_external_storage/ldap_home_connector_configuration.rst:20
+msgid ""
+"Create an entry in :file:`/etc/fstab` for the remote Windows root home "
+"directory mount. Store the credentials to access the home directory in a "
+"separate file, for example :file:`/etc/credentials`, with the username "
+"and password on separate lines, like this::"
+msgstr ""
+
+#: ../../enterprise_external_storage/ldap_home_connector_configuration.rst:28
+msgid ""
+"Then add a line like this to :file:`/etc/fstab`, substituting your own "
+"server address and filenames::"
+msgstr ""
+
+#: ../../enterprise_external_storage/ldap_home_connector_configuration.rst:34
+msgid "Configure the LDAP Home Connector"
+msgstr ""
+
+#: ../../enterprise_external_storage/ldap_home_connector_configuration.rst:36
+msgid ""
+"Enable the LDAP Home Connector app. Then go to the LDAP Home Connector "
+"form on your ownCloud admin page. In the **Display folder as:** field "
+"enter the name as you want it to appear on your users' File pages."
+msgstr ""
+
+#: ../../enterprise_external_storage/ldap_home_connector_configuration.rst:40
+msgid ""
+"Then in the **Attribute name:** field enter the LDAP attribute name that "
+"will contain the home directory. Use any LDAP attribute that is not "
+"already in use, then save your changes."
+msgstr ""
+
+#: ../../enterprise_external_storage/ldap_home_connector_configuration.rst:48
+msgid "Configure the LDAP Server"
+msgstr ""
+
+#: ../../enterprise_external_storage/ldap_home_connector_configuration.rst:50
+msgid ""
+"In Active Directory, open the user profile. Scroll to the **Extensions** "
+"section and open the **Attribute Editor** tab"
+msgstr ""
+
+#: ../../enterprise_external_storage/ldap_home_connector_configuration.rst:56
+msgid ""
+"Scroll to the attribute being used (UserSharedFolder in this instance), "
+"and click **Edit**.  Enter the users home directory."
+msgstr ""
+
+#: ../../enterprise_external_storage/ldap_home_connector_configuration.rst:62
+msgid "Save your changes, and you are finished."
+msgstr ""
+

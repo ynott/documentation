@@ -1,0 +1,1289 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../configuration_server/occ_command.rst:3
+msgid "Using the occ Command"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:5
+msgid ""
+"ownCloud's ``occ`` command (ownCloud console) is ownCloud's command-line "
+"interface. You can perform many common server operations with ``occ``, "
+"such as installing and upgrading ownCloud, manage users, encryption, "
+"passwords, LDAP setting, and more."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:10
+msgid ""
+"``occ`` is in the :file:`owncloud/` directory; for example "
+":file:`/var/www/owncloud` on Ubuntu Linux. ``occ`` is a PHP script. **You"
+" must run it as your HTTP user** to ensure that the correct permissions "
+"are maintained on your ownCloud files and directories. In ownCloud 8.2+ "
+"you may run it from any directory (specifying the filepath); in previous "
+"releases it had to be run from the :file:`owncloud/` directory."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:18
+msgid "occ Command Directory"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:20
+msgid ":ref:`http_user_label`"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:21
+msgid ":ref:`apps_commands_label`"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:22
+msgid ":ref:`background_jobs_selector_label`"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:23
+msgid ":ref:`config_commands_label`"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:24
+msgid ":ref:`dav_label`"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:25
+msgid ":ref:`database_conversion_label`"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:26
+msgid ":ref:`encryption_label`"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:27
+msgid ":ref:`federation_sync_label`"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:28
+msgid ":ref:`file_operations_label`"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:29
+msgid ":ref:`files_external_label`"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:30
+msgid ":ref:`integrity_check_label`"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:31
+msgid ":ref:`create_javascript_translation_files_label`"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:32
+msgid ":ref:`ldap_commands_label`"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:33
+msgid ":ref:`logging_commands_label`"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:34
+msgid ":ref:`maintenance_commands_label`"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:35
+msgid ":ref:`security_commands_label`"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:36
+msgid ":ref:`shibboleth_label`"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:37
+msgid ":ref:`trashbin_label`"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:38
+msgid ":ref:`user_commands_label`"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:39
+msgid ":ref:`versions_label`"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:40
+msgid ":ref:`command_line_installation_label`"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:41
+msgid ":ref:`command_line_upgrade_label`"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:42
+msgid ":ref:`two_factor_auth_label`"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:43
+msgid ":ref:`disable_user_label`"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:48
+msgid "Run occ As Your HTTP User"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:50
+msgid ""
+"The HTTP user is different on the various Linux distributions. See "
+":ref:`strong_perms_label` to learn how to find your HTTP user."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:53
+msgid "The HTTP user and group in Debian/Ubuntu is www-data."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:54
+msgid "The HTTP user and group in Fedora/CentOS is apache."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:55
+msgid "The HTTP user and group in Arch Linux is http."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:56
+msgid "The HTTP user in openSUSE is wwwrun, and the HTTP group is www."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:58
+msgid ""
+"If your HTTP server is configured to use a different PHP version than the"
+" default (/usr/bin/php), ``occ`` should be run with the same version. For"
+" example, in CentOS 6.5 with SCL-PHP54 installed, the command looks like "
+"this::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:64
+msgid ""
+"Running ``occ`` with no options lists all commands and options, like this"
+" example on Ubuntu::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:94
+msgid "This is the same as ``sudo -u www-data php occ list``."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:96
+msgid "Run it with the ``-h`` option for syntax help::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:100
+msgid "Display your ownCloud version::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:105
+msgid "Query your ownCloud server status::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:113
+msgid ""
+"``occ`` has options, commands, and arguments. Options and arguments are "
+"optional, while commands are required. The syntax is::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:118
+msgid ""
+"Get detailed information on individual commands with the ``help`` "
+"command, like this example for the ``maintenance:mode`` command::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:138
+msgid ""
+"The ``status`` command from above has an option to define the output "
+"format. The default is plain text, but it can also be ``json``::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:144
+msgid "or ``json_pretty``::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:154
+msgid ""
+"This output option is available on all list and list-like commands: "
+"``status``, ``check``, ``app:list``, ``config:list``, "
+"``encryption:status`` and ``encryption:list-modules``"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:161
+msgid "Apps Commands"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:163
+msgid "The ``app`` commands list, enable, and disable apps::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:173
+msgid ""
+"List all of your installed apps, and show whether they are enabled or "
+"disabled::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:178
+msgid "Enable an app, for example the External Storage Support app::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:183
+msgid "Disable an app::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:188
+msgid ""
+"``app:check-code`` has multiple checks: it checks if an app uses "
+"ownCloud's public API (``OCP``) or private API (``OC_``), and it also "
+"checks for deprecated methods and the validity of the ``info.xml`` file. "
+"By default all checks are enabled. The Activity app is an example of a "
+"correctly-formatted app::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:196
+msgid "If your app has issues, you'll see output like this::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:209
+msgid "You can get the full filepath to an app::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:217
+msgid "Background Jobs Selector"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:219
+msgid ""
+"Use the ``background`` command to select which scheduler you want to use "
+"for controlling background jobs, Ajax, Webcron, or Cron. This is the same"
+" as using the **Cron** section on your ownCloud Admin page::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:228
+msgid "This example selects Ajax::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:233
+msgid "The other two commands are:"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:235
+msgid "``background:cron``"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:236
+msgid "``background:webcron``"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:238
+msgid ""
+"See :doc:`../configuration_server/background_jobs_configuration` to learn"
+" more."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:243
+msgid "Config Commands"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:245
+msgid "The ``config`` commands are used to configure the ownCloud server::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:257
+msgid "You can list all configuration values with one command::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:261
+msgid ""
+"By default, passwords and other sensitive data are omitted from the "
+"report, so the output can be posted publicly (e.g. as part of a bug "
+"report). In order to generate a full backport of all configuration values"
+" the ``--private`` flag needs to be set::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:268
+msgid ""
+"The exported content can also be imported again to allow the fast setup "
+"of similar instances. The import command will only add or update values. "
+"Values that exist in the current configuration, but not in the one that "
+"is being imported are left untouched::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:275
+msgid "It is also possible to import remote files, by piping the input::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:281
+msgid ""
+"While it is possible to update/set/delete the versions and installation "
+"statuses of apps and ownCloud itself, it is **not** recommended to do "
+"this directly. Use the ``occ app:enable``, ``occ app:disable`` and ``occ "
+"update`` commands instead."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:287
+msgid "Getting a Single Configuration Value"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:289
+msgid "These commands get the value of a single app or system configuration::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:298
+msgid "Setting a Single Configuration Value"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:300
+msgid "These commands set the value of a single app or system configuration::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:310
+msgid ""
+"The ``config:system:set`` command creates the value, if it does not "
+"already exist. To update an existing value,  set ``--update-only``::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:317
+msgid ""
+"Note that in order to write a Boolean, float, or integer value to the "
+"configuration file, you need to specify the type on your command. This "
+"applies only to the ``config:system:set`` command. The following values "
+"are known:"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:322
+msgid "``boolean``"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:323
+msgid "``integer``"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:324
+msgid "``float``"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:325
+msgid "``string`` (default)"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:327
+msgid ""
+"When you want to e.g. disable the maintenance mode run the following "
+"command::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:335
+msgid "Setting an array Configuration Value"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:337
+msgid ""
+"Some configurations (e.g. the trusted domain setting) are an array of "
+"data. In order to set (and also get) the value of one key, you can "
+"specify multiple ``config`` names separated by spaces::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:346
+msgid ""
+"To replace ``sample.tld`` with ``example.com`` trusted_domains => 2 needs"
+" to be set::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:359
+msgid "Deleting a Single Configuration Value"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:361
+msgid ""
+"These commands delete the configuration of an app or system "
+"configuration::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:369
+msgid ""
+"The delete command will by default not complain if the configuration was "
+"not set before. If you want to be notified in that case, set the "
+"``--error-if-not-exists`` flag::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:381
+msgid "Dav Commands"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:383
+msgid ""
+"A set of commands to create addressbooks, calendars, and to migrate "
+"addressbooks from 8.2 when you upgrade to 9.0::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:393
+msgid ""
+"The syntax for ``dav:create-addressbook`` and  ``dav:create-calendar`` is"
+" ``dav:create-addressbook [user] [name]``. This example creates the "
+"addressbook ``mollybook`` for the user molly::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:399
+msgid "This example creates a new calendar for molly::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:403
+msgid "Molly will immediately see these on her Calendar and Contacts pages."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:405
+msgid ""
+"In 9.0, the CalDAV server has been integrated into core. Your existing "
+"calendars and contacts should migrate automatically when you upgrade. If "
+"something goes wrong you can try a manual migration. First delete any "
+"partially-migrated calendars or addressbooks. Then run this command to "
+"migrate user's contacts::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:413
+msgid "Run this command to migrate calendars::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:417
+msgid ""
+"See `ownCloud 9.0 - calendar migration analysis "
+"<http://morrisjobke.de/2016/03/07/ownCloud-9.0-calendar-migration-"
+"analysis/>`_ for help with troubleshooting and reporting problems."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:421
+msgid ""
+"``dav:sync-birthday-calendar`` adds all birthdays to your calendar from "
+"addressbooks shared with you. This example syncs to your calendar from "
+"user bernie::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:427
+msgid ""
+"``dav:sync-system-addressbook`` synchronizes all users to the system "
+"addressbook::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:432
+#: ../../configuration_server/occ_command.rst:565
+#: ../../configuration_server/occ_command.rst:673
+#: ../../configuration_server/occ_command.rst:703
+msgid "Added in 9.0."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:437
+msgid "Database Conversion"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:439
+msgid ""
+"The SQLite database is good for testing, and for ownCloud servers with "
+"small single-user workloads that do not use sync clients, but production "
+"servers with multiple users should use MariaDB, MySQL, or PostgreSQL. You"
+" can use ``occ`` to convert from SQLite to one of these other databases."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:452
+msgid "You need:"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:454
+msgid "Your desired database and its PHP connector installed."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:455
+msgid "The login and password of a database admin user."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:456
+msgid "The database port number, if it is a non-standard port."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:458
+msgid "This is example converts SQLite to MySQL/MariaDB::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:463
+msgid ""
+"For a more detailed explanation see "
+":doc:`../configuration_database/db_conversion`"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:469
+msgid "Encryption"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:471
+msgid "``occ`` includes a complete set of commands for managing encryption::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:490
+msgid ""
+"``encryption:status`` shows whether you have active encryption, and your "
+"default encryption module. To enable encryption you must first enable the"
+" Encryption app, and then run ``encryption:enable``::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:500
+msgid ""
+"``encryption:change-key-storage-root`` is for moving your encryption keys"
+" to a different folder. It takes one argument, ``newRoot``, which defines"
+" your new root folder. The folder must exist, and the path is relative to"
+" your root ownCloud directory::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:506
+msgid "You can see the current location of your keys folder::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:511
+msgid ""
+"``encryption:list-modules`` displays your available encryption modules. "
+"You will see a list of modules only if you have enabled the Encryption "
+"app. Use ``encryption:set-default-module [module name]`` to set your "
+"desired module."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:515
+msgid ""
+"``encryption:encrypt-all`` encrypts all data files for all users. You "
+"must first put your ownCloud server into :ref:`single-user "
+"mode<maintenance_commands_label>` to prevent any user activity until "
+"encryption is completed."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:520
+msgid ""
+"``encryption:decrypt-all`` decrypts all user data files, or optionally a "
+"single user::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:525
+msgid ""
+"Users must have enabled recovery keys on their Personal pages. You must "
+"first put your ownCloud server into :ref:`single-user mode "
+"<maintenance_commands_label>` to prevent any user activity until "
+"decryption is completed."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:530
+msgid ""
+"Use ``encryption:disable`` to disable your encryption module. You must "
+"first put your ownCloud server into :ref:`single-user mode "
+"<maintenance_commands_label>` to prevent any user activity."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:534
+msgid ""
+"``encryption:enable-master-key`` creates a new master key, which is used "
+"for all user data instead of individual user keys. This is especially "
+"useful to enable single-sign on. Use this only on fresh installations "
+"with no existing data, or on systems where encryption has not already "
+"been enabled. It is not possible to disable it."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:540
+msgid ""
+"``encryption:migrate`` migrates encryption keys after a major ownCloud "
+"version upgrade. You may optionally specify individual users in a space-"
+"delimited list."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:543
+msgid "See :doc:`../configuration_files/encryption_configuration` to learn more."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:548
+msgid "Federation Sync"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:551
+msgid ""
+"This command is only available when the \"Federation\" app "
+"(``federation``) is enabled."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:554
+msgid "Synchronize the addressbooks of all federated ownCloud servers::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:559
+msgid ""
+"In ownCloud 9.+, servers connected with federation shares can share user "
+"address books, and auto-complete usernames in share dialogs. Use this "
+"command to synchronize federated servers::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:570
+msgid "File Operations"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:572
+msgid "``occ`` has three commands for managing files in ownCloud::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:580
+msgid ""
+"The ``files:scan`` command scans for new files and updates the file "
+"cache. You may rescan all files, per-user, a space-delimited list of "
+"users, and limit the search path. If not using ``--quiet``, statistics "
+"will be shown at the end of the scan::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:601
+msgid "Verbosity levels of ``-vv`` or ``-vvv`` are automatically reset to ``-v``"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:603
+msgid ""
+"Note for option --unscanned: In general there is a background job "
+"(through cron) that will do that scan periodically. The --unscanned "
+"option makes it possible to trigger this from the CLI."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:607
+msgid ""
+"When using the ``--path`` option, the path must consist of following "
+"components::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:616
+msgid "where the term ``files`` is mandatory."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:618
+msgid "Example::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:622
+msgid ""
+"In the example above, the user_id ``alice`` is determined implicitly from"
+" the path component given."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:625
+msgid ""
+"The ``--path``, ``--all`` and ``[user_id]`` parameters and are exclusive "
+"- only one must be specified."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:628
+msgid ""
+"``files:cleanup`` tidies up the server's file cache by deleting all file "
+"entries that have no matching entries in the storage table."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:631
+msgid ""
+"You may transfer all files and shares from one user to another. This is "
+"useful before removing a user::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:640
+msgid "Files External"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:642
+msgid ""
+"These commands replace the ``data/mount.json`` configuration file used in"
+" ownCloud releases before 9.0."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:646
+msgid ""
+"These commands are only available when the \"External storage support\" "
+"app (``files_external``) is enabled."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:649
+msgid "Commands for managing external storage::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:663
+msgid ""
+"These commands replicate the functionality in the ownCloud Web GUI, plus "
+"two new features:  ``files_external:export`` and "
+"``files_external:import``."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:666
+msgid ""
+"Use ``files_external:export`` to export all admin mounts to stdout, and "
+"``files_external:export [user_id]`` to export the mounts of the specified"
+" ownCloud user."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:670
+msgid ""
+"Use ``files_external:import [filename]`` to import legacy JSON "
+"configurations, and to copy external mount configurations to another "
+"ownCloud server."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:678
+msgid "Integrity Check"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:680
+msgid ""
+"Apps which have an official tag MUST be code signed starting with "
+"ownCloud 9.0. Unsigned official apps won't be installable anymore. Code "
+"signing is optional for all third-party applications::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:688
+msgid "After creating your signing key, sign your app like this example::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:692
+msgid "Verify your app::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:696
+msgid ""
+"When it returns nothing, your app is signed correctly. When it returns a "
+"message then there is an error. See `Code Signing "
+"<https://doc.owncloud.org/server/9.0/developer_manual/app/code_signing.html"
+"#how-to-get-your-app-signed>`_ in the Developer manual for more detailed "
+"information."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:699
+msgid "``integrity:sign-core`` is for ownCloud core developers only."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:701
+msgid "See :doc:`../issues/code_signing` to learn more."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:708
+msgid "l10n, Create Javascript Translation Files for Apps"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:710
+msgid ""
+"This command is for app developers to update their translation mechanism "
+"from ownCloud 7 to ownCloud 8 and later."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:716
+msgid "LDAP Commands"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:719
+msgid ""
+"These commands are only available when the \"LDAP user and group "
+"backend\" app (``user_ldap``) is enabled."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:722
+msgid ""
+"These LDAP commands appear only when you have enabled the LDAP app. Then "
+"you can run the following LDAP commands with ``occ``::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:737
+msgid "Search for an LDAP user, using this syntax::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:742
+msgid ""
+"Searches will match at the beginning of the attribute value only. This "
+"example searches for givenNames that start with \"rob\"::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:747
+msgid ""
+"This will find robbie, roberta, and robin. Broaden the search to find, "
+"for example, ``jeroboam`` with the asterisk wildcard::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:752
+msgid ""
+"User search attributes are set with ``ldap:set-config`` (below). For "
+"example, if your search attributes are ``givenName`` and ``sn`` you can "
+"find users by first name + last name very quickly. For example, you'll "
+"find Terri Hanson by searching for ``te ha``. Trailing whitespaces are "
+"ignored."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:758
+msgid ""
+"Check if an LDAP user exists. This works only if the ownCloud server is "
+"connected to an LDAP server::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:763
+msgid ""
+"``ldap:check-user`` will not run a check when it finds a disabled LDAP "
+"connection. This prevents users that exist on disabled LDAP connections "
+"from being marked as deleted. If you know for certain that the user you "
+"are searching for is not in one of the disabled connections, and exists "
+"on an active connection, use the ``--force`` option to force it to check "
+"all active LDAP connections::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:771
+msgid ""
+"``ldap:create-empty-config`` creates an empty LDAP configuration. The "
+"first one you create has no ``configID``, like this example::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:777
+msgid ""
+"This is a holdover from the early days, when there was no option to "
+"create additional configurations. The second, and all subsequent, "
+"configurations that you create are automatically assigned IDs::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:784
+msgid "Then you can list and view your configurations::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:788
+msgid "And view the configuration for a single configID::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:792
+msgid "``ldap:delete-config [configID]`` deletes an existing LDAP configuration::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:797
+msgid ""
+"The ``ldap:set-config`` command is for manipulating configurations, like "
+"this example that sets search attributes::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:803
+msgid ""
+"``ldap:test-config`` tests whether your configuration is correct and can "
+"bind to the server::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:809
+msgid ""
+"``ldap:show-remnants`` is for cleaning up the LDAP mappings table, and is"
+" documented in :doc:`../configuration_user/user_auth_ldap_cleanup`."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:815
+msgid "Logging Commands"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:817
+msgid "These commands view and configure your ownCloud logging preferences::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:823
+msgid "Run ``log:owncloud`` to see your current logging status::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:830
+msgid ""
+"Use the ``--enable`` option to turn on logging. Use ``--file`` to set a "
+"different log file path. Set your rotation by log file size in bytes with"
+" ``--rotate-size``; 0 disables rotation."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:834
+msgid ""
+"``log:manage`` sets your logging backend, log level, and timezone. The "
+"defaults are ``owncloud``, ``Warning``, and ``UTC``. Available options "
+"are:"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:837
+msgid "--backend [owncloud, syslog, errorlog]"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:838
+msgid "--level [debug, info, warning, error]"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:843
+msgid "Maintenance Commands"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:845
+msgid ""
+"Use these commands when you upgrade ownCloud, manage encryption, perform "
+"backups and other tasks that require locking users out until you are "
+"finished::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:859
+msgid ""
+"``maintenance:mode`` locks the sessions of all logged-in users, including"
+" administrators, and displays a status screen warning that the server is "
+"in maintenance mode. Users who are not already logged in cannot log in "
+"until maintenance mode is turned off. When you take the server out of "
+"maintenance mode logged-in users must refresh their Web browsers to "
+"continue working::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:868
+msgid ""
+"Putting your ownCloud server into single-user mode allows admins to log "
+"in and work, but not ordinary users. This is useful for performing "
+"maintenance and troubleshooting on a running server::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:875
+msgid "Turn it off when you're finished::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:880
+msgid ""
+"Run ``maintenance:data-fingerprint`` to tell desktop and mobile clients "
+"that a server backup has been restored. Users will be prompted to resolve"
+" any conflicts between newer and older file versions."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:884
+msgid ""
+"The ``maintenance:repair`` command runs automatically during upgrades to "
+"clean up the database, so while you can run it manually there usually "
+"isn't a need to::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:890
+msgid ""
+"``maintenance:mimetype:update-db`` updates the ownCloud database and file"
+" cache with changed mimetypes found in ``config/mimetypemapping.json``. "
+"Run this command after modifying ``config/mimetypemapping.json``. If you "
+"change a mimetype, run ``maintenance:mimetype:update-db --repair-"
+"filecache`` to apply the change to existing files."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:899
+msgid "Security"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:901
+msgid ""
+"Use these commands to manage server-wide SSL certificates. These are "
+"useful when you create federation shares with other ownCloud servers that"
+" use self-signed certificates::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:908
+msgid "This example lists your installed certificates::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:912
+msgid "Import a new certificate::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:916
+msgid "Remove a certificate::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:923
+msgid "Shibboleth Modes (Enterprise Edition only)"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:926
+msgid ""
+"This command is only available when the \"Shibboleth user backend\" app "
+"(``user_shibboleth``) is enabled."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:929
+msgid ""
+"``shibboleth:mode`` sets your Shibboleth mode to ``notactive``, "
+"``autoprovision``, or ``ssoonly``::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:937
+msgid "Trashbin"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:940
+msgid ""
+"This command is only available when the \"Deleted files\" app "
+"(``files_trashbin``) is enabled."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:949
+msgid ""
+"The ``trashbin:cleanup`` command removes the deleted files of the "
+"specified users in a space-delimited list, or all users if none are "
+"specified. This example removes all the deleted files of all users::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:961
+msgid "This example removes the deleted files of users molly and freda::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:967
+msgid ""
+"``trashbin:expire`` deletes only expired files according to the "
+"``trashbin_retention_obligation`` setting in ``config.php`` (see the "
+"Deleted Files section in :doc:`config_sample_php_parameters`). The "
+"default is to delete expired files for all users, or you may list users "
+"in a space-delimited list."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:972
+msgid "User Commands"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:974
+msgid ""
+"The ``user`` commands create and remove users, reset passwords, display a"
+" simple report showing how many users you have, and when a user was last "
+"logged in::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:988
+msgid ""
+"You can create a new user with their display name, login name, and any "
+"group memberships with the ``user:add`` command. The syntax is::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:994
+msgid ""
+"The ``display-name`` corresponds to the **Full Name** on the Users page "
+"in your ownCloud Web UI, and the ``uid`` is their **Username**, which is "
+"their login name. This example adds new user Layla Smith, and adds her to"
+" the **users** and **db-admins** groups. Any groups that do not exist are"
+" created::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1008
+msgid "Go to your Users page, and you will see your new user."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1010
+msgid ""
+"``password-from-env`` allows you to set the user's password from an "
+"environment variable. This prevents the password from being exposed to "
+"all users via the process list, and will only be visible in the history "
+"of the user (root) running the command. This also permits creating "
+"scripts for adding multiple new users."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1016
+msgid ""
+"To use ``password-from-env`` you must run as \"real\" root, rather than "
+"``sudo``, because ``sudo`` strips environment variables. This example "
+"adds new user Fred Jones::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1027
+msgid ""
+"You can reset any user's password, including administrators (see "
+":doc:`../configuration_user/reset_admin_password`)::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1035
+msgid "You may also use ``password-from-env`` to reset passwords::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1042
+msgid "You can delete users::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1046
+msgid "View a user's most recent login::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1051
+msgid "Read user settings::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1061
+msgid "Filter by app::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1067
+msgid "Get a single setting::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1072
+msgid "Set a setting::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1076
+msgid "Delete a setting::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1080
+msgid ""
+"Generate a simple report that counts all users, including users on "
+"external user authentication servers such as LDAP::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1098
+msgid "Versions"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1101
+msgid ""
+"This command is only available when the \"Versions\" app "
+"(``files_versions``) is enabled."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1110
+msgid ""
+"Use ``versions:cleanup`` to delete all older file versions for specific "
+"users (keeping the most recent versions), or for all users when none are "
+"specified."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1112
+msgid ""
+"This example deletes all files versions for all users, except the most "
+"recent versions::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1123
+msgid "You can delete versions for specific users in a space-delimited list::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1129
+msgid ""
+"``versions:expire`` Deletes only expired files according to the "
+"``versions_retention_obligation`` setting in ``config.php`` (see the File"
+" versions section in :doc:`config_sample_php_parameters`). The default is"
+" to delete expired files for all users, or you may list users in a space-"
+"delimited list."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1134
+msgid "Command Line Installation"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1136
+msgid ""
+"These commands are available only after you have downloaded and unpacked "
+"the ownCloud archive, and taken no further installation steps."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1139
+msgid ""
+"You can install ownCloud entirely from the command line. After "
+"downloading the tarball and copying ownCloud into the appropriate "
+"directories, or after installing ownCloud packages (See "
+":doc:`../installation/linux_installation` and "
+":doc:`../installation/source_installation`) you can use ``occ`` commands "
+"in place of running the graphical Installation Wizard."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1146
+msgid ""
+"Apply correct permissions to your ownCloud directories; see "
+":ref:`strong_perms_label`. Then choose your ``occ`` options. This lists "
+"your available options::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1179
+msgid "Display your ``maintenance:install`` options::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1209
+msgid "This example completes the installation::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1218
+msgid "Supported databases are::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1228
+msgid "Command Line Upgrade"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1230
+msgid ""
+"These commands are available only after you have downloaded upgraded "
+"packages or tar archives, and before you complete the upgrade."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1233
+msgid "List all options, like this example on CentOS Linux::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1254
+msgid ""
+"When you are performing an update or upgrade on your ownCloud server (see"
+" the Maintenance section of this manual), it is better to use ``occ`` to "
+"perform the database upgrade step, rather than the Web GUI, in order to "
+"avoid timeouts. PHP scripts invoked from the Web interface are limited to"
+" 3600 seconds. In larger environments this may not be enough, leaving the"
+" system in an inconsistent state. After performing all the preliminary "
+"steps (see :doc:`../maintenance/upgrade`) use this command to upgrade "
+"your databases, like this example on CentOS Linux. Note how it details "
+"the steps::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1277
+msgid "Enabling verbosity displays timestamps::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1289
+msgid ""
+"If there is an error it throws an exception, and the error is detailed in"
+" your ownCloud logfile, so you can use the log output to figure out what "
+"went wrong, or to use in a bug report::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1303
+msgid ""
+"In ownCloud 9.2 the migration simulation has been removed, so the "
+"``--skip-migration-test`` and ``--dry-run`` commands are no longer "
+"available."
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1308
+msgid "Two-factor Authentication"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1309
+msgid ""
+"If a two-factor provider app is enabled, it is enabled for all users by "
+"default (though the provider can decide whether or not the user has to "
+"pass the challenge). In the case of an user losing access to the second "
+"factor (e.g. lost phone with two-factor SMS verification), the admin can "
+"temporarily disable the two-factor check for that user via the occ "
+"command::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1317
+msgid "To re-enable two-factor auth again use the following commmand::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1324
+msgid "Disable Users"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1326
+msgid "Admins can disable users via the occ command too::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1330
+msgid "Use the following command to enable the user again::"
+msgstr ""
+
+#: ../../configuration_server/occ_command.rst:1334
+msgid ""
+"Note that once users are disabled, their connected browsers will be "
+"disconnected."
+msgstr ""
+

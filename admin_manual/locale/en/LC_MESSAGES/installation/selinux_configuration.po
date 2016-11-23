@@ -1,0 +1,200 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../installation/selinux_configuration.rst:5
+msgid "SELinux Configuration"
+msgstr ""
+
+#: ../../installation/selinux_configuration.rst:7
+msgid ""
+"When you have SELinux enabled on your Linux distribution, you may run "
+"into permissions problems after a new ownCloud installation, and see "
+"``permission denied`` errors in your ownCloud logs."
+msgstr ""
+
+#: ../../installation/selinux_configuration.rst:11
+msgid "When you are testing ownCloud or troubleshooting,"
+msgstr ""
+
+#: ../../installation/selinux_configuration.rst:13
+msgid ""
+"The following settings should work for most SELinux systems that use the "
+"default distro profiles. Run these commands as root, and remember to "
+"adjust the filepaths in these examples for your installation::"
+msgstr ""
+
+#: ../../installation/selinux_configuration.rst:26
+msgid ""
+"If you uninstall ownCloud you need to remove the ownCloud directory "
+"labels. To do this execute the following commands as root after "
+"uninstalling ownCloud::"
+msgstr ""
+
+#: ../../installation/selinux_configuration.rst:38
+msgid ""
+"Note: The assets folder is only required if JavaScript and CSS Asset "
+"Management is enabled. (``asset-pipeline.enabled' => true,`` in "
+"``config.php``)"
+msgstr ""
+
+#: ../../installation/selinux_configuration.rst:40
+msgid ""
+"If you have customized SELinux policies and these examples do not work, "
+"you must give the HTTP server write access to these directories::"
+msgstr ""
+
+#: ../../installation/selinux_configuration.rst:49
+msgid "Enable updates via the web interface"
+msgstr ""
+
+#: ../../installation/selinux_configuration.rst:51
+msgid ""
+"To enable updates via the ownCloud web interface, you may need this to "
+"enable writing to the ownCloud directories::"
+msgstr ""
+
+#: ../../installation/selinux_configuration.rst:55
+msgid "When the update is completed, disable write access::"
+msgstr ""
+
+#: ../../installation/selinux_configuration.rst:60
+msgid "Disallow write access to the whole web directory"
+msgstr ""
+
+#: ../../installation/selinux_configuration.rst:62
+msgid ""
+"For security reasons it's suggested to disable write access to all "
+"folders in /var/www/ (default)::"
+msgstr ""
+
+#: ../../installation/selinux_configuration.rst:67
+msgid "Allow access to a remote database"
+msgstr ""
+
+#: ../../installation/selinux_configuration.rst:69
+msgid ""
+"An additional setting is needed if your installation is connecting to a "
+"remote database::"
+msgstr ""
+
+#: ../../installation/selinux_configuration.rst:74
+msgid "Allow access to LDAP server"
+msgstr ""
+
+#: ../../installation/selinux_configuration.rst:76
+msgid "Use this setting to allow LDAP connections::"
+msgstr ""
+
+#: ../../installation/selinux_configuration.rst:81
+msgid "Allow access to remote network"
+msgstr ""
+
+#: ../../installation/selinux_configuration.rst:83
+msgid ""
+"ownCloud requires access to remote networks for functions such as Server-"
+"to-Server sharing, external storages or the app store. To allow this "
+"access use the following setting::"
+msgstr ""
+
+#: ../../installation/selinux_configuration.rst:89
+msgid "Allow access to network memcache"
+msgstr ""
+
+#: ../../installation/selinux_configuration.rst:91
+msgid ""
+"This setting is not required if ``httpd_can_network_connect`` is already "
+"on::"
+msgstr ""
+
+#: ../../installation/selinux_configuration.rst:96
+msgid "Allow access to SMTP/sendmail"
+msgstr ""
+
+#: ../../installation/selinux_configuration.rst:98
+msgid ""
+"If you want to allow ownCloud to send out e-mail notifications via "
+"sendmail you need to use the following setting::"
+msgstr ""
+
+#: ../../installation/selinux_configuration.rst:104
+msgid "Allow access to CIFS/SMB"
+msgstr ""
+
+#: ../../installation/selinux_configuration.rst:106
+msgid ""
+"If you have placed your datadir on a CIFS/SMB share use the following "
+"setting::"
+msgstr ""
+
+#: ../../installation/selinux_configuration.rst:111
+msgid "Allow access to FuseFS"
+msgstr ""
+
+#: ../../installation/selinux_configuration.rst:113
+msgid ""
+"If your owncloud data folder resides on a Fuse Filesystem (e.g. EncFS "
+"etc), this setting is required as well::"
+msgstr ""
+
+#: ../../installation/selinux_configuration.rst:118
+msgid "Allow access to GPG for Rainloop"
+msgstr ""
+
+#: ../../installation/selinux_configuration.rst:120
+msgid ""
+"If you use a the rainloop webmail client app which supports GPG/PGP, you "
+"might need this::"
+msgstr ""
+
+#: ../../installation/selinux_configuration.rst:125
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../installation/selinux_configuration.rst:127
+msgid ""
+"For general Troubleshooting of SELinux and its profiles try to install "
+"the package ``setroubleshoot`` and run::"
+msgstr ""
+
+#: ../../installation/selinux_configuration.rst:131
+msgid "to get a report which helps you configuring your SELinux profiles."
+msgstr ""
+
+#: ../../installation/selinux_configuration.rst:133
+msgid ""
+"Another tool for troubleshooting is to enable a single ruleset for your "
+"ownCloud directory::"
+msgstr ""
+
+#: ../../installation/selinux_configuration.rst:138
+msgid ""
+"It is much stronger security to have a more fine-grained ruleset as in "
+"the examples at the beginning, so use this only for testing and "
+"troubleshooting. It has a similar effect to disabling SELinux, so don't "
+"use it on production systems."
+msgstr ""
+
+#: ../../installation/selinux_configuration.rst:140
+msgid ""
+"See this `discussion on GitHub "
+"<https://github.com/owncloud/documentation/pull/2693>`_ to learn more "
+"about configuring SELinux correctly for ownCloud."
+msgstr ""
+

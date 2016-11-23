@@ -1,0 +1,211 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../configuration_files/federated_cloud_sharing_configuration.rst:3
+msgid "Configuring Federation Sharing"
+msgstr ""
+
+#: ../../configuration_files/federated_cloud_sharing_configuration.rst:5
+msgid ""
+"Federated Cloud Sharing is now managed by the Federation app (9.0+), and "
+"is now called Federation sharing. When you enable the Federation app you "
+"can easily and securely link file shares between ownCloud servers, in "
+"effect creating a cloud of ownClouds."
+msgstr ""
+
+#: ../../configuration_files/federated_cloud_sharing_configuration.rst:11
+msgid "Sharing With ownCloud 8 and Older"
+msgstr ""
+
+#: ../../configuration_files/federated_cloud_sharing_configuration.rst:13
+msgid ""
+"Direct Federation shares (:ref:`label-direct-share-link`) are not "
+"supported in ownCloud 8 and older, so you must create Federation shares "
+"with public links (:ref:`label-public-link-share`)."
+msgstr ""
+
+#: ../../configuration_files/federated_cloud_sharing_configuration.rst:20
+msgid "Creating a new Federation Share (9.0+ only)"
+msgstr ""
+
+#: ../../configuration_files/federated_cloud_sharing_configuration.rst:22
+msgid ""
+"Follow these steps to create a new Federation share between two ownCloud "
+"9.0+ servers. This requires no action by the user on the remote server; "
+"all it takes is a few steps on the originating server."
+msgstr ""
+
+#: ../../configuration_files/federated_cloud_sharing_configuration.rst:26
+msgid "Enable the Federation app."
+msgstr ""
+
+#: ../../configuration_files/federated_cloud_sharing_configuration.rst:28
+msgid ""
+"Go to your ownCloud Admin page and scroll to the Sharing section. Verify "
+"that **Allow users on this server to send shares to other servers** and "
+"**Allow users on this server to receive shares from other servers** are "
+"enabled."
+msgstr ""
+
+#: ../../configuration_files/federated_cloud_sharing_configuration.rst:33
+msgid ""
+"Now go to the Federation section. By default, **Add server automatically "
+"once a federated share was created successfully** is checked. The "
+"Federation app supports creating a list of trusted ownCloud servers, "
+"which allows the trusted servers to exchange user directories and auto-"
+"complete the names of external users when you create shares. If you do "
+"not want this enabled, then un-check it."
+msgstr ""
+
+#: ../../configuration_files/federated_cloud_sharing_configuration.rst:42
+msgid ""
+"Now go to your Files page and select a folder to share. Click the share "
+"icon, and then enter the username and URL of the user on the remote "
+"ownCloud server. In this example, that is "
+"``freda@https://example.com/owncloud``. When ownCloud verifies the link, "
+"it displays it with the **(remote)** label. Click on this label to "
+"establish the link."
+msgstr ""
+
+#: ../../configuration_files/federated_cloud_sharing_configuration.rst:50
+msgid ""
+"When the link is successfully completed, you have a single share option, "
+"and that is **can edit**."
+msgstr ""
+
+#: ../../configuration_files/federated_cloud_sharing_configuration.rst:55
+msgid "You may disconnect the share at any time by clicking the trash can icon."
+msgstr ""
+
+#: ../../configuration_files/federated_cloud_sharing_configuration.rst:58
+msgid "Configuring Trusted ownCloud Servers"
+msgstr ""
+
+#: ../../configuration_files/federated_cloud_sharing_configuration.rst:60
+msgid ""
+"You may create a list of trusted ownCloud servers for Federation sharing."
+" This allows your linked ownCloud servers to share user directories, and "
+"to auto-fill user names in share dialogs. If **Add server automatically "
+"once a federated share was created successfully** is enabled on your "
+"Admin page, servers will be automatically added to your trusted list when"
+" you create new Federation shares."
+msgstr ""
+
+#: ../../configuration_files/federated_cloud_sharing_configuration.rst:66
+msgid ""
+"You may also enter ownCloud server URLs in the **Add ownCloud Server** "
+"field. The yellow light indicates a successful connection, with no user "
+"names exchanged. The green light indicates a successful connection with "
+"user names exchanged. A red light means the connection failed."
+msgstr ""
+
+#: ../../configuration_files/federated_cloud_sharing_configuration.rst:76
+msgid "Creating Federation Shares via Public Link Share"
+msgstr ""
+
+#: ../../configuration_files/federated_cloud_sharing_configuration.rst:78
+msgid ""
+"You'll need to use a Public Link Share to create Federation shares with "
+"ownCloud 8.x and older."
+msgstr ""
+
+#: ../../configuration_files/federated_cloud_sharing_configuration.rst:81
+msgid ""
+"Check the ``Share Link`` checkbox to expose more sharing options (which "
+"are described more fully in :doc:`file_sharing_configuration`). You may "
+"create a Federation share by allowing ownCloud to create a public link "
+"for you, and then email it to the person you want to create the share "
+"with."
+msgstr ""
+
+#: ../../configuration_files/federated_cloud_sharing_configuration.rst:88
+msgid ""
+"You may optionally set a password and expiration date on it. When your "
+"recipient receives your email they must click the link, or copy it to a "
+"Web browser. They will see a page displaying a thumbnail of the file, "
+"with a button to **Add to your ownCloud**."
+msgstr ""
+
+#: ../../configuration_files/federated_cloud_sharing_configuration.rst:95
+msgid ""
+"Your recipient should click the **Add to your ownCloud** button. On the "
+"next screen your recipient needs to enter the URL to their ownCloud "
+"server, and then press the return key."
+msgstr ""
+
+#: ../../configuration_files/federated_cloud_sharing_configuration.rst:101
+msgid ""
+"Your recipient has to take one more step, and that is to confirm creating"
+" the federated cloud share link by clicking the **Add remote share** "
+"button."
+msgstr ""
+
+#: ../../configuration_files/federated_cloud_sharing_configuration.rst:106
+msgid ""
+"Un-check the ``Share Link`` checkbox to disable any federated cloud share"
+" created this way."
+msgstr ""
+
+#: ../../configuration_files/federated_cloud_sharing_configuration.rst:110
+msgid "Configuration Tips"
+msgstr ""
+
+#: ../../configuration_files/federated_cloud_sharing_configuration.rst:112
+msgid ""
+"The Sharing section on your Admin page allows you to control how your "
+"users manage federated cloud shares:"
+msgstr ""
+
+#: ../../configuration_files/federated_cloud_sharing_configuration.rst:115
+msgid "Check ``Enforce password protection`` to require passwords on link shares."
+msgstr ""
+
+#: ../../configuration_files/federated_cloud_sharing_configuration.rst:116
+msgid ""
+"Check ``Set default expiration date`` to require an expiration date on "
+"link shares."
+msgstr ""
+
+#: ../../configuration_files/federated_cloud_sharing_configuration.rst:118
+msgid "Check ``Allow public uploads`` to allow two-way file sharing."
+msgstr ""
+
+#: ../../configuration_files/federated_cloud_sharing_configuration.rst:120
+msgid ""
+"Your Apache Web server must have ``mod_rewrite`` enabled, and you must "
+"have ``trusted_domains`` correctly configured in ``config.php`` to allow "
+"external connections (see :doc:`../installation/installation_wizard`). "
+"Consider also enabling SSL to encrypt all traffic between your servers ."
+msgstr ""
+
+#: ../../configuration_files/federated_cloud_sharing_configuration.rst:125
+msgid ""
+"Your ownCloud server creates the share link from the URL that you used to"
+" log into the server, so make sure that you log into your server using a "
+"URL that is accessible to your users. For example, if you log in via its "
+"LAN IP address, such as ``http://192.168.10.50``, then your share URL "
+"will be something like "
+"``http://192.168.10.50/owncloud/index.php/s/jWfCfTVztGlWTJe``, which is "
+"not accessible outside of your LAN. This also applies to using the server"
+" name; for access outside of your LAN you need to use a fully-qualified "
+"domain name such as ``http://myserver.example.com``, rather than "
+"``http://myserver``."
+msgstr ""
+

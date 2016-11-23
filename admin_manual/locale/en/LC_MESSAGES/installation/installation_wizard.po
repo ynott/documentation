@@ -1,0 +1,465 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../installation/installation_wizard.rst:3
+msgid "Installation Wizard"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:6
+msgid "Quick Start"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:8
+msgid ""
+"When ownCloud prerequisites are fulfilled and all ownCloud files are "
+"installed, the last step to completing the installation is running the "
+"Installation Wizard. This is just three steps:"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:13
+msgid "Point your Web browser to ``http://localhost/owncloud``"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:14
+msgid "Enter your desired administrator's username and password."
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:15
+msgid "Click **Finish Setup**."
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:21
+msgid "You're finished and can start using your new ownCloud server."
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:23
+msgid ""
+"Of course, there is much more that you can do to set up your ownCloud "
+"server for best performance and security. In the following sections we "
+"will cover important installation and post-installation steps. Note that "
+"you must follow the instructions in :ref:`Setting Strong Permissions "
+"<strong_perms_label>` in order to use the :doc:`occ Command "
+"<../configuration_server/occ_command>`."
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:29
+msgid ":ref:`Data Directory Location <data_directory_location_label>`"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:30
+msgid ":ref:`Database Choice <database_choice_label>`"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:31
+msgid ":ref:`Trusted Domains <trusted_domains_label>`"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:32
+msgid ":ref:`Setting Strong Permissions <strong_perms_label>`"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:37
+msgid "Data Directory Location"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:39
+msgid ""
+"Click **Storage and Database** to expose additional installation "
+"configuration options for your ownCloud data directory and database."
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:46
+msgid ""
+"You should locate your ownCloud data directory outside of your Web root "
+"if you are using an HTTP server other than Apache, or you may wish to "
+"store your ownCloud data in a different location for other reasons (e.g. "
+"on a storage server). It is best to configure your data directory "
+"location at installation, as it is difficult to move after installation. "
+"You may put it anywhere; in this example is it located in "
+"``/var/oc_data``. This directory must already exist, and must be owned by"
+" your HTTP user (see :ref:`strong_perms_label`)."
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:58
+msgid "Database Choice"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:60
+msgid ""
+"When installing ownCloud Server & ownCloud Enterprise editions the "
+"administrator may choose one of 3 supported database products."
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:64
+msgid "SQLite"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:65
+msgid ""
+"Is the default database for ownCloud Server, but is not available and not"
+" supported for the ownCloud Enterprise edition."
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:68
+msgid ""
+"SQLite will be installed by the ownCloud packages and all the necessary "
+"dependencies will be satisfied.  See see :doc:`source_installation` for a"
+" detailed listing of required and optional PHP modules."
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:72
+msgid ""
+"If you used the packages to install ownCloud, you may \"Finish Setup\" "
+"with no additional steps to configure ownCloud using the SQLite database "
+"for limited use."
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:75
+msgid ""
+"Please note that SQLite is good only for testing and lightweight single "
+"user setups. There is no client synchronization support.  Therefore, "
+"other devices will not be able to synchronize with the data stored in an "
+"ownCloud SQLite database."
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:80
+msgid "MYSQL/MariaDB"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:81
+msgid ""
+"Is the ownCloud recommended database. See :doc:`MySQL/MariaDB "
+"<system_requirements>`. It may be used with either ownCloud Server or "
+"ownCloud Enterprise editions."
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:85
+msgid ""
+"First you should install the recommended MySQL/MariaDB database.  Use "
+"package:"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:85
+msgid "``sudo apt-get install mariadb-server``"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:87
+msgid ""
+"If you have an administrator login that has permissions to create and "
+"modify databases, you may choose \"Storage & Database\".  Then enter your"
+" database administrator name, password and any name you want for your "
+"ownCloud database."
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:91
+msgid ""
+"Otherwise, use these steps to create temporary database administrator "
+"account."
+msgstr ""
+
+#: ../../installation/installation_wizard.rst
+msgid "``sudo mysql --user=root mysql``"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst
+msgid "``CREATE USER 'dbadmin'@'localhost' IDENTIFIED BY 'Apassword';``"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst
+msgid ""
+"``GRANT ALL PRIVILEGES ON *.* TO 'dbadmin'@'localhost' WITH GRANT "
+"OPTION;``"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst
+msgid "``FLUSH PRIVILEGES;``"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst
+msgid "``exit``"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:102
+msgid "PostgreSQL"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:103
+msgid "Is also supported by ownCloud."
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:106
+msgid "To install PostgreSQL, use the apt-get (or other apt-driving) command:"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:106
+msgid "``sudo apt-get install postgresql``"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:109
+msgid "You may view more information about the PostgreSQL database system at:"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:109
+msgid "``http://www.postgresql.org``"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:111
+msgid ""
+"In order to allow ownCloud access to the database, create a known "
+"password for the default user \"postgres\" added when the database is "
+"installed."
+msgstr ""
+
+#: ../../installation/installation_wizard.rst
+msgid "``sudo -i -u postgres psql``"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst
+msgid "``postgres=# \\password``"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst
+msgid "``Enter new password:``"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst
+msgid "``Enter it again:``"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst
+msgid "``postgres=# \\q``"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:124
+msgid "Oracle11g"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:125
+msgid "Is only supported for the ownCloud Enterprise edition."
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:129
+msgid "Database Setup By ownCloud"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:130
+msgid ""
+"Your database and PHP connectors must be installed before you run the "
+"Installation Wizard by clicking the \"Finish setup\" button."
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:133
+msgid ""
+"After you enter your temporary or root administrator login for your "
+"database, the installer creates a special database user with privileges "
+"limited to the ownCloud database. Then ownCloud needs only this special "
+"ownCloud database user and drops the temporary or root database login."
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:137
+msgid ""
+"This new user is named from your ownCloud admin user, with an oc_ prefix,"
+" and then given a random password.  The ownCloud database user and "
+"password are written into config.ph:"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:140
+msgid "For MySQL/MariaDB:"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:141
+msgid "``'dbuser' => 'oc_dbadmin',``"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:142
+#: ../../installation/installation_wizard.rst:146
+msgid "``'dbpassword' => 'pX65Ty5DrHQkYPE5HRsDvyFHlZZHcm',``"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:144
+msgid "For PostgreSQL:"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:145
+msgid "``'dbuser' => 'oc_postgres',``"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:149
+msgid "Click Finish Setup, and start using your new ownCloud server."
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:155
+msgid "Now we will look at some important post-installation steps."
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:160
+msgid "Trusted Domains"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:162
+msgid ""
+"All URLs used to access your ownCloud server must be whitelisted in your "
+"``config.php`` file, under the ``trusted_domains`` setting. Users are "
+"allowed to log into ownCloud only when they point their browsers to a URL"
+" that is listed in the ``trusted_domains`` setting. You may use IP "
+"addresses and domain names. A typical configuration looks like this::"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:175
+msgid ""
+"The loopback address, ``127.0.0.1``, is automatically whitelisted, so as "
+"long as you have access to the physical server you can always log in. In "
+"the event that a load balancer is in place there will be no issues as "
+"long as it sends the correct X-Forwarded-Host header. When a user tries a"
+" URL that is not whitelisted the following error appears:"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:188
+msgid "Setting Strong Directory Permissions"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:190
+msgid ""
+"For hardened security we recommend setting the permissions on your "
+"ownCloud directories as strictly as possible, and for proper server "
+"operations. This should be done immediately after the initial "
+"installation and before running the setup. Your HTTP user must own the "
+"``config/``, ``data/`` and ``apps/`` directories so that you can "
+"configure ownCloud, create, modify and delete your data files, and "
+"install apps via the ownCloud Web interface."
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:197
+msgid ""
+"You can find your HTTP user in your HTTP server configuration files. Or "
+"you can use :ref:`label-phpinfo` (Look for the **User/Group** line)."
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:200
+msgid "The HTTP user and group in Debian/Ubuntu is ``www-data``."
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:201
+msgid "The HTTP user and group in Fedora/CentOS is ``apache``."
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:202
+msgid "The HTTP user and group in Arch Linux is ``http``."
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:203
+msgid "The HTTP user in openSUSE is ``wwwrun``, and the HTTP group is ``www``."
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:205
+msgid ""
+"When using an NFS mount for the data directory, do not change its "
+"ownership from the default. The simple act of mounting the drive will set"
+" proper permissions for ownCloud to write to the directory. Changing "
+"ownership as above could result in some issues if the NFS mount is lost."
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:211
+msgid ""
+"The easy way to set the correct permissions is to copy and run this "
+"script. Replace the ``ocpath`` variable with the path to your ownCloud "
+"directory, and replace the ``htuser`` and ``htgroup`` variables with your"
+" HTTP user and group::"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:253
+msgid ""
+"If you have customized your ownCloud installation and your filepaths are "
+"different than the standard installation, then modify this script "
+"accordingly."
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:256
+msgid ""
+"This lists the recommended modes and ownership for your ownCloud "
+"directories and files:"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:259
+msgid ""
+"All files should be read-write for the file owner, read-only for the "
+"group owner, and zero for the world"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:261
+msgid ""
+"All directories should be executable (because directories always need the"
+" executable bit set), read-write for the directory owner, and read-only "
+"for the group owner"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:264
+msgid ""
+"The :file:`apps/` directory should be owned by ``[HTTP user]:[HTTP "
+"group]``"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:265
+msgid ""
+"The :file:`config/` directory should be owned by ``[HTTP user]:[HTTP "
+"group]``"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:266
+msgid ""
+"The :file:`themes/` directory should be owned by ``[HTTP user]:[HTTP "
+"group]``"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:267
+msgid ""
+"The :file:`assets/` directory should be owned by ``[HTTP user]:[HTTP "
+"group]``"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:268
+msgid ""
+"The :file:`data/` directory should be owned by ``[HTTP user]:[HTTP "
+"group]``"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:269
+msgid ""
+"The :file:`[ocpath]/.htaccess` file should be owned by ``root:[HTTP "
+"group]``"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:270
+msgid "The :file:`data/.htaccess` file should be owned by ``root:[HTTP group]``"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:271
+msgid ""
+"Both :file:`.htaccess` files are read-write file owner, read-only group "
+"and world"
+msgstr ""
+
+#: ../../installation/installation_wizard.rst:274
+msgid ""
+"These strong permissions prevent upgrading your ownCloud server; see "
+":ref:`set_updating_permissions_label` for a script to quickly change "
+"permissions to allow upgrading."
+msgstr ""
+

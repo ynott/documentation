@@ -1,0 +1,254 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../configuration_server/security_setup_warnings.rst:3
+msgid "Warnings on Admin Page"
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:5
+msgid ""
+"Your ownCloud server has a built-in configuration checker, and it reports"
+" its findings at the top of your Admin page. These are some of the "
+"warnings you might see, and what to do about them."
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:12
+msgid "Cache Warnings"
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:14
+msgid ""
+"\"No memory cache has been configured. To enhance your performance please"
+" configure a memcache if available.\" ownCloud supports multiple php "
+"caching extentions:"
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:18
+msgid "APCu"
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:19
+msgid "Memcached"
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:20
+msgid "Redis (minimum required PHP extension version: 2.2.6)"
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:22
+msgid ""
+"You will see this warning if you have no caches installed and enabled, or"
+" if your cache does not have the required minimum version installed; "
+"older versions are disabled because of performance problems."
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:26
+msgid ""
+"If you see \"*{Cache}* below version *{Version}* is installed. for "
+"stability and performance reasons we recommend to update to a newer "
+"*{Cache}* version\" then you need to upgrade, or, if you're not using it,"
+" remove it."
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:30
+msgid ""
+"You are not required to use any caches, but caches improve server "
+"performance. See :doc:`caching_configuration`."
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:34
+msgid "Transactional file locking is disabled"
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:36
+msgid ""
+"\"Transactional file locking is disabled, this might lead to issues with "
+"race conditions.\""
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:39
+msgid ""
+"Please see :doc:`../configuration_files/files_locking_transactional` on "
+"how to correctly configure your environment for transactional file "
+"locking."
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:43
+msgid "You are accessing this site via HTTP"
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:45
+msgid ""
+"\"You are accessing this site via HTTP. We strongly suggest you configure"
+" your server to require using HTTPS instead.\" Please take this warning "
+"seriously; using HTTPS is a fundamental security measure. You must "
+"configure your Web server to support it, and then there are some settings"
+" in the **Security** section of your ownCloud Admin page to enable. The "
+"following pages describe how to enable HTTPS on the Apache and Nginx Web "
+"servers."
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:52
+msgid ":ref:`enabling_ssl_label` (on Apache)"
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:54
+msgid ":ref:`use_https_label`"
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:56
+msgid ":doc:`../installation/nginx_examples`"
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:59
+msgid "The test with getenv(\\\"PATH\\\") only returns an empty response"
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:61
+msgid ""
+"Some environments are not passing a valid PATH variable to ownCloud. The "
+":ref:`php_fpm_tips_label` provides the information about how to configure"
+" your environment."
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:66
+msgid "The \"Strict-Transport-Security\" HTTP header is not configured"
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:68
+msgid ""
+"\"The \"Strict-Transport-Security\" HTTP header is not configured to "
+"least \"15552000\" seconds. For enhanced security we recommend enabling "
+"HSTS as described in our security tips.\""
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:71
+msgid ""
+"The HSTS header needs to be configured within your Web server by "
+"following the :ref:`enable-hsts-label` documentation"
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:75
+msgid "/dev/urandom is not readable by PHP"
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:77
+msgid ""
+"\"/dev/urandom is not readable by PHP which is highly discouraged for "
+"security reasons. Further information can be found in our "
+"documentation.\""
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:80
+msgid ""
+"This message is another one which needs to be taken seriously. Please "
+"have a look at the :ref:`dev-urandom-label` documentation."
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:84
+msgid "Your Web server is not yet set up properly to allow file synchronization"
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:86
+msgid ""
+"\"Your web server is not yet set up properly to allow file "
+"synchronization because the WebDAV interface seems to be broken.\""
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:89
+msgid ""
+"At the ownCloud community forums a larger `FAQ "
+"<https://central.owncloud.org/t/how-to-fix-caldav-carddav-webdav-"
+"problems/852>`_ is maintained containing various information and "
+"debugging hints."
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:93
+msgid "Outdated NSS / OpenSSL version"
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:95
+msgid ""
+"\"cURL is using an outdated OpenSSL version (OpenSSL/$version). Please "
+"update your operating system or features such as installing and updating "
+"apps via the app store or Federated Cloud Sharing will not work "
+"reliably.\""
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:99
+msgid ""
+"\"cURL is using an outdated NSS version (NSS/$version). Please update "
+"your operating system or features such as installing and updating apps "
+"via the app store or Federated Cloud Sharing will not work reliably.\""
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:103
+msgid ""
+"There are known bugs in older OpenSSL and NSS versions leading to "
+"misbehaviour in combination with remote hosts using SNI. A technology "
+"used by most of the HTTPS websites. To ensure that ownCloud will work "
+"properly you need to update OpenSSL to at least 1.0.2b or 1.0.1d. For NSS"
+" the patch version depends on your distribution and an heuristic is "
+"running the test which actually reproduces the bug. There are "
+"distributions such as RHEL/CentOS which have this backport still `pending"
+" <https://bugzilla.redhat.com/show_bug.cgi?id=1241172>`_."
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:112
+msgid ""
+"Your Web server is not set up properly to resolve /.well-known/caldav/ or"
+" /.well-known/carddav/"
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:114
+msgid ""
+"Both URLs need to be correctly redirected to the DAV endpoint of "
+"ownCloud. Please refer to :ref:`service-discovery-label` for more info."
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:118
+msgid "Some files have not passed the integrity check"
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:120
+msgid ""
+"Please refer to the :ref:`code_signing_fix_warning_label` documentation "
+"how to debug this issue."
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:123
+msgid ""
+"Your database does not run with \"READ COMMITED\" transaction isolation "
+"level"
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:125
+msgid ""
+"\"Your database does not run with \"READ COMMITED\" transaction isolation"
+" level. This can cause problems when multiple actions are executed in "
+"parallel.\""
+msgstr ""
+
+#: ../../configuration_server/security_setup_warnings.rst:128
+msgid ""
+"Please refer to :ref:`db-transaction-label` how to configure your "
+"database for this requirement."
+msgstr ""
+

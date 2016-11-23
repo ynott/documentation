@@ -1,0 +1,147 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../configuration_files/external_storage/google.rst:3
+msgid "Google Drive"
+msgstr ""
+
+#: ../../configuration_files/external_storage/google.rst:5
+msgid ""
+"ownCloud uses OAuth 2.0 to connect to Google Drive. This requires "
+"configuration through Google to get an app ID and app secret, as ownCloud"
+" registers itself as an app."
+msgstr ""
+
+#: ../../configuration_files/external_storage/google.rst:9
+msgid ""
+"All applications that access a Google API must be registered through the "
+"`Google Cloud Console <https://console.developers.google.com/>`_. Follow "
+"along carefully because the Google interface is a bit of a maze and it's "
+"easy to get lost."
+msgstr ""
+
+#: ../../configuration_files/external_storage/google.rst:13
+msgid ""
+"If you already have a Google account, such as Groups, Drive, or Mail, you"
+" can use your existing login to log into the Google Cloud Console. After "
+"logging in click  the **Create Project** button."
+msgstr ""
+
+#: ../../configuration_files/external_storage/google.rst:20
+msgid ""
+"Give your project a name, and either accept the default **Project ID** or"
+" create your own, then click the **Create** button."
+msgstr ""
+
+#: ../../configuration_files/external_storage/google.rst:27
+msgid "You'll be returned to your dashboard."
+msgstr ""
+
+#: ../../configuration_files/external_storage/google.rst:33
+msgid ""
+"Google helpfully highlights your next step in blue, the **Use Google "
+"APIs** box. Make sure that your new project is selected, click on **Use "
+"Google APIs** , and it takes you to Google's APIs screen. There are many "
+"Google APIs; look for the **Google Apps APIs** and click **Drive API.**"
+msgstr ""
+
+#: ../../configuration_files/external_storage/google.rst:41
+msgid ""
+"**Drive API** takes you to the API Manager overview. Click the blue "
+"**Enable API** button."
+msgstr ""
+
+#: ../../configuration_files/external_storage/google.rst:47
+msgid "Now you must create your credentials, so click on **Go to credentials**."
+msgstr ""
+
+#: ../../configuration_files/external_storage/google.rst:52
+msgid ""
+"For some reason Google warns us again that we need to create credentials."
+" We will use 0Auth 2.0."
+msgstr ""
+
+#: ../../configuration_files/external_storage/google.rst:58
+msgid ""
+"Now we have to create a consent screen. This is the information in the "
+"screen Google shows you when you connect your new Google app to ownCloud "
+"the first time. Click **Configure consent screen**. Then fill in the "
+"required form fields. Your logo must be hosted, as you cannot upload it, "
+"so enter its URL. When you're finished click **Save**."
+msgstr ""
+
+#: ../../configuration_files/external_storage/google.rst:67
+msgid ""
+"The next screen that opens is **Create Client ID**. Check **Web "
+"Application**, then enter your app name. **Authorized JavaScript "
+"Origins** is your root domain, for example ``https://example.com``, "
+"without a trailing slash. You need two **Authorized Redirect URIs**, and "
+"they must be in this form::"
+msgstr ""
+
+#: ../../configuration_files/external_storage/google.rst:75
+msgid ""
+"Replace ``https://example.com/owncloud/`` with your own ownCloud server "
+"URL, then click **Create**."
+msgstr ""
+
+#: ../../configuration_files/external_storage/google.rst:81
+msgid ""
+"Now Google reveals to you your **Client ID** and **Client Secret**. Click"
+" **OK**."
+msgstr ""
+
+#: ../../configuration_files/external_storage/google.rst:87
+msgid ""
+"You can see these anytime in your Google console; just click on your app "
+"name to see complete information."
+msgstr ""
+
+#: ../../configuration_files/external_storage/google.rst:93
+msgid "Now you have everything you need to mount your Google Drive in ownCloud."
+msgstr ""
+
+#: ../../configuration_files/external_storage/google.rst:95
+msgid ""
+"Go to the External Storage section of your Admin page, create your new "
+"folder name, enter the Client ID and Client Secret, and click **Grant "
+"Access**. Your consent page appears when ownCloud makes a successful "
+"connection. Click **Allow**."
+msgstr ""
+
+#: ../../configuration_files/external_storage/google.rst:103
+msgid ""
+"When you see the green light confirming a successful connection you're "
+"finished."
+msgstr ""
+
+#: ../../configuration_files/external_storage/google.rst:109
+msgid ""
+"See :doc:`../external_storage_configuration_gui` for additional mount "
+"options and information."
+msgstr ""
+
+#: ../../configuration_files/external_storage/google.rst:112
+msgid ""
+"See :doc:`auth_mechanisms` for more information on authentication "
+"schemes. "
+"603026686136-qnv9ooocacrkrh1vs0cht83eprgm2sbb.apps.googleusercontent.com"
+msgstr ""
+

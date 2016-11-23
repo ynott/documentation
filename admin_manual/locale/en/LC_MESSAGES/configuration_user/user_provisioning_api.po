@@ -1,0 +1,787 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../configuration_user/user_provisioning_api.rst:3
+msgid "User Provisioning API"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:5
+msgid ""
+"The Provisioning API application enables a set of APIs that external "
+"systems can use to create, edit, delete and query user attributes, query,"
+" set and remove groups, set quota and query total storage used in "
+"ownCloud. Group admin users can also query ownCloud and perform the same "
+"functions as an admin for groups they manage. The API also enables an "
+"admin to query for active ownCloud applications, application info, and to"
+" enable or disable an app remotely. HTTP requests can be used via a Basic"
+" Auth header to perform any of the functions listed above. The "
+"Provisioning API app is enabled by default."
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:14
+msgid ""
+"The base URL for all calls to the share API is "
+"**owncloud_base_url/ocs/v1.php/cloud**."
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:17
+msgid "Instruction Set For Users"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:20
+msgid "**users / adduser**"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:22
+msgid ""
+"Create a new user on the ownCloud server. Authentication is done by "
+"sending a basic HTTP authentication header."
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:25
+#: ../../configuration_user/user_provisioning_api.rst:66
+msgid "**Syntax: ocs/v1.php/cloud/users**"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:27
+#: ../../configuration_user/user_provisioning_api.rst:265
+#: ../../configuration_user/user_provisioning_api.rst:348
+#: ../../configuration_user/user_provisioning_api.rst:514
+#: ../../configuration_user/user_provisioning_api.rst:766
+msgid "HTTP method: POST"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:28
+msgid "POST argument: userid - string, the required username for the new user"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:29
+msgid "POST argument: password - string, the required password for the new user"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:31
+#: ../../configuration_user/user_provisioning_api.rst:73
+#: ../../configuration_user/user_provisioning_api.rst:111
+#: ../../configuration_user/user_provisioning_api.rst:152
+#: ../../configuration_user/user_provisioning_api.rst:228
+#: ../../configuration_user/user_provisioning_api.rst:268
+#: ../../configuration_user/user_provisioning_api.rst:309
+#: ../../configuration_user/user_provisioning_api.rst:352
+#: ../../configuration_user/user_provisioning_api.rst:393
+#: ../../configuration_user/user_provisioning_api.rst:432
+#: ../../configuration_user/user_provisioning_api.rst:478
+#: ../../configuration_user/user_provisioning_api.rst:517
+#: ../../configuration_user/user_provisioning_api.rst:555
+#: ../../configuration_user/user_provisioning_api.rst:593
+#: ../../configuration_user/user_provisioning_api.rst:633
+#: ../../configuration_user/user_provisioning_api.rst:674
+#: ../../configuration_user/user_provisioning_api.rst:714
+#: ../../configuration_user/user_provisioning_api.rst:768
+#: ../../configuration_user/user_provisioning_api.rst:802
+msgid "Status codes:"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:33
+#: ../../configuration_user/user_provisioning_api.rst:75
+#: ../../configuration_user/user_provisioning_api.rst:113
+#: ../../configuration_user/user_provisioning_api.rst:154
+#: ../../configuration_user/user_provisioning_api.rst:195
+#: ../../configuration_user/user_provisioning_api.rst:230
+#: ../../configuration_user/user_provisioning_api.rst:270
+#: ../../configuration_user/user_provisioning_api.rst:311
+#: ../../configuration_user/user_provisioning_api.rst:354
+#: ../../configuration_user/user_provisioning_api.rst:395
+#: ../../configuration_user/user_provisioning_api.rst:434
+#: ../../configuration_user/user_provisioning_api.rst:480
+#: ../../configuration_user/user_provisioning_api.rst:519
+#: ../../configuration_user/user_provisioning_api.rst:557
+#: ../../configuration_user/user_provisioning_api.rst:595
+#: ../../configuration_user/user_provisioning_api.rst:635
+#: ../../configuration_user/user_provisioning_api.rst:676
+#: ../../configuration_user/user_provisioning_api.rst:716
+#: ../../configuration_user/user_provisioning_api.rst:770
+#: ../../configuration_user/user_provisioning_api.rst:804
+msgid "100 - successful"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:34
+#: ../../configuration_user/user_provisioning_api.rst:520
+#: ../../configuration_user/user_provisioning_api.rst:677
+msgid "101 - invalid input data"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:35
+msgid "102 - username already exists"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:36
+msgid "103 - unknown error occurred whilst adding the user"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:39
+#: ../../configuration_user/user_provisioning_api.rst:78
+#: ../../configuration_user/user_provisioning_api.rst:116
+#: ../../configuration_user/user_provisioning_api.rst:199
+#: ../../configuration_user/user_provisioning_api.rst:233
+#: ../../configuration_user/user_provisioning_api.rst:278
+#: ../../configuration_user/user_provisioning_api.rst:319
+#: ../../configuration_user/user_provisioning_api.rst:360
+#: ../../configuration_user/user_provisioning_api.rst:401
+#: ../../configuration_user/user_provisioning_api.rst:439
+#: ../../configuration_user/user_provisioning_api.rst:483
+#: ../../configuration_user/user_provisioning_api.rst:525
+#: ../../configuration_user/user_provisioning_api.rst:560
+#: ../../configuration_user/user_provisioning_api.rst:600
+#: ../../configuration_user/user_provisioning_api.rst:640
+#: ../../configuration_user/user_provisioning_api.rst:680
+#: ../../configuration_user/user_provisioning_api.rst:719
+#: ../../configuration_user/user_provisioning_api.rst:773
+#: ../../configuration_user/user_provisioning_api.rst:807
+msgid "Example"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:41
+msgid ""
+"POST ``http://admin:secret@example.com/ocs/v1.php/cloud/users -d "
+"userid=\"Frank\" -d password=\"frankspassword\"``"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:43
+msgid "Creates the user ``Frank`` with password ``frankspassword``"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:46
+#: ../../configuration_user/user_provisioning_api.rst:84
+#: ../../configuration_user/user_provisioning_api.rst:122
+#: ../../configuration_user/user_provisioning_api.rst:170
+#: ../../configuration_user/user_provisioning_api.rst:205
+#: ../../configuration_user/user_provisioning_api.rst:239
+#: ../../configuration_user/user_provisioning_api.rst:285
+#: ../../configuration_user/user_provisioning_api.rst:327
+#: ../../configuration_user/user_provisioning_api.rst:368
+#: ../../configuration_user/user_provisioning_api.rst:409
+#: ../../configuration_user/user_provisioning_api.rst:446
+#: ../../configuration_user/user_provisioning_api.rst:489
+#: ../../configuration_user/user_provisioning_api.rst:532
+#: ../../configuration_user/user_provisioning_api.rst:566
+#: ../../configuration_user/user_provisioning_api.rst:607
+#: ../../configuration_user/user_provisioning_api.rst:646
+#: ../../configuration_user/user_provisioning_api.rst:686
+#: ../../configuration_user/user_provisioning_api.rst:725
+#: ../../configuration_user/user_provisioning_api.rst:779
+#: ../../configuration_user/user_provisioning_api.rst:813
+msgid "XML Output"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:61
+msgid "**users / getusers**"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:63
+msgid ""
+"Retrieves a list of users from the ownCloud server. Authentication is "
+"done by sending a Basic HTTP Authorization header."
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:68
+#: ../../configuration_user/user_provisioning_api.rst:109
+#: ../../configuration_user/user_provisioning_api.rst:226
+#: ../../configuration_user/user_provisioning_api.rst:430
+#: ../../configuration_user/user_provisioning_api.rst:473
+#: ../../configuration_user/user_provisioning_api.rst:553
+#: ../../configuration_user/user_provisioning_api.rst:591
+#: ../../configuration_user/user_provisioning_api.rst:671
+#: ../../configuration_user/user_provisioning_api.rst:712
+msgid "HTTP method: GET"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:69
+#: ../../configuration_user/user_provisioning_api.rst:474
+msgid "url arguments: search - string, optional search string"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:70
+#: ../../configuration_user/user_provisioning_api.rst:475
+msgid "url arguments: limit - int, optional limit value"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:71
+#: ../../configuration_user/user_provisioning_api.rst:476
+msgid "url arguments: offset - int, optional offset value"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:80
+msgid ""
+"GET "
+"``http://admin:secret@example.com/ocs/v1.php/cloud/users?search=Frank``"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:81
+msgid "Returns list of users matching the search string."
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:102
+msgid "**users / getuser**"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:104
+msgid ""
+"Retrieves information about a single user. Authentication is done by "
+"sending a Basic HTTP Authorization header."
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:107
+#: ../../configuration_user/user_provisioning_api.rst:146
+#: ../../configuration_user/user_provisioning_api.rst:189
+msgid "**Syntax: ocs/v1.php/cloud/users/{userid}**"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:118
+msgid "GET ``http://admin:secret@example.com/ocs/v1.php/cloud/users/Frank``"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:119
+msgid "Returns information on the user ``Frank``"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:140
+msgid "**users / edituser**"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:142
+msgid ""
+"Edits attributes related to a user. Users are able to edit email, "
+"displayname and password; admins can also edit the quota value. "
+"Authentication is done by sending a Basic HTTP Authorization header."
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:148
+msgid "HTTP method: PUT"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:149
+msgid "PUT argument: key, the field to edit (email, quota, display, password)"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:150
+msgid "PUT argument: value, the new value for the field"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:155
+msgid "101 - user not found"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:156
+msgid "102 - invalid input data"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:159
+msgid "Examples"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:161
+msgid ""
+"PUT ``PUT http://admin:secret@example.com/ocs/v1.php/cloud/users/Frank -d"
+" key=\"email\" -d value=\"franksnewemail@example.org\"``"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:163
+msgid "Updates the email address for the user ``Frank``"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:165
+msgid ""
+"PUT ``PUT http://admin:secret@example.com/ocs/v1.php/cloud/users/Frank -d"
+" key=\"quota\" -d value=\"100MB\"``"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:167
+msgid "Updates the quota for the user ``Frank``"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:184
+msgid "**users / deleteuser**"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:186
+msgid ""
+"Deletes a user from the ownCloud server. Authentication is done by "
+"sending a Basic HTTP Authorization header."
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:191
+#: ../../configuration_user/user_provisioning_api.rst:306
+#: ../../configuration_user/user_provisioning_api.rst:389
+#: ../../configuration_user/user_provisioning_api.rst:631
+#: ../../configuration_user/user_provisioning_api.rst:800
+msgid "HTTP method: DELETE"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:193
+msgid "Statuscodes:"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:196
+msgid "101 - failure"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:201
+msgid "DELETE ``http://admin:secret@example.com/ocs/v1.php/cloud/users/Frank``"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:202
+msgid "Deletes the user ``Frank``"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:219
+msgid "**users / getgroups**"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:221
+msgid ""
+"Retrieves a list of groups the specified user is a member of. "
+"Authentication is done by sending a Basic HTTP Authorization header."
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:224
+#: ../../configuration_user/user_provisioning_api.rst:263
+#: ../../configuration_user/user_provisioning_api.rst:304
+msgid "**Syntax: ocs/v1.php/cloud/users/{userid}/groups**"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:235
+msgid ""
+"GET  "
+"``http://admin:secret@example.com/ocs/v1.php/cloud/users/Frank/groups``"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:236
+msgid "Retrieves a list of groups of which ``Frank`` is a member"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:258
+msgid "**users / addtogroup**"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:260
+msgid ""
+"Adds the specified user to the specified group. Authentication is done by"
+" sending a Basic HTTP Authorization header."
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:266
+msgid "POST argument: groupid, string - the group to add the user to"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:271
+#: ../../configuration_user/user_provisioning_api.rst:312
+msgid "101 - no group specified"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:272
+#: ../../configuration_user/user_provisioning_api.rst:313
+#: ../../configuration_user/user_provisioning_api.rst:356
+msgid "102 - group does not exist"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:273
+#: ../../configuration_user/user_provisioning_api.rst:314
+msgid "103 - user does not exist"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:274
+#: ../../configuration_user/user_provisioning_api.rst:315
+msgid "104 - insufficient privileges"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:275
+msgid "105 - failed to add user to group"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:280
+msgid ""
+"POST "
+"``http://admin:secret@example.com/ocs/v1.php/cloud/users/Frank/groups -d "
+"groupid=\"newgroup\"``"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:282
+msgid "Adds the user ``Frank`` to the group ``newgroup``"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:299
+msgid "**users / removefromgroup**"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:301
+msgid ""
+"Removes the specified user from the specified group. Authentication is "
+"done by sending a Basic HTTP Authorization header."
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:307
+msgid "POST argument: groupid, string - the group to remove the user from"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:316
+msgid "105 - failed to remove user from group"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:321
+msgid ""
+"DELETE "
+"``http://admin:secret@example.com/ocs/v1.php/cloud/users/Frank/groups -d "
+"groupid=\"newgroup\"``"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:324
+msgid "Removes the user ``Frank`` from the group ``newgroup``"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:341
+msgid "**users / createsubadmin**"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:343
+msgid ""
+"Makes a user the subadmin of a group. Authentication is done by sending a"
+" Basic HTTP Authorization header."
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:346
+#: ../../configuration_user/user_provisioning_api.rst:387
+#: ../../configuration_user/user_provisioning_api.rst:428
+msgid "**Syntax: ocs/v1.php/cloud/users/{userid}/subadmins**"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:349
+msgid ""
+"POST argument: groupid, string - the group of which to make the user a "
+"subadmin"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:355
+#: ../../configuration_user/user_provisioning_api.rst:396
+#: ../../configuration_user/user_provisioning_api.rst:435
+msgid "101 - user does not exist"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:357
+#: ../../configuration_user/user_provisioning_api.rst:398
+msgid "103 - unknown failure"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:362
+msgid ""
+"POST "
+"``https://admin:secret@example.com/ocs/v1.php/cloud/users/Frank/subadmins"
+" -d groupid=\"group\"``"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:365
+msgid "Makes the user ``Frank`` a subadmin of the ``group`` group"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:382
+msgid "**users / removesubadmin**"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:384
+msgid ""
+"Removes the subadmin rights for the user specified from the group "
+"specified. Authentication is done by sending a Basic HTTP Authorization "
+"header."
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:390
+msgid ""
+"DELETE argument: groupid, string - the group from which to remove the "
+"user's subadmin rights"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:397
+msgid "102 - user is not a subadmin of the group / group does not exist"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:403
+msgid ""
+"DELETE "
+"``https://admin:secret@example.com/ocs/v1.php/cloud/users/Frank/subadmins"
+" -d groupid=\"oldgroup\"``"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:406
+msgid "Removes ``Frank's`` subadmin rights from the ``oldgroup`` group"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:423
+msgid "**users / getsubadmingroups**"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:425
+msgid ""
+"Returns the groups in which the user is a subadmin. Authentication is "
+"done by sending a Basic HTTP Authorization header."
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:436
+#: ../../configuration_user/user_provisioning_api.rst:597
+msgid "102 - unknown failure"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:441
+msgid ""
+"GET "
+"``https://admin:secret@example.com/ocs/v1.php/cloud/users/Frank/subadmins``"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:443
+msgid "Returns the groups of which ``Frank`` is a subadmin"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:463
+msgid "Instruction Set For Groups"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:466
+msgid "**groups / getgroups**"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:468
+msgid ""
+"Retrieves a list of groups from the ownCloud server. Authentication is "
+"done by sending a Basic HTTP Authorization header."
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:471
+#: ../../configuration_user/user_provisioning_api.rst:512
+msgid "**Syntax: ocs/v1.php/cloud/groups**"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:485
+msgid "GET ``http://admin:secret@example.com/ocs/v1.php/cloud/groups?search=adm``"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:486
+msgid "Returns list of groups matching the search string."
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:507
+msgid "**groups / addgroup**"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:509
+msgid ""
+"Adds a new group. Authentication is done by sending a Basic HTTP "
+"Authorization header."
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:515
+msgid "POST argument: groupid, string - the new groups name"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:521
+msgid "102 - group already exists"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:522
+msgid "103 - failed to add the group"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:527
+msgid ""
+"POST ``http://admin:secret@example.com/ocs/v1.php/cloud/groups -d "
+"groupid=\"newgroup\"``"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:529
+msgid "Adds a new group called ``newgroup``"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:546
+msgid "**groups / getgroup**"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:548
+msgid ""
+"Retrieves a list of group members. Authentication is done by sending a "
+"Basic HTTP Authorization header."
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:551
+#: ../../configuration_user/user_provisioning_api.rst:629
+msgid "**Syntax: ocs/v1.php/cloud/groups/{groupid}**"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:562
+msgid "POST ``http://admin:secret@example.com/ocs/v1.php/cloud/groups/admin``"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:563
+msgid "Returns a list of users in the ``admin`` group"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:584
+msgid "**groups / getsubadmins**"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:586
+msgid ""
+"Returns subadmins of the group. Authentication is done by sending a Basic"
+" HTTP Authorization header."
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:589
+msgid "**Syntax: ocs/v1.php/cloud/groups/{groupid}/subadmins**"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:596
+#: ../../configuration_user/user_provisioning_api.rst:636
+msgid "101 - group does not exist"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:602
+msgid ""
+"GET "
+"``https://admin:secret@example.com/ocs/v1.php/cloud/groups/mygroup/subadmins``"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:604
+msgid "Return the subadmins of the group: ``mygroup``"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:624
+msgid "**groups / deletegroup**"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:626
+msgid ""
+"Removes a group. Authentication is done by sending a Basic HTTP "
+"Authorization header."
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:637
+msgid "102 - failed to delete group"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:642
+msgid "DELETE ``http://admin:secret@example.com/ocs/v1.php/cloud/groups/mygroup``"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:643
+msgid "Delete the group ``mygroup``"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:660
+msgid "Instruction Set For Apps"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:663
+msgid "**apps / getapps**"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:665
+msgid ""
+"Returns a list of apps installed on the ownCloud server. Authentication "
+"is done by sending a Basic HTTP Authorization header."
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:669
+msgid "**Syntax: ocs/v1.php/cloud/apps/**"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:672
+msgid "url argument: filter, string - optional (``enabled`` or ``disabled``)"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:682
+msgid ""
+"GET "
+"``http://admin:secret@example.com/ocs/v1.php/cloud/apps?filter=enabled``"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:683
+msgid "Gets enabled apps"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:705
+msgid "**apps / getappinfo**"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:707
+msgid ""
+"Provides information on a specific application. Authentication is done by"
+" sending a Basic HTTP Authorization header."
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:710
+#: ../../configuration_user/user_provisioning_api.rst:764
+#: ../../configuration_user/user_provisioning_api.rst:798
+msgid "**Syntax: ocs/v1.php/cloud/apps/{appid}**"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:721
+msgid "GET ``http://admin:secret@example.com/ocs/v1.php/cloud/apps/files``"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:722
+msgid "Get app info for the ``files`` app"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:759
+msgid "**apps / enable**"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:761
+msgid ""
+"Enable an app.  Authentication is done by sending a Basic HTTP "
+"Authorization header."
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:775
+msgid ""
+"POST "
+"``http://admin:secret@example.com/ocs/v1.php/cloud/apps/files_texteditor``"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:776
+msgid "Enable the ``files_texteditor`` app"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:792
+msgid "**apps / disable**"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:794
+msgid ""
+"Disables the specified app. Authentication is done by sending a Basic "
+"HTTP Authorization header."
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:809
+msgid ""
+"DELETE "
+"``http://admin:secret@example.com/ocs/v1.php/cloud/apps/files_texteditor``"
+msgstr ""
+
+#: ../../configuration_user/user_provisioning_api.rst:810
+msgid "Disable the ``files_texteditor`` app"
+msgstr ""
+

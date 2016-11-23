@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../configuration_server/import_ssl_cert.rst:3
+msgid "Importing System-wide and Personal SSL Certificates"
+msgstr ""
+
+#: ../../configuration_server/import_ssl_cert.rst:5
+msgid ""
+"Modern Web browsers try to keep us safe, and so they blast us with scary "
+"warnings when sites have the smallest errors in their SSL certificates, "
+"or when they use self-signed SSL certificates. ownCloud admins encounter "
+"this when creating Federation shares, or setting up external storage "
+"mounts. There is no reason against using self-signed certificates on your"
+" own networks; they're fast, free, and easy."
+msgstr ""
+
+#: ../../configuration_server/import_ssl_cert.rst:8
+msgid "Importing Personal SSL Certificates"
+msgstr ""
+
+#: ../../configuration_server/import_ssl_cert.rst:10
+msgid ""
+"ownCloud has several methods for importing self-signed certificates so "
+"that you don't have to hassle with Web browser warnings. When you allow "
+"your users to create their own external storage mounts or Federation "
+"shares, they can import SSL certificates for those shares on their "
+"Personal pages."
+msgstr ""
+
+#: ../../configuration_server/import_ssl_cert.rst:14
+msgid ""
+"Click the **Import root certificate** button to open a file picker. You "
+"can distribute copies of your SSL certificates to your users (via an "
+"ownCloud share!), or users can download them from their Web browsers. "
+"Click on the little padlock icon and click through until you see a **View"
+" Certificate** button, then keep going until you can download it. In "
+"Firefox and Chromium there is an **Export** button for downloading your "
+"own copy of a site's SSL certificate."
+msgstr ""
+
+#: ../../configuration_server/import_ssl_cert.rst:18
+msgid "*Click \"More information\" in Firefox to import SSL certificate*"
+msgstr ""
+
+#: ../../configuration_server/import_ssl_cert.rst:21
+msgid "Site-wide SSL Import"
+msgstr ""
+
+#: ../../configuration_server/import_ssl_cert.rst:23
+msgid ""
+"The personal imports only work for individual users. You can enable site-"
+"wide SSL certificates for all of your users on your ownCloud admin page. "
+"To enable this, you must add this line to your ``config.php`` file::"
+msgstr ""
+
+#: ../../configuration_server/import_ssl_cert.rst:27
+msgid ""
+"Then you'll have a  **Import root certificate** button on your admin "
+"page, just like the one on your personal page."
+msgstr ""
+
+#: ../../configuration_server/import_ssl_cert.rst:30
+msgid "Using OCC to Import and Manage SSL Certificates"
+msgstr ""
+
+#: ../../configuration_server/import_ssl_cert.rst:32
+msgid ""
+"The ``occ`` command has options for listing and managing your SSL "
+"certificates::"
+msgstr ""
+
+#: ../../configuration_server/import_ssl_cert.rst:38
+msgid "See :doc:`occ_command` to learn about how to use ``occ``."
+msgstr ""
+

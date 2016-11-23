@@ -1,0 +1,121 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../configuration_files/collaborative_documents_configuration.rst:2
+msgid "Configuring the Collaborative Documents App"
+msgstr ""
+
+#: ../../configuration_files/collaborative_documents_configuration.rst:4
+msgid ""
+"The Documents application supports editing documents within ownCloud, "
+"without the need to launch an external application. The Documents app "
+"supports these features:"
+msgstr ""
+
+#: ../../configuration_files/collaborative_documents_configuration.rst:8
+msgid "Cooperative edit, with multiple users editing files simultaneously."
+msgstr ""
+
+#: ../../configuration_files/collaborative_documents_configuration.rst:9
+msgid "Document creation within ownCloud."
+msgstr ""
+
+#: ../../configuration_files/collaborative_documents_configuration.rst:10
+msgid "Document upload."
+msgstr ""
+
+#: ../../configuration_files/collaborative_documents_configuration.rst:11
+msgid ""
+"Share and edit files in the browser, and then share them inside ownCloud "
+"or through a public link."
+msgstr ""
+
+#: ../../configuration_files/collaborative_documents_configuration.rst:14
+msgid ""
+"Supported file formats are `.odt`, `.doc`, and `.docx`. `.odt` is "
+"supported natively in ownCloud, and you must have LibreOffice or "
+"OpenOffice installed on the ownCloud server to convert `.doc`, and "
+"`.docx` documents."
+msgstr ""
+
+#: ../../configuration_files/collaborative_documents_configuration.rst:19
+msgid "Enabling the Documents App"
+msgstr ""
+
+#: ../../configuration_files/collaborative_documents_configuration.rst:21
+msgid ""
+"Go to your Apps page and click the ``Enable`` button. You also have the "
+"option to grant access to the Documents apps to selected user groups. By "
+"default it is available to all groups."
+msgstr ""
+
+#: ../../configuration_files/collaborative_documents_configuration.rst:27
+msgid ""
+"See \"Collaborative Document Editing\" in the User manual to learn how to"
+" create and share documents in the Documents application."
+msgstr ""
+
+#: ../../configuration_files/collaborative_documents_configuration.rst:31
+msgid "Enabling and testing MS Word support"
+msgstr ""
+
+#: ../../configuration_files/collaborative_documents_configuration.rst:33
+msgid ""
+"Go to your admin settings menu. After choosing ``Local`` or ``External`` "
+"click on the ``Apply and test`` button. If you have a working LibreOffice"
+" or OpenOffice installation a green ``Saved`` icon should appear."
+msgstr ""
+
+#: ../../configuration_files/collaborative_documents_configuration.rst:40
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../configuration_files/collaborative_documents_configuration.rst:42
+msgid "If the mentioned test fails please make sure that:"
+msgstr ""
+
+#: ../../configuration_files/collaborative_documents_configuration.rst:44
+msgid ""
+"the PHP functions ``escapeshellarg`` and ``shell_exec`` are not disabled "
+"in your PHP configuration"
+msgstr ""
+
+#: ../../configuration_files/collaborative_documents_configuration.rst:46
+msgid ""
+"the libreoffice/openoffice binary is within your PATH and is executeable "
+"for the HTTP user"
+msgstr ""
+
+#: ../../configuration_files/collaborative_documents_configuration.rst:48
+msgid "your SELinux configuration is not blocking the execution of the binary"
+msgstr ""
+
+#: ../../configuration_files/collaborative_documents_configuration.rst:49
+msgid ""
+"the PHP ``open_basedir`` is correctly configured to allow the access to "
+"the binary"
+msgstr ""
+
+#: ../../configuration_files/collaborative_documents_configuration.rst:51
+msgid ""
+"More hints why the test is failing can be found in your "
+"``data/owncloud.log``."
+msgstr ""
+

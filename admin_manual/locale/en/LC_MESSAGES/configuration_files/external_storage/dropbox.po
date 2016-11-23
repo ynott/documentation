@@ -1,0 +1,100 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../configuration_files/external_storage/dropbox.rst:3
+msgid "Dropbox"
+msgstr ""
+
+#: ../../configuration_files/external_storage/dropbox.rst:5
+msgid ""
+"While Dropbox supports the newer OAuth 2.0, ownCloud uses OAuth 1.0, so "
+"you can safely ignore any references to OAuth 2.0 in the Dropbox "
+"configuration."
+msgstr ""
+
+#: ../../configuration_files/external_storage/dropbox.rst:8
+msgid ""
+"Connecting Dropbox is a little more work because you have to create a "
+"Dropbox app. Log into the `Dropbox Developers page "
+"<http://www.dropbox.com/developers>`_ and click **Create Your App**:"
+msgstr ""
+
+#: ../../configuration_files/external_storage/dropbox.rst:15
+msgid "Next, for **Choose an API** check **Dropbox API**."
+msgstr ""
+
+#: ../../configuration_files/external_storage/dropbox.rst:20
+msgid ""
+"The next option is choosing which folders to share, or to share "
+"everything in your Dropbox."
+msgstr ""
+
+#: ../../configuration_files/external_storage/dropbox.rst:26
+msgid "Then enter your app name. This is anything you want it to be."
+msgstr ""
+
+#: ../../configuration_files/external_storage/dropbox.rst:31
+msgid "Then click the **Create App** button."
+msgstr ""
+
+#: ../../configuration_files/external_storage/dropbox.rst:33
+msgid ""
+"Now you are on your app page, which displays its settings and more "
+"options. Do not click **Development (Apply for production)** because that"
+" is for apps that you want to release publicly."
+msgstr ""
+
+#: ../../configuration_files/external_storage/dropbox.rst:40
+msgid ""
+"Click **Enable additional users** to allow multiple ownCloud users to "
+"access your new Dropbox share."
+msgstr ""
+
+#: ../../configuration_files/external_storage/dropbox.rst:43
+msgid ""
+"Now go to your ownCloud Admin page. Your ownCloud configuration requires "
+"only the local mount name, the **App Key** and the **App Secret**, and "
+"which users or groups have access to the share. Remember the little gear "
+"icon at the far right for additional options."
+msgstr ""
+
+#: ../../configuration_files/external_storage/dropbox.rst:48
+msgid ""
+"After entering your local mount name, **App Key** and **App Secret**, "
+"click **Grant access**."
+msgstr ""
+
+#: ../../configuration_files/external_storage/dropbox.rst:54
+msgid ""
+"If you are not already logged into Dropbox, you will be prompted to login"
+" and authorize access. This happens only once, when you are first "
+"creating the new share. Click **Allow**, and you're done."
+msgstr ""
+
+#: ../../configuration_files/external_storage/dropbox.rst:61
+msgid ""
+"See :doc:`../external_storage_configuration_gui` for additional mount "
+"options and information."
+msgstr ""
+
+#: ../../configuration_files/external_storage/dropbox.rst:64
+msgid "See :doc:`auth_mechanisms` for more information on authentication schemes."
+msgstr ""
+

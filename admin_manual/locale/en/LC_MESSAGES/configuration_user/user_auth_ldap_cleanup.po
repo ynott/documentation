@@ -1,0 +1,130 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../configuration_user/user_auth_ldap_cleanup.rst:3
+msgid "LDAP User Cleanup"
+msgstr ""
+
+#: ../../configuration_user/user_auth_ldap_cleanup.rst:5
+msgid ""
+"LDAP User Cleanup is a new feature in the ``LDAP user and group backend``"
+" application. LDAP User Cleanup is a background process that "
+"automatically searches the ownCloud LDAP mappings table, and verifies if "
+"the LDAP users are still available. Any users that are not available are "
+"marked as ``deleted`` in the ``oc_preferences`` database table. Then you "
+"can run a command to display this table, displaying only the users marked"
+" as ``deleted``, and then you have the option of removing their data from"
+" your ownCloud data directory."
+msgstr ""
+
+#: ../../configuration_user/user_auth_ldap_cleanup.rst:13
+msgid "These items are removed upon cleanup:"
+msgstr ""
+
+#: ../../configuration_user/user_auth_ldap_cleanup.rst:15
+msgid "Local ownCloud group assignments"
+msgstr ""
+
+#: ../../configuration_user/user_auth_ldap_cleanup.rst:16
+msgid "User preferences (DB table ``oc_preferences``)"
+msgstr ""
+
+#: ../../configuration_user/user_auth_ldap_cleanup.rst:17
+msgid "User's ownCloud home folder"
+msgstr ""
+
+#: ../../configuration_user/user_auth_ldap_cleanup.rst:18
+msgid "User's corresponding entry in ``oc_storages``"
+msgstr ""
+
+#: ../../configuration_user/user_auth_ldap_cleanup.rst:20
+msgid "There are two prerequisites for LDAP User Cleanup to operate:"
+msgstr ""
+
+#: ../../configuration_user/user_auth_ldap_cleanup.rst:22
+msgid ""
+"Set ``ldapUserCleanupInterval`` in ``config.php`` to your desired check "
+"interval in minutes. The default is 51 minutes."
+msgstr ""
+
+#: ../../configuration_user/user_auth_ldap_cleanup.rst:25
+msgid ""
+"All configured LDAP connections are enabled and operating correctly. As "
+"users can exist on multiple LDAP servers, you want to be sure that all of"
+" your LDAP servers are available so that a user on a temporarily "
+"disconnected LDAP server is not marked as ``deleted``."
+msgstr ""
+
+#: ../../configuration_user/user_auth_ldap_cleanup.rst:30
+msgid ""
+"The background process examines 50 users at a time, and runs at the "
+"interval you configured with ``ldapUserCleanupInterval``. For example, if"
+" you have 200 LDAP users and your ``ldapUserCleanupInterval`` is 20 "
+"minutes, the process will examine the first 50 users, then 20 minutes "
+"later the next 50 users, and 20 minutes later the next 50, and so on."
+msgstr ""
+
+#: ../../configuration_user/user_auth_ldap_cleanup.rst:36
+msgid ""
+"There are two ``occ`` commands to use for examining a table of users "
+"marked as deleted, and then manually deleting them.  The ``occ`` command "
+"is in your ownCloud directory, for example ``/var/www/owncloud/occ``, and"
+" it must be run as your HTTP user. To learn more about ``occ``, see "
+":doc:`../configuration_server/occ_command`."
+msgstr ""
+
+#: ../../configuration_user/user_auth_ldap_cleanup.rst:42
+msgid "These examples are for Ubuntu Linux:"
+msgstr ""
+
+#: ../../configuration_user/user_auth_ldap_cleanup.rst:44
+msgid ""
+"``sudo -u www-data php occ ldap:show-remnants`` displays a table with all"
+" users that have been marked as deleted, and their LDAP data."
+msgstr ""
+
+#: ../../configuration_user/user_auth_ldap_cleanup.rst:47
+msgid ""
+"``sudo -u www-data php occ user:delete [user]`` removes the user's data "
+"from the ownCloud data directory."
+msgstr ""
+
+#: ../../configuration_user/user_auth_ldap_cleanup.rst:50
+msgid ""
+"This example shows what the table of users marked as ``deleted`` looks "
+"like::"
+msgstr ""
+
+#: ../../configuration_user/user_auth_ldap_cleanup.rst:62
+msgid ""
+"Then you can run ``sudo -u www-data php occ user:delete aaliyah_brown`` "
+"to delete user aaliyah_brown. You must use the user's ownCloud name."
+msgstr ""
+
+#: ../../configuration_user/user_auth_ldap_cleanup.rst:66
+msgid "Deleting Local ownCloud Users"
+msgstr ""
+
+#: ../../configuration_user/user_auth_ldap_cleanup.rst:68
+msgid ""
+"You may also use ``occ user:delete [user]`` to remove a local ownCloud "
+"user; this removes their user account and their data."
+msgstr ""
+

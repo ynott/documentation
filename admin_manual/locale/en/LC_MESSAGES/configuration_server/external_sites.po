@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../configuration_server/external_sites.rst:3
+msgid "Linking External Sites"
+msgstr ""
+
+#: ../../configuration_server/external_sites.rst:5
+msgid ""
+"You can embed external Web sites inside your ownCloud pages with the "
+"External Sites app, as this screenshot shows."
+msgstr ""
+
+#: ../../configuration_server/external_sites.rst:11
+#: ../../configuration_server/external_sites.rst:28
+msgid "*Click to enlarge*"
+msgstr ""
+
+#: ../../configuration_server/external_sites.rst:13
+msgid ""
+"This is useful for quick access to important Web pages such as the "
+"ownCloud manuals and informational pages for your company, and for "
+"presenting external pages inside your custom ownCloud branding, if you "
+"use your own custom themes."
+msgstr ""
+
+#: ../../configuration_server/external_sites.rst:18
+msgid ""
+"The External sites app is included in all versions of ownCloud. Go to "
+"**Apps > Not Enabled** to enable it. Then go to your ownCloud Admin page "
+"to create your links, which are saved automatically. There is a dropdown "
+"menu to select an icon, but there is only one default icon so you don't "
+"have to select one. Hover your cursor to the right of your links to make "
+"the trashcan icon appear when you want to remove them."
+msgstr ""
+
+#: ../../configuration_server/external_sites.rst:30
+msgid ""
+"The links appear in the ownCloud dropdown menu on the top left after "
+"refreshing your page, and have globe icons."
+msgstr ""
+
+#: ../../configuration_server/external_sites.rst:35
+msgid ""
+"Your links may or may not work correctly due to the various ways that Web"
+" browsers and Web sites handle HTTP and HTTPS URLs, and because the "
+"External Sites app embeds external links in IFrames. Modern Web browsers "
+"try very hard to protect Web surfers from dangerous links, and safety "
+"apps like `Privacy Badger <https://www.eff.org/privacybadger>`_ and ad-"
+"blockers may block embedded pages. It is strongly recommended to enforce "
+"HTTPS on your ownCloud server; do not weaken this, or any of your "
+"security tools, just to make embedded Web pages work. After all, you can "
+"freely access them outside of ownCloud."
+msgstr ""
+
+#: ../../configuration_server/external_sites.rst:45
+msgid ""
+"Most Web sites that offer login functionalities use the ``X-Frame-"
+"Options`` or ``Content-Security-Policy`` HTTP header which instructs "
+"browsers to not allow their pages to be embedded for security reasons "
+"(e.g. \"Clickjacking\"). You can usually verify the reason why embedding "
+"the website is not possible by using your browser's console tool. For "
+"example, this page has an invalid SSL certificate."
+msgstr ""
+
+#: ../../configuration_server/external_sites.rst:54
+msgid "On this page, X-Frame-Options prevents the embedding."
+msgstr ""
+
+#: ../../configuration_server/external_sites.rst:58
+msgid ""
+"There isn't much you can do about these issues, but if you're curious you"
+" can see what is happening."
+msgstr ""
+

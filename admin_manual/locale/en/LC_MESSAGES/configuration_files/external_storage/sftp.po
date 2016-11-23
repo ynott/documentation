@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../configuration_files/external_storage/sftp.rst:3
+msgid "SFTP"
+msgstr ""
+
+#: ../../configuration_files/external_storage/sftp.rst:5
+msgid ""
+"ownCloud's SFTP (FTP over an SSH tunne) backend supports both password "
+"and public key authentication."
+msgstr ""
+
+#: ../../configuration_files/external_storage/sftp.rst:8
+msgid ""
+"The **Host** field is required; a port can be specified as part of the "
+"**Host** field in the following format: ``hostname.domain:port``. The "
+"default port is 22 (SSH)."
+msgstr ""
+
+#: ../../configuration_files/external_storage/sftp.rst:12
+msgid ""
+"For public key authentication, you can generate a public/private key pair"
+" from your **SFTP with secret key login** configuration."
+msgstr ""
+
+#: ../../configuration_files/external_storage/sftp.rst:18
+msgid ""
+"After generating your keys, you need to copy your new public key to the "
+"destination server to ``.ssh/authorized_keys``. ownCloud will then use "
+"its private key to authenticate to the SFTP server."
+msgstr ""
+
+#: ../../configuration_files/external_storage/sftp.rst:22
+msgid ""
+"The default **Remote Subfolder** is the root directory (``/``) of the "
+"remote SFTP server, and you may enter any directory you wish."
+msgstr ""
+
+#: ../../configuration_files/external_storage/sftp.rst:25
+msgid ""
+"See :doc:`../external_storage_configuration_gui` for additional mount "
+"options and information."
+msgstr ""
+
+#: ../../configuration_files/external_storage/sftp.rst:28
+msgid "See :doc:`auth_mechanisms` for more information on authentication schemes."
+msgstr ""
+

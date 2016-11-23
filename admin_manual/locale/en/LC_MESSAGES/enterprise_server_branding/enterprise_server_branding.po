@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../enterprise_server_branding/enterprise_server_branding.rst:3
+msgid "Custom Theming ownCloud (Enterprise only)"
+msgstr ""
+
+#: ../../enterprise_server_branding/enterprise_server_branding.rst:6
+msgid "Overview"
+msgstr ""
+
+#: ../../enterprise_server_branding/enterprise_server_branding.rst:8
+msgid ""
+"ownBrander is an ownCloud build service that is exclusive to Enterprise "
+"edition customers for creating branded ownCloud clients and servers. You "
+"may brand your ownCloud server using ownBrander to easily build a custom "
+"theme, using your own logo and artwork. ownCloud has always been theme-"
+"able, but it was a manual process that required editing CSS and PHP "
+"files. Now Enterprise customers can use ownBrander, which provides an "
+"easy graphical wizard."
+msgstr ""
+
+#: ../../enterprise_server_branding/enterprise_server_branding.rst:15
+msgid ""
+"You need an Enterprise subscription, an account on `Customer.owncloud.com"
+" <https://customer.owncloud.com/owncloud>`_, and the ownBrander app "
+"enabled on your account. When you complete the steps in the wizard the "
+"ownBrander service builds your new branded theme, and in 24-48 hours "
+"you'll see it in your account."
+msgstr ""
+
+#: ../../enterprise_server_branding/enterprise_server_branding.rst:25
+msgid ""
+"When you open the ownBrander app, go to the Web tab. You will see an "
+"introduction and the wizard, which starts with uploading your logo. You "
+"will need a number of images in specific sizes and formats, and the "
+"wizard tells you what you need. Example images are on the right, and you "
+"can click to enlarge them."
+msgstr ""
+
+#: ../../enterprise_server_branding/enterprise_server_branding.rst:35
+msgid ""
+"If you see errors when you upload SVG files, such as \"Incorrect "
+"extension.File type image/svg+xml is not correct\", \"This SVG is "
+"invalid\", or \"Error uploading file: Incorrect size\", try opening the "
+"file in `Inkscape <https://inkscape.org/en/>`_ then save as \"Plain SVG\""
+" and upload your SVG image again."
+msgstr ""
+
+#: ../../enterprise_server_branding/enterprise_server_branding.rst:41
+msgid ""
+"The wizard has two sections. The first section contains all the required "
+"elements: logos and other artwork, colors, naming, and your enterprise "
+"URL. The Suggested section contains optional items such as additional "
+"logo placements and custom URLs."
+msgstr ""
+
+#: ../../enterprise_server_branding/enterprise_server_branding.rst:46
+msgid ""
+"When you are finished, click the **Generate Web Server** button. If you "
+"want to change anything, go ahead and change it and click the **Generate "
+"Web Server** button. This will override your previous version, if it has "
+"not been created yet.In 24-48 hours you'll find your new branded theme in"
+" the **Web** folder in your `Customer.owncloud.com "
+"<https://customer.owncloud.com/owncloud>`_ account."
+msgstr ""
+
+#: ../../enterprise_server_branding/enterprise_server_branding.rst:52
+msgid ""
+"Inside the **Web** folder you'll find a **themes** folder. Copy this to "
+"your ``owncloud/themes`` directory. You may name your **themes** folder "
+"anything you want, for example ``myBrandedTheme``. Then configure your "
+"ownCloud server to use your branded theme by entering it in your "
+"``config.php`` file::"
+msgstr ""
+
+#: ../../enterprise_server_branding/enterprise_server_branding.rst:59
+msgid ""
+"If anything goes wrong with your new theme, comment out this line to re-"
+"enable the default theme until you fix your branded theme. The branded "
+"theme follows the same file structure as the default theme, and you may "
+"further customize it by editing the source files."
+msgstr ""
+
+#: ../../enterprise_server_branding/enterprise_server_branding.rst:64
+msgid ""
+"Always edit only your custom theme files. Never edit the default theme "
+"files."
+msgstr ""
+

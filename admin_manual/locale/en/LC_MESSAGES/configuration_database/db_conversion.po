@@ -1,0 +1,165 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../configuration_database/db_conversion.rst:3
+msgid "Converting Database Type"
+msgstr ""
+
+#: ../../configuration_database/db_conversion.rst:5
+msgid ""
+"You can convert a SQLite database to a more performing MySQL, MariaDB or "
+"PostgreSQL database with the ownCloud command line tool. SQLite is good "
+"for testing and simple single-user ownCloud servers, but it does not "
+"scale for multiple-user production users."
+msgstr ""
+
+#: ../../configuration_database/db_conversion.rst:10
+msgid "ownCloud Enterprise edition does not support SQLite."
+msgstr ""
+
+#: ../../configuration_database/db_conversion.rst:13
+msgid "Run the conversion"
+msgstr ""
+
+#: ../../configuration_database/db_conversion.rst:15
+msgid ""
+"First setup the new database, here called \"new_db_name\". In ownCloud "
+"root folder call"
+msgstr ""
+
+#: ../../configuration_database/db_conversion.rst:22
+msgid "The Options"
+msgstr ""
+
+#: ../../configuration_database/db_conversion.rst:24
+msgid "``--port=\"3306\"``                       the database port (optional)"
+msgstr ""
+
+#: ../../configuration_database/db_conversion.rst:25
+msgid ""
+"``--password=\"mysql_user_password\"``    password for the new database. "
+"If omitted the tool will ask you (optional)"
+msgstr ""
+
+#: ../../configuration_database/db_conversion.rst:26
+msgid "``--clear-schema``                      clear schema (optional)"
+msgstr ""
+
+#: ../../configuration_database/db_conversion.rst:27
+msgid ""
+"``--all-apps``                          by default, tables for enabled "
+"apps are converted, use to convert also tables of deactivated apps "
+"(optional)"
+msgstr ""
+
+#: ../../configuration_database/db_conversion.rst:29
+msgid ""
+"*Note:* The converter searches for apps in your configured app folders "
+"and uses the schema definitions in the apps to create the new table. So "
+"tables of removed apps will not be converted even with option ``--all-"
+"apps``"
+msgstr ""
+
+#: ../../configuration_database/db_conversion.rst:33
+msgid "For example"
+msgstr ""
+
+#: ../../configuration_database/db_conversion.rst:39
+msgid ""
+"To successfully proceed with the conversion, you must type ``yes`` when "
+"prompted with the question ``Continue with the conversion?``"
+msgstr ""
+
+#: ../../configuration_database/db_conversion.rst:42
+msgid ""
+"On success the converter will automatically configure the new database in"
+" your ownCloud config ``config.php``."
+msgstr ""
+
+#: ../../configuration_database/db_conversion.rst:46
+msgid "Unconvertible Tables"
+msgstr ""
+
+#: ../../configuration_database/db_conversion.rst:48
+msgid ""
+"If you updated your ownCloud installation there might exist old tables, "
+"which are not used anymore. The converter will tell you which ones."
+msgstr ""
+
+#: ../../configuration_database/db_conversion.rst:58
+msgid "You can ignore these tables. Here is a list of known old tables:"
+msgstr ""
+
+#: ../../configuration_database/db_conversion.rst:61
+msgid "oc_calendar_calendars"
+msgstr ""
+
+#: ../../configuration_database/db_conversion.rst:62
+msgid "oc_calendar_objects"
+msgstr ""
+
+#: ../../configuration_database/db_conversion.rst:63
+msgid "oc_calendar_share_calendar"
+msgstr ""
+
+#: ../../configuration_database/db_conversion.rst:64
+msgid "oc_calendar_share_event"
+msgstr ""
+
+#: ../../configuration_database/db_conversion.rst:65
+msgid "oc_fscache"
+msgstr ""
+
+#: ../../configuration_database/db_conversion.rst:66
+msgid "oc_log"
+msgstr ""
+
+#: ../../configuration_database/db_conversion.rst:67
+msgid "oc_media_albums"
+msgstr ""
+
+#: ../../configuration_database/db_conversion.rst:68
+msgid "oc_media_artists"
+msgstr ""
+
+#: ../../configuration_database/db_conversion.rst:69
+msgid "oc_media_sessions"
+msgstr ""
+
+#: ../../configuration_database/db_conversion.rst:70
+msgid "oc_media_songs"
+msgstr ""
+
+#: ../../configuration_database/db_conversion.rst:71
+msgid "oc_media_users"
+msgstr ""
+
+#: ../../configuration_database/db_conversion.rst:72
+msgid "oc_permissions"
+msgstr ""
+
+#: ../../configuration_database/db_conversion.rst:73
+msgid "oc_queuedtasks"
+msgstr ""
+
+#: ../../configuration_database/db_conversion.rst:74
+msgid "oc_sharing"
+msgstr ""
+

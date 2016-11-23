@@ -1,0 +1,398 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012-2016, The ownCloud developers
+# This file is distributed under the same license as the ownCloud 9.2 Server
+# Administration Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ownCloud 9.2 Server Administration Manual 9.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-23 14:10+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../enterprise_firewall/file_firewall.rst:3
+msgid "File Firewall (Enterprise only)"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:5
+msgid ""
+"The File Firewall GUI enables you to create and manage firewall rule sets"
+" from your ownCloud admin page. The File Firewall gives you finer-grained"
+" control of access and sharing, with rules for allowing or denying "
+"access, and restrictions per group, upload size, client devices, IP "
+"address, time of day, and many more criteria. For additional flexibility "
+"the File Firewall also supports regular expressions."
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:12
+msgid ""
+"Each rule consists of one or more conditions. A request matches a rule if"
+" all conditions evaluate to true. If a request matches at least one of "
+"the defined rules, the request is blocked and the file content can not be"
+" read or written."
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:18
+msgid ""
+"As of ownCloud 9.0, the File Firewall app cannot lock out administrators "
+"from the Web interface when      rules are misconfigured."
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:20
+msgid ""
+"Figure 1 shows an empty firewall configuration panel. Set your logging "
+"level to **Failures Only** for debugging, and create a new ruleset by "
+"clicking the **Add Group** button. After setting up your rules you must "
+"click the **Save Rules** button."
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:28
+msgid "*Figure 1: Empty File Firewall configuration panel*"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:30
+msgid ""
+"Figure 2 shows two rules. The first rule, **No Support outside office "
+"hours**, prevents members of the support group from logging into the "
+"ownCloud Web interface from 5pm-9am, and also blocks client syncing."
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:34
+msgid ""
+"The second rule prevents members of the qa-team group from accessing the "
+"Web UI from IP addresses that are outside of the local network."
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:40
+msgid "*Figure 2: Two example rules that restrict logins per user group*"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:42
+msgid "All other users are not affected, and can log in anytime from anywhere."
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:45
+msgid "Available Conditions"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:48
+msgid "User Group"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:48
+msgid "The user (is|is not) a member of the selected group."
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:51
+msgid "User Agent"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:51
+msgid "The User-Agent of the request (matches|does not match) the given string."
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:55
+msgid "User Device"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:54
+msgid ""
+"A shortcut for matching all known (``android`` | ``ios`` | ``desktop``) "
+"sync clients by their User Agent string."
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:59
+msgid "Request Time"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:58
+msgid ""
+"The time of the request (has to|must not) be in a single range from "
+"beginning time to end time."
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:63
+#: ../../enterprise_firewall/file_firewall.rst:96
+msgid "Request URL"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:62
+msgid ""
+"The **full page URL** (has to|must not) (match|contain|begin with|end) "
+"with a given string."
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:66
+msgid "Request Type"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:66
+msgid "The request (is|is not) a (WebDAV|public share link|other) request."
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:69
+msgid "Request IP Range (IPv4) and IP Range (IPv6)"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:69
+msgid ""
+"The request's ``REMOTE_ADDR`` header (is|is not) matching the given IP "
+"range."
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:72
+msgid "Subnet (IPv4) and Subnet (IPv6)"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:72
+msgid ""
+"The request's ``SERVER_ADDR`` header (is|is not) matching the given IP "
+"range."
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:76
+msgid "File Size Upload"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:75
+msgid ""
+"When a file is uploaded the size has to be (less|less or "
+"equal|greater|greater or equal) to the given size."
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:80
+msgid "File Mimetype Upload"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:79
+msgid ""
+"When a file is uploaded the mimetype (is|is not|begins with|does not "
+"begin with|ends with|does not end with) the given string."
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:84
+msgid "System File Tag"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:83
+msgid ""
+"One of the parent folders or the file itself (is|is not) tagged with a "
+"System tag."
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:88
+msgid "Regular Expression"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:87
+msgid ""
+"The File Firewall supports regular expressions, allowing you to create "
+"custom rules using the following conditions:"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:90
+msgid "IP Range (IPv4)"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:91
+msgid "IP Range (IPv6)"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:92
+msgid "Subnet (IPv4)"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:93
+msgid "Subnet (IPv6)"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:94
+msgid "User agent"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:95
+msgid "User group"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:98
+msgid ""
+"You can combine multiple rules into one rule. E.g., if a rule applies to "
+"both the support and the qa-team you could write your rule like this::"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:104
+msgid "No Manual Editing"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:106
+msgid ""
+"We do not recommend modifying the configuration values directly in your "
+"``config.php``. These use JSON encoding, so the values are difficult to "
+"read and a single typo will break all of your rules."
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:111
+msgid "Controlling Access to Folders"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:113
+msgid ""
+"The easiest way to block access to a folder, starting with ownCloud 9.0, "
+"is to use a system tag. A new rule type was added which allows you to "
+"block access to files and folders, where at least one of the parents has "
+"a given tag. Now you just need to add the tag to the folder or file, and "
+"then block the tag with the File Firewall."
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:119
+msgid "This example blocks access to any folder with the tag \"Confidential\"."
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:121
+msgid "Block by System Tag::"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:130
+msgid "Custom Configuration for Branded Clients"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:132
+msgid ""
+"If you are using :doc:`branded ownCloud clients "
+"<../enterprise_clients/index>`, you may define "
+"``firewall.branded_clients`` in your ``config.php`` to identify your "
+"branded clients in the firewall **\"User Device\"** rule."
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:136
+msgid ""
+"The configuration is a ``User-Agent`` => ``Device`` map. ``Device`` must "
+"be one of the following:"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:139
+msgid "android"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:140
+msgid "android_branded"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:141
+msgid "ios"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:142
+msgid "ios_branded"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:143
+msgid "desktop"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:144
+msgid "desktop_branded"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:146
+msgid ""
+"The ``User-Agent`` is always compared all lowercase. By default the agent"
+" is compared with ``equals``. When a trailing or leading asterisk, ``*``,"
+" is found, the agent is compared with ``starts with`` or ``ends with``. "
+"If the agent has both a leading and a trailing ``*``, the string must "
+"appear anywhere. For technical reasons the ``User-Agent`` string must be "
+"at least 4 characters (including wildcards). (When you build your branded"
+" client you have the option to create a custom User Agent.)"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:154
+msgid ""
+"In this example configuration you need to replace the example User Agent "
+"strings, for example ``'android_branded'``, with your own User Agent "
+"strings::"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:168
+msgid "The Web UI dropdown then expands to the following options:"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:170
+msgid "Android Client - always visible"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:171
+msgid "iOS Client - always visible"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:172
+msgid "Desktop Client - always visible"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:173
+msgid ""
+"Android Client (Branded) - visible when at least one ``android_branded`` "
+"is defined"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:174
+msgid ""
+"iOS Client (Branded) - visible when at least one ``ios_branded`` is "
+"defined"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:175
+msgid ""
+"Desktop Client (Branded) - visible when at least one ``desktop_branded`` "
+"is defined"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:176
+msgid ""
+"All branded clients - visible when at least one of ``android_branded``, "
+"``ios_branded`` or ``desktop_branded`` is defined"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:178
+msgid ""
+"All non-branded clients - visible when at least one of "
+"``android_branded``, ``ios_branded`` or ``desktop_branded`` is defined"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:180
+msgid "Others (Browsers, etc.) - always visible"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:182
+msgid "Then these options operate this way:"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:184
+msgid ""
+"The ``* Client`` options only match ``android``, ``ios`` and ``desktop`` "
+"respectively."
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:185
+msgid ""
+"The ``* Client (Branded)`` options match the ``*_branded`` agents "
+"equivalent."
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:186
+msgid ""
+"``All branded clients`` matches: ``android_branded``, ``ios_branded`` and"
+" ``desktop_branded``"
+msgstr ""
+
+#: ../../enterprise_firewall/file_firewall.rst:188
+msgid "``All non-branded clients`` matches: ``android``, ``ios`` and ``desktop``"
+msgstr ""
+
