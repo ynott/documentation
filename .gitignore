@@ -11,6 +11,7 @@
 *~
 *.sav
 *.backup
+*.swp
 
 # Exclude NetBeans project
 /nbproject/*
